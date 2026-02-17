@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英換 Ei-Kan | ヘル英 Heru-E</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand-container">
+            <h1 class="logo">英換 <span class="sub">Ei-Kan</span></h1>
+            <p class="tagline">by ヘル英 (Heru-E) - 現場のための英語変換</p>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="例: 予約, アレルギー, 免税...">
+        </div>
+        
+        <div class="quick-tags">
+            <button onclick="filterTag('All')">すべて</button>
+            <button onclick="filterTag('Menu')">🍴 飲食</button>
+            <button onclick="filterTag('Sign')">⚠️ 注意</button>
+            <button onclick="filterTag('Pay')">💳 会計</button>
+            <button onclick="filterTag('Hotel')">🏨 宿泊</button>
+        </div>
+    </header>
+
+    <main id="translationGrid">
+        </main>
+
+    <footer>
+        <p>© 2026 ヘル英 Project - Making Japan International</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
