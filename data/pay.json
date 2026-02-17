@@ -16,3 +16,4 @@
 	{ "jp": "前払い制", "en": "Payment first", "tag": "Pay", "context": "注文時に支払う形式の説明に。" },
 	{ "jp": "後払い制", "en": "Payment after dining", "tag": "Pay", "context": "レジで最後に支払う形式に。" }
 ]
+

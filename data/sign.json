@@ -36,5 +36,26 @@
 	{ "jp": "検温にご協力ください", "en": "Please check your temperature", "tag": "Sign", "context": "体温測定の依頼に。" },
 	{ "jp": "マスク着用", "en": "Masks required", "tag": "Sign", "context": "感染対策のルールに。" },
 	{ "jp": "距離を保ってください", "en": "Please keep your distance", "tag": "Sign", "context": "ソーシャルディスタンスの案内に。" },
-	{ "jp": "お出口はあちらです", "en": "The exit is over there", "tag": "Sign", "context": "帰りの客への案内に。" }
-]
+	{ "jp": "お出口はあちらです", "en": "The exit is over there", "tag": "Sign", "context": "帰りの客への案内に。" },
+	{ "jp": "入口はこちら", "en": "Entrance this way", "tag": "Sign", "context": "入り口案内に。" },
+	{ "jp": "営業時間: 10:00 - 20:00", "en": "Business hours: 10:00 - 20:00", "tag": "Sign", "context": "営業時間の表示に。" },
+	{ "jp": "ペット同伴はご遠慮ください", "en": "Please do not bring pets", "tag": "Sign", "context": "ペット不可の場所に。" },
+	{ "jp": "ベビーカーは折りたたんでください", "en": "Please fold strollers", "tag": "Sign", "context": "狭い通路での注意に。" },
+	{ "jp": "車椅子優先席", "en": "Wheelchair priority seating", "tag": "Sign", "context": "優先席の表示に。" },
+	{ "jp": "スタッフにお声掛けください", "en": "Please ask staff for assistance", "tag": "Sign", "context": "案内を必要とする場合に。" },
+	{ "jp": "飲食は店内指定場所で", "en": "Please eat only in designated areas", "tag": "Sign", "context": "指定エリアでの飲食を促す案内に。" },
+	{ "jp": "自転車はここに止めないでください", "en": "No bicycle parking here", "tag": "Sign", "context": "駐輪禁止エリアに。" },
+	{ "jp": "入場料あり", "en": "Admission fee", "tag": "Sign", "context": "有料施設の入り口表示に。" },
+	{ "jp": "喫煙所はこちら", "en": "Smoking area here", "tag": "Sign", "context": "指定喫煙所の案内に。" },
+	{ "jp": "危険物持ち込み禁止", "en": "No dangerous items", "tag": "Sign", "context": "持ち込み禁止物の注意に。" },
+	{ "jp": "エレベーター点検中", "en": "Elevator under maintenance", "tag": "Sign", "context": "エレベーター停止時の案内に。" },
+	{ "jp": "点検日は掲示をご確認ください", "en": "Check posted schedule for maintenance dates", "tag": "Sign", "context": "定期点検の案内に。" },
+	{ "jp": "床が濡れています", "en": "Floor is wet", "tag": "Sign", "context": "清掃や雨天時の注意喚起に。" },
+	{ "jp": "ここは写真撮影OK", "en": "Photography allowed", "tag": "Sign", "context": "撮影可の場所に。" },
+	{ "jp": "靴を脱いでください", "en": "Please take off your shoes", "tag": "Sign", "context": "和室などでの案内に。" },
+	{ "jp": "手荷物はここへ", "en": "Place carry-on items here", "tag": "Sign", "context": "荷物置き場の案内に。" },
+	{ "jp": "営業時間変更のお知らせ", "en": "Notice of business hour changes", "tag": "Sign", "context": "臨時営業時間の掲示に。" },
+	{ "jp": "整理券をお取りください", "en": "Please take a numbered ticket", "tag": "Sign", "context": "行列管理の案内に。" },
+	{ "jp": "こちらは出口専用です", "en": "Exit only", "tag": "Sign", "context": "一方通行の出口に。" }
+	]
+
