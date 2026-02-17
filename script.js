@@ -5,21 +5,21 @@ const searchInput = document.getElementById('searchInput');
 
 let translations = []; 
 
-// 1. Fetch data with improved error logging for that 404
 async function loadData() {
     try {
-        const response = await fetch('data.json');
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        // Adding './' tells the browser: "Look in the exact same folder as index.html"
+        const response = await fetch('./data.json'); 
+        if (!response.ok) throw new Error(`Status: ${response.status}`);
         translations = await response.json();
         displayTranslations(); 
+        console.log("Data loaded successfully!");
     } catch (error) {
-        console.error("404 Check: Is data.json in the same folder as index.html?", error);
-        grid.innerHTML = `<p style="color: red; text-align: center; padding: 20px;">
-            Error: Could not find data.json. Check your file location!</p>`;
+        console.error("Fetch Error:", error);
+        grid.innerHTML = `<p style="color:red;">404: data.json not found in this directory.</p>`;
     }
 }
 
-// 2. Display Logic
+// 2. Display Cards
 function displayTranslations(filter = "", category = "All") {
     grid.innerHTML = "";
     
@@ -45,7 +45,7 @@ function displayTranslations(filter = "", category = "All") {
     });
 }
 
-// 3. SECURE EVENT LISTENERS (No more CSP errors!)
+// 3. Event Listeners (Fixes CSP errors)
 
 // Theme Toggle
 themeToggle.addEventListener('click', () => {
@@ -53,29 +53,28 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
 });
 
-// Category Filter Buttons
+// Category Filtering
 document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const tag = btn.getAttribute('data-tag');
-        searchInput.value = ""; // Clear search when switching categories
+        searchInput.value = "";
         displayTranslations("", tag);
     });
 });
 
-// Search Input
+// Search
 searchInput.addEventListener('input', (e) => {
     displayTranslations(e.target.value);
 });
 
-// Copy Button (Event Delegation)
+// Copy logic (Event Delegation)
 grid.addEventListener('click', (e) => {
     if (e.target.classList.contains('copy-btn')) {
         const text = e.target.getAttribute('data-text');
         navigator.clipboard.writeText(text).then(() => {
-            const btn = e.target;
-            const originalText = btn.innerText;
-            btn.innerText = "✅ OK!";
-            setTimeout(() => btn.innerText = originalText, 1500);
+            const originalText = e.target.innerText;
+            e.target.innerText = "✅ OK!";
+            setTimeout(() => e.target.innerText = originalText, 1500);
         });
     }
 });
