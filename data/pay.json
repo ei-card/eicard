@@ -1,5 +1,5 @@
 [
-	{ "jp": "電子マネー使えます", "en": "E-money accepted", "tag": "Pay", "context": "SuicaやPayPayの案内に。" },
+	{ "jp": "電子マネー使えます", "en": "E-money accepted", "tag": "Pay", "context": "電子マネーの案内に。" },
 	{ "jp": "お会計は別々ですか？", "en": "Would you like to pay separately?", "tag": "Pay", "context": "個別会計の確認に。" },
 	{ "jp": "免税手続きはこちらです", "en": "Tax-free counter is over here", "tag": "Pay", "context": "買い物客への案内に。" },
 	{ "jp": "暗証番号を入力してください", "en": "Please enter your PIN", "tag": "Pay", "context": "カード決済の時に。" },

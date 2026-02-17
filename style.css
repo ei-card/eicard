@@ -200,3 +200,26 @@ footer {
 }
 
 .cta-button:hover { opacity: 0.9; }
+
+.card-btns {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.print-btn, .copy-btn {
+    background: var(--search-bg);
+    border: 1px solid var(--border);
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--text-main);
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+}
+
+.print-btn:hover, .copy-btn:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
