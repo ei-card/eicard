@@ -66,7 +66,7 @@ function displayTranslations(categoryFilter = "All") {
             <div class="card-top">
                 <h3>${item.jp}</h3>
                 <div class="card-btns">
-                    <button class="print-btn" onclick="printPhrase('${item.jp}', '${item.en}')">🖨️ 印刷</button>
+                    <button class="print-btn" onclick="printPhrase('${item.jp}', '${item.en}')">印刷</button>
                     <button class="copy-btn" data-text="${item.en}">コピー</button>
                 </div>
             </div>
