@@ -1,3 +1,29 @@
+:root {
+    /* New Minimalist Gradient Palette */
+    --bg: #fcfcfc;
+    --header-bg: rgba(255, 255, 255, 0.8);
+    --card-bg: #ffffff;
+    --primary: #2c3e50;
+    --accent: #3498db;
+    --text-main: #2d3436;
+    --text-sub: #636e72;
+    --border: #dfe6e9;
+    --search-bg: #f1f2f6;
+    --danger: #e74c3c;
+
+    /* Gradient from the PNG Border */
+    --gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #fac1eb 100%);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", sans-serif;
+    background: var(--gradient); /* Apply gradient to the whole page */
+    background-attachment: fixed;
+    margin: 0;
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
 /* Card header row for jp-text and kebab menu */
 .card-header-row {
     display: flex;
@@ -6,39 +32,7 @@
     gap: 8px;
     margin-bottom: 2px;
 }
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
-    background-color: var(--bg);
-    color: var(--text-main);
-    margin: 0;
-    transition: background 0.3s, color 0.3s;
-    -webkit-font-smoothing: antialiased;
-}
 
-/* Top Right Toggle */
-.theme-toggle-container {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-#themeToggle {
-    background: var(--search-bg);
-    border: 1px solid var(--border);
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: 0.2s;
-}
-
-header {
-    background: var(--header-bg);
-    padding: 3rem 1rem;
-    text-align: center;
-    border-bottom: 1px solid var(--border);
-}
 
 .logo {
     font-size: 2.8rem;
@@ -97,45 +91,6 @@ header {
     margin: 0 auto;
 }
 
-.card {
-    background: var(--card-bg);
-    border-radius: 16px;
-    padding: 24px;
-    border: 1px solid var(--border);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-}
-
-/* Increased Japanese Font Size */
-.card h3 {
-    margin: 0;
-    font-size: 1.2rem; 
-    font-weight: 700;
-    color: var(--accent);
-}
-
-.en-text {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--primary);
-    margin: 15px 0;
-}
-
-.context {
-    font-size: 0.9rem;
-    color: var(--text-sub);
-    padding-top: 15px;
-    border-top: 1px solid var(--border);
-}
-
-.copy-btn {
-    background: var(--search-bg);
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    color: var(--text-main);
-    cursor: pointer;
-}
-
 footer {
     padding: 60px;
     text-align: center;
@@ -180,93 +135,28 @@ footer {
     border-radius: 8px;
     text-decoration: none;
 }
-
 .cta-button:hover { opacity: 0.9; }
 
-.card-btns {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.print-btn, .copy-btn {
+.copy-btn {
     background: var(--search-bg);
     border: 1px solid var(--border);
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: 8px;
     color: var(--text-main);
     cursor: pointer;
     font-size: 0.85rem;
     transition: all 0.2s ease;
 }
-
-.print-btn:hover, .copy-btn:hover {
+.copy-btn:hover {
     background: var(--accent);
     color: white;
     border-color: var(--accent);
-}
-
-/* --- Kebab Menu & Verified UI --- */
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    position: relative;
-    margin-bottom: 12px;
-}
-
-
-
-/* --- Restored Typography --- */
-.jp {
-    font-size: 0.95rem;
-    color: var(--accent); /* This is your Light Blue (#3498db) */
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.en {
-    font-size: 1.4rem;
-    color: var(--primary); /* This is your Deep Indigo (#2c3e50) */
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-/* --- Card Header Adjustment --- */
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Changed from flex-start to center for better alignment */
-    min-height: 24px;
-    margin-bottom: 15px;
 }
 
 /* Ensure the Genre/Tag is hidden if it exists in the HTML */
 .tag {
     display: none;
 }
-
-.translation-card {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 10px 14px 12px 14px;
-    transition: transform 0.2s;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    min-height: unset;
-}
-
-.card-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-}
-
 
 /* Card Japanese text: blue */
 .jp-text {
@@ -276,13 +166,6 @@ footer {
     margin: 0 0 4px 0;
 }
 
-.en-text {
-    font-size: 1.15rem;
-    color: var(--primary);
-    font-weight: 700;
-    margin: 4px 0 4px 0;
-    line-height: 1.25;
-}
 
 /* Card context: dark grey */
 .context-text {
@@ -292,34 +175,6 @@ footer {
     padding-top: 6px;
     margin-top: 4px;
     margin-bottom: 4px;
-}
-
-/* Card button row at bottom, right-aligned */
-.card-btns-row {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 8px;
-    margin-top: 8px;
-}
-.card-btns {
-    display: flex;
-    gap: 6px;
-}
-
-/* Compact Menu */
-.menu-btn {
-    background: none;
-    border: none;
-    color: var(--text-sub);
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 4px 8px;
-    border-radius: 6px;
-    transition: background 0.15s;
-}
-.menu-btn:hover {
-    background: var(--search-bg);
 }
 
 .translation-card {
@@ -333,22 +188,14 @@ footer {
     gap: 8px; /* Tight gap between elements */
 }
 
-.card-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 12px;
-}
-
-/* Remove duplicate/old .jp-text rule */
 
 .en-text {
     font-size: 1.1rem;
     color: var(--text-main);
     margin: 0;
     line-height: 1.3;
+    font-weight: 700;
 }
-
 
 /* Download button and dropdown styles */
 .download-main-btn {
@@ -371,19 +218,6 @@ footer {
     position: relative;
     display: inline-block;
 }
-.download-dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 110%;
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    z-index: 20;
-    min-width: 120px;
-    padding: 6px 0;
-}
 .download-dropdown.show {
     display: block;
 }
@@ -404,7 +238,7 @@ footer {
     background: var(--search-bg);
     color: var(--accent);
 }
-/* カード内の要素をさらにコンパクトに */
+
 .card {
     padding: 16px;
     display: flex;
@@ -415,54 +249,6 @@ footer {
 .card-header {
     height: 24px; /* 高さを固定 */
     margin-bottom: 8px;
-}
-
-.jp {
-    font-size: 0.85rem;
-    color: var(--accent);
-    margin-bottom: 4px;
-}
-
-.en {
-    font-size: 1.2rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 12px;
-}
-
-/* メニューの見た目 */
-.menu-content a {
-    padding: 8px 12px;
-    font-size: 0.8rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.menu-content a:last-child { border-bottom: none; }
-
-:root {
-    /* New Minimalist Gradient Palette */
-    --bg: #fcfcfc;
-    --header-bg: rgba(255, 255, 255, 0.8);
-    --card-bg: #ffffff;
-    --primary: #2c3e50;
-    --accent: #3498db;
-    --text-main: #2d3436;
-    --text-sub: #636e72;
-    --border: #dfe6e9;
-    --search-bg: #f1f2f6;
-    --danger: #e74c3c;
-
-    /* Gradient from the PNG Border */
-    --gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #fac1eb 100%);
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Hiragino Sans", sans-serif;
-    background: var(--gradient); /* Apply gradient to the whole page */
-    background-attachment: fixed;
-    margin: 0;
-    color: var(--text-main);
-    min-height: 100vh;
 }
 
 /* Minimalist Header */
@@ -507,10 +293,15 @@ header {
 .menu-btn {
     background: none;
     border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
     color: var(--text-sub);
-    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+.menu-btn:hover {
+    background: var(--search-bg);
 }
 
 .menu-content {
@@ -522,7 +313,7 @@ header {
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     z-index: 100;
-    min-width: 160px;
+    min-width: 120px;
     overflow: hidden;
 }
 
@@ -541,4 +332,4 @@ header {
     text-decoration: none;
 }
 
-.menu-content button:hover { background: var(--search-bg); }
+.menu-content button, .menu-content a:hover { background: var(--search-bg); }

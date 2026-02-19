@@ -39,13 +39,15 @@ function displayTranslations(categoryFilter = "All") {
     const katakanaTerm = toKatakana(term);
     grid.innerHTML = "";
 
-        let filtered = allData.filter(item => {
-            const matchesCategory = (categoryFilter === "All" || item.tag === categoryFilter);
-            const searchPool = (item.jp + item.en + (item.keywords || "")).toLowerCase();
-            const searchPoolKatakana = toKatakana(searchPool);
-            const matchesSearch = searchPool.includes(term) || searchPoolKatakana.includes(katakanaTerm);
-            return matchesCategory && matchesSearch;
-        });
+    const filtered = allData.filter(item => {
+        const matchesCategory = (categoryFilter === "All" || item.tag === categoryFilter);
+        const matchesSearch = 
+            item.jp.toLowerCase().includes(term) || 
+            item.en.toLowerCase().includes(term) || 
+            (item.keywords && item.keywords.toLowerCase().includes(term)) || // Hits
+            toKatakana(item.jp).includes(katakanaTerm);
+        return matchesCategory && matchesSearch;
+    });
 
         for (let i = filtered.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -95,7 +97,10 @@ window.toggleMenu = (e) => {
 const getVisualTemplate = (jp, en) => `
     <div id="capture-target" style="
         box-sizing: border-box;
-        width: 800px; /* Fixed width for consistent high-res output */
+        width: 100%;
+        max-width: 95vw; 
+        max-height: 95vh;
+        margin: 0 auto;
         padding: 10px; 
         background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #fac1eb 100%);
         display: flex;
@@ -105,38 +110,14 @@ const getVisualTemplate = (jp, en) => `
     ">
         <div style="
             background: rgba(255, 255, 255, 0.95);
-            padding: 60px 40px;
-            border-radius: 12px;
+            padding: 40px 30px;
+            border-radius: 20px;
             text-align: center;
             width: 100%;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
-            position: relative;
-            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         ">
-            <div style="
-                position: absolute; top: -50px; right: -50px;
-                width: 150px; height: 150px;
-                background: linear-gradient(135deg, #a8edea 0%, #fac1eb 100%);
-                opacity: 0.05; border-radius: 80%;
-            "></div>
-
-            <div style="
-                font-size: 24px; 
-                color: #7f8c8d; 
-                margin-bottom: 20px; 
-                font-weight: 500;
-                letter-spacing: 0.05em;
-            ">${jp}</div>
-            
-            <div style="
-                font-size: 52px; 
-                color: #2c3e50; 
-                font-weight: 800; 
-                line-height: 1.2;
-                margin-bottom: 40px;
-                word-wrap: break-word;
-            ">${en}</div>
-            
+            <div style="font-size: 20px; color: #7f8c8d; margin-bottom: 15px;">${jp}</div>
+            <div style="font-size: 40px; color: #2c3e50; font-weight: 800; line-height: 1.2; margin-bottom: 25px;">${en}</div>
             <div style="
                 border-top: 2px solid #f1f2f6;
                 padding-top: 20px;
@@ -146,13 +127,12 @@ const getVisualTemplate = (jp, en) => `
                 gap: 10px;
             ">
                 <span style="
-                    font-size: 14px; 
+                    font-size: 7px; 
                     color: #bdc3c7; 
                     font-weight: bold; 
                     letter-spacing: 2px;
                     text-transform: uppercase;
-                ">英換 EI-KAN PROJECT</span>
-            </div>
+                ">英換 EIKAN PROJECT</span>
         </div>
     </div>
 `;
@@ -169,7 +149,7 @@ window.downloadPhraseImage = (jp, en) => {
 
     html2canvas(target, { 
         backgroundColor: null, 
-        scale: 3, // Retina quality
+        scale: 5, // Retina quality
         logging: false 
     }).then(canvas => {
         const link = document.createElement('a');
@@ -187,35 +167,48 @@ window.downloadPhraseImage = (jp, en) => {
 };
 
 window.printPhrase = (jp, en) => {
-    const win = window.open('', '', 'width=900,height=700');
+    const win = window.open('', '', 'width=1200,height=800');
     
-    // We inject the EXACT same gradient HTML into the print window
     win.document.write(`
         <!DOCTYPE html>
         <html>
         <head>
-            <title>Print - 英換</title>
+            <title>英換 - Full Page Print</title>
             <style>
+                @page { 
+                    margin: 0; 
+                    size: auto; 
+                }
+
                 body { 
                     margin: 0; 
                     padding: 0; 
                     display: flex; 
                     justify-content: center; 
                     align-items: center; 
-                    min-height: 100vh;
-                    background: #f0f0f0; 
+                    width: 100vw; 
+                    height: 100vh;
+                    overflow: hidden;
                 }
-                /* Print specific overrides */
+
                 @media print {
-                    body { -webkit-print-color-adjust: exact; }
-                    @page { margin: 0; }
+                    body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+                }
+
+                #capture-target {
+                    display: flex;
+                    justify-content: center;
+                    transform-origin: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    border-radius: 0px;
+                    padding: 5vw; 
                 }
             </style>
         </head>
         <body>
-            ${getVisualTemplate(jp, en)}
+        ${getVisualTemplate(jp, en)}
             <script>
-                // Wait for the window to load, then print
                 window.onload = () => {
                     setTimeout(() => {
                         window.print();
@@ -239,6 +232,7 @@ window.handleCopy = (btn, text) => {
         btn.style.background = "#2ecc71";
         btn.style.color = "white";
         btn.style.borderColor = "#2ecc71";
+        btn.style.alignItems = "center";
 
         setTimeout(() => {
             btn.innerText = originalText;
