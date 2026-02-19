@@ -8,5 +8,4 @@
 * **Dynamic Discovery:** Displays 10 random useful phrases on every load/refresh to keep the interface engaging.
 * **One-Click Print:** Opens a perfectly formatted, minimalist print window designed to fit small slips.
 * **Privacy-Focused Printing:** Custom CSS automatically hides browser headers (date/URL) for a professional look.
-* **Dark Mode Support:** A smooth, eye-friendly interface for low-light environments.
 ---
