@@ -1,0 +1,58 @@
+﻿jp,en,tag,context,keywords,verified
+充電できます,Charging stations available,Hotel,コンセント開放の案内に。,"充電, じゅうでん, charge, charging, battery, power, コンセント, outlet, USB, socket",False
+お名前をご記入ください,Please write your name here,Hotel,ウェイティングリストの記入依頼に。,"名前, name, 記入, fill in, sign in, register, なまえ, check-in, registration",False
+パスポートを見せてください,May I see your passport?,Hotel,宿泊台帳や免税の手続きに。,"パスポート, passport, ID, 提示, identity, identification, 旅券, りょけん, travel document",False
+Wi-Fiパスワードはこちら,Wi-Fi password is here,Hotel,ネット環境の案内に。,"Wi-Fi, wifi, ワイファイ, internet, password, パスワード, connection, ネット, free wifi",False
+チェックアウトは何時ですか？,What time is check-out?,Hotel,時間の確認に。,"チェックアウトは何時ですか？, What time is check-out?, what, time, check-out?, hotel",False
+荷物を預けられますか？,Can I leave my luggage here?,Hotel,クロークサービスの案内に。,"荷物, luggage, baggage, 預かり, storage, keep, counter, cloak, cloakroom, にもつ",False
+予約していますか？,Do you have a reservation?,Hotel,受付での最初の確認に。,"予約していますか？, Do you have a reservation?, you, have, reservation?, hotel",False
+お名前を伺えますか？,"May I have your name, please?",Hotel,予約確認の際に。,"お名前を伺えますか？, May I have your name, please?, may, have, your, name, please?, hotel",False
+エレベーターはあちらです,The elevator is over there,Hotel,館内案内に。,"エレベーターはあちらです, The elevator is over there, the, elevator, over, there, hotel",False
+朝食は7時からです,Breakfast starts at 7 AM,Hotel,食事時間の説明に。,"朝食は7時からです, Breakfast starts at 7 AM, breakfast, starts, hotel",False
+外出時は鍵を預けてください,Please leave your key at the desk,Hotel,外出時のルールに。,"外出時は鍵を預けてください, Please leave your key at the desk, please, leave, your, key, the, desk, hotel",False
+大浴場,Public bath,Hotel,旅館やホテルの案内に。,"大浴場, Public bath, public, bath, hotel",False
+露天風呂,Open-air bath,Hotel,温泉の案内に。,"露天風呂, Open-air bath, open-air, bath, hotel",False
+かけ湯をしてください,Please rinse before entering,Hotel,温泉のマナー説明に。,"かけ湯をしてください, Please rinse before entering, please, rinse, before, entering, hotel",False
+タオル持参,Please bring your own towel,Hotel,銭湯などの案内に。,"タオル持参, Please bring your own towel, please, bring, your, own, towel, hotel",False
+刺青お断り,No tattoos allowed,Hotel,公共浴場のルールに。,"刺青お断り, No tattoos allowed, tattoos, allowed, hotel",False
+サウナ,Sauna,Hotel,設備の案内に。,"サウナ, Sauna, sauna, hotel",False
+貸切風呂,Private bath,Hotel,家族風呂などの案内に。,"貸切風呂, Private bath, private, bath, hotel",False
+門限,Curfew,Hotel,夜間の入館制限に。,"門限, Curfew, curfew, hotel",False
+門限は23時です,The curfew is 11 PM,Hotel,具体的な時間の案内に。,"門限は23時です, The curfew is 11 PM, the, curfew, hotel",False
+全館禁煙,No smoking throughout the building,Hotel,建物全体のルールに。,"全館禁煙, No smoking throughout the building, smoking, throughout, the, building, hotel",False
+またお越しください,We hope to see you again,Hotel,お見送りの挨拶に。,"またお越しください, We hope to see you again, hope, see, you, again, hotel",False
+良い旅を！,Have a nice trip!,Hotel,最後に一言添える時に。,"良い旅を！, Have a nice trip!, have, nice, trip!, hotel",False
+フロントは24時間対応です,Front desk open 24 hours,Hotel,フロントの案内に。,"フロントは24時間対応です, Front desk open 24 hours, front, desk, open, hours, hotel",False
+レイトチェックアウト可能です,Late check-out available,Hotel,対応にオプションがあります。,"レイトチェックアウト可能です, Late check-out available, late, check-out, available, hotel",False
+アーリーチェックイン可能です,Early check-in available,Hotel,利用にはオプションをお求めください。,"アーリーチェックイン可能です, Early check-in available, early, check-in, available, hotel",False
+ランドリーサービスがあります,Laundry service available,Hotel,ランドリー・サービスの案内に。,"ランドリーサービスがあります, Laundry service available, laundry, service, available, hotel",False
+ルームサービスをご利用いただけます,Room service available,Hotel,お部屋での注文に対応します。,"ルームサービスをご利用いただけます, Room service available, room, service, available, hotel",False
+モーニングコール承ります,Wake-up call service,Hotel,時間の予約について。,"モーニングコール承ります, Wake-up call service, wake-up, call, service, hotel",False
+ハウスキーピングを行っています,Daily housekeeping,Hotel,清掃に関する案内に。,"ハウスキーピングを行っています, Daily housekeeping, daily, housekeeping, hotel",False
+起こさないでください,Do Not Disturb,Hotel,客室ドアの表示に。,"起こさないでください, Do Not Disturb, not, disturb, hotel",False
+禁煙ルーム利用可能です,Non-smoking rooms available,Hotel,部屋のタイプ案内に。,"禁煙ルーム利用可能です, Non-smoking rooms available, non-smoking, rooms, available, hotel",False
+喫煙ルームもあります,Smoking rooms available,Hotel,喫煙室の案内に。,"喫煙ルームもあります, Smoking rooms available, smoking, rooms, available, hotel",False
+バリアフリー対応です,Accessible rooms available,Hotel,設備の案内に。,"バリアフリー対応です, Accessible rooms available, accessible, rooms, available, hotel",False
+ベビーベッドをご用意できます,Baby crib available,Hotel,小児用の備品案内に。,"ベビーベッドをご用意できます, Baby crib available, baby, crib, available, hotel",False
+ペット同伴可（要事前確認）,Pet-friendly rooms (on request),Hotel,事前にご連絡ください。,"ペット同伴可（要事前確認）, Pet-friendly rooms (on request), pet-friendly, rooms, on, request, hotel",False
+駐車場あり,Parking available,Hotel,駐車場の案内に。,"駐車場あり, Parking available, parking, available, hotel",False
+バレットパーキング対応,Valet parking available,Hotel,設備オプションに。,"バレットパーキング対応, Valet parking available, valet, parking, available, hotel",False
+レンタサイクルあります,Bicycle rental,Hotel,スポーツ・レクリエーションに。,"レンタサイクルあります, Bicycle rental, bicycle, rental, hotel",False
+シャトルサービスがあります,Shuttle service available,Hotel,送迎サービスの案内に。,"シャトルサービスがあります, Shuttle service available, shuttle, service, available, hotel",False
+空港シャトルサービスあり,Airport shuttle service,Hotel,予約についてはデスクに詳しく。,"空港シャトルサービスあり, Airport shuttle service, airport, shuttle, service, hotel",False
+コンシェルジュがいます,Concierge available,Hotel,観光の手配に。,"コンシェルジュがいます, Concierge available, concierge, available, hotel",False
+ツアーデスクで手配します,Tour desk available,Hotel,ツアーの制度について。,"ツアーデスクで手配します, Tour desk available, tour, desk, available, hotel",False
+外貨両替可能です,Currency exchange available,Hotel,両替の案内に。,"外貨両替可能です, Currency exchange available, currency, exchange, available, hotel",False
+大浴場・露天風呂,Public bath / Open-air hot spring,Hotel,旅館やホテルの温泉施設の案内に。,"大浴場, 露天風呂, bath, onsen, hot spring, public bath, spa, お風呂, 温泉, rotenburo",False
+タトゥー隠しシールあります,Tattoo cover stickers available,Hotel,温泉利用時のマナーに関する案内に。,"タトゥー隠しシールあります, Tattoo cover stickers available, tattoo, cover, stickers, available, hotel",False
+浴衣（ゆかた）の貸出,Yukata rental (Japanese cotton robe),Hotel,館内着や観光用の貸出案内に。,"浴衣, yukata, rental, robe, kimono, cotton robe, 貸出, かしだし, traditional wear",False
+変換プラグの貸出,Travel adapter rental,Hotel,海外ゲストからの要望が多い備品。,"変換プラグの貸出, Travel adapter rental, travel, adapter, rental, hotel",False
+連泊中の清掃不要（エコ）,No cleaning needed (Eco-friendly stay),Hotel,清掃を辞退する場合のドアカードなどに。,"連泊中の清掃不要（エコ）, No cleaning needed (Eco-friendly stay), cleaning, needed, eco-friendly, stay, hotel",False
+仲居（なかい）さん,Ryokan staff / Room attendant,Hotel,旅館の給仕担当者。,"仲居（なかい）さん, Ryokan staff / Room attendant, ryokan, staff, room, attendant, hotel",False
+布団敷きサービス,Futon-laying service,Hotel,夜に布団を準備するサービス。,"布団敷きサービス, Futon-laying service, futon-laying, service, hotel",False
+貸切風呂（家族風呂）,Private reservation bath,Hotel,家族やカップルで貸切るお風呂。,"貸切風呂（家族風呂）, Private reservation bath, private, reservation, bath, hotel",False
+部屋食（へやしょく）,In-room dining,Hotel,部屋で食事をいただくスタイル。,"部屋食（へやしょく）, In-room dining, in-room, dining, hotel",False
+モーニングコール設定,Wake-up call setup,Hotel,起床時間の予約に。,"モーニングコール設定, Wake-up call setup, wake-up, call, setup, hotel",False
+体調不良・救急車,Feeling unwell / Call an ambulance,Hotel,緊急時の連絡に。,"体調不良・救急車, Feeling unwell / Call an ambulance, feeling, unwell, call, ambulance, hotel",False
+近隣のコンビニ案内,Directions to nearby convenience stores,Hotel,買い物場所の案内に。,"近隣のコンビニ案内, Directions to nearby convenience stores, directions, nearby, convenience, stores, hotel",False
+加湿器の貸出,Humidifier rental,Hotel,乾燥対策の備品案内に。,"加湿器の貸出, Humidifier rental, humidifier, rental, hotel",False

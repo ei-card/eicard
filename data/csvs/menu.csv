@@ -1,0 +1,165 @@
+﻿jp,en,tag,context,keywords,verified
+出汁（だし）,Japanese fish and seaweed stock,Menu,和食のベース。魚が使われていることを明確にする際に。,"出汁,dashi,だし,Japanese stock,鰹出汁,昆布出汁,bonito dashi,kombu dashi,umami broth,awase dashi",False
+鰹だし,Bonito (fish) stock,Menu,魚由来であることをベジタリアンに伝える際に。,"鰹だし, Bonito stock, Katsuobushi, Dashi, Japanese broth, かつおだし, Bonito flakes, 出汁, Instant dashi, Dashi powder",False
+昆布だし,Kelp (seaweed) stock,Menu,ベジタリアン・ヴィーガン対応の際に。,"昆布だし,Kelp stock,Dashi,Seaweed stock,Kombu stock,出汁,Japanese broth,Vegan dashi,旨味,こんぶ出汁",False
+植物性100%,100% plant-based,Menu,ヴィーガン対応メニューの表記に。,"植物性100%, 100% plant-based, プラントベース, vegan, ヴィーガン, 動物性不使用, animal-free, 菜食主義, 完全植物性, plant-only",False
+肉不使用,Meat-free,Menu,お肉が入っていないことを示す際に。,"Meat-free,肉不使用,Vegetarian,ベジタリアン,Vegan,ヴィーガン,Plant-based,プラントベース,Meatless,肉なし",False
+魚介不使用,Seafood-free,Menu,魚や貝が使われていないことを示す際に。,"Seafood-free, 魚介不使用, No seafood, シーフードフリー, Fish-free, 魚不使用, Shellfish-free, 貝不使用, Vegan seafood, ヴィーガンシーフード",False
+乳製品不使用,Dairy-free,Menu,牛乳やバターを使っていないメニューに。,"Dairy-free,乳製品不使用,Vegan,ヴィーガン,Plant-based,プラントベース,Lactose-free,ラクトースフリー,Dairy alternative,代替乳製品",False
+卵不使用,Egg-free,Menu,マヨネーズなども含め卵を使っていない場合に。,STOP_SCRIPT,False
+五葷（にんにく・ねぎ等）不使用,No pungent vegetables (No garlic/onions),Menu,宗教や嗜好に合わせた表記に。,"五葷, ごくん, gokun, no garlic, no onion, no leeks, oriental vegan, 精進料理, にんにく不使用, ねぎ不使用",False
+グルテンフリー,Gluten-free,Menu,小麦粉を一切使用していないメニューに。,"グルテンフリー, gluten-free, 小麦不使用, wheat-free, 米粉, rice flour, セリアック, celiac, 小麦粉なし",False
+醤油（小麦含む）,Soy sauce (contains wheat),Menu,醤油に小麦が含まれることを注意喚起する際に。,"醤油（小麦含む）, Soy sauce (contains wheat), soy, sauce, contains, wheat, menu",False
+炭火焼き,Charcoal-grilled,Menu,香ばしさをアピールする調理法の説明。,"炭火焼き, Charcoal-grilled, charcoal-grilled, menu",False
+煮込み,Slow-cooked / Simmered,Menu,煮魚や煮物の美味しそうな表現。,"煮込み, Slow-cooked / Simmered, slow-cooked, simmered, menu",False
+天ぷら（サクサク）,Crispy tempura,Menu,衣の食感を伝える際に。,"天ぷら（サクサク）, Crispy tempura, crispy, tempura, menu",False
+素揚げ,Deep-fried without batter,Menu,野菜の素揚げなどの説明。,"素揚げ, Deep-fried without batter, deep-fried, without, batter, menu",False
+和え物,Marinated side dish,Menu,小鉢料理の説明に。,"和え物, Marinated side dish, marinated, side, dish, menu",False
+湯通し,Blanched,Menu,さっと火を通した料理の説明に。,"湯通し, Blanched, blanched, menu",False
+鉄板焼き,Teppanyaki / Griddle grilled,Menu,ステーキや粉もんの説明に。,"鉄板焼き, Teppanyaki / Griddle grilled, teppanyaki, griddle, grilled, menu",False
+塩麹漬け,Marinated in salted rice malt,Menu,発酵調味料のニュアンスを伝える際に。,"塩麹漬け, Marinated in salted rice malt, marinated, salted, rice, malt, menu",False
+西京焼き,Grilled with sweet miso glaze,Menu,西京味噌で漬けた焼き物の説明に。,"西京焼き, Grilled with sweet miso glaze, grilled, with, sweet, miso, glaze, menu",False
+照り焼き,Teriyaki (sweet soy glaze),Menu,外国人に馴染みのある用語で説明。,"照り焼き, Teriyaki (sweet soy glaze), teriyaki, sweet, soy, glaze, menu",False
+刺身盛り合わせ,Assorted sashimi,Menu,生魚であることを明確に。,"刺身盛り合わせ, Assorted sashimi, assorted, sashimi, menu",False
+旬の地魚,Local seasonal fish,Menu,地元の新鮮さをアピール。,"旬の地魚, Local seasonal fish, local, seasonal, fish, menu",False
+脂ののった,Fatty / Succulent,Menu,魚の部位の特徴を伝える。,"脂ののった, Fatty / Succulent, fatty, succulent, menu",False
+あっさり,Light and refreshing,Menu,さっぱり系の味付けに。,"あっさり, Light and refreshing, light, and, refreshing, menu",False
+濃厚,Rich / Creamy,Menu,こってりした味わいに。,"濃厚, Rich / Creamy, rich, creamy, menu",False
+ピリ辛,Mildly spicy,Menu,少し辛めの表記に。,"ピリ辛, Mildly spicy, mildly, spicy, menu",False
+薬味,Condiments / Garnish,Menu,わさび、生姜、ネギなどの総称。,"薬味, Condiments / Garnish, condiments, garnish, menu",False
+自家製,House-made / Homemade,Menu,自家製調味料や料理のアピールに。,"自家製, House-made / Homemade, house-made, homemade, menu",False
+数量限定,Limited quantity,Menu,数量限定メニューに。,"数量限定, Limited quantity, limited, quantity, menu",False
+お通し（席料）,Mandatory appetizer (cover charge),Menu,席料がかかる場合の表記に。,"お通し（席料）, Mandatory appetizer (cover charge), mandatory, appetizer, cover, charge, menu",False
+ワンドリンク制,One-drink minimum,Menu,注文ルールの説明に。,"ワンドリンク制, One-drink minimum, one-drink, minimum, menu",False
+食べ放題,All-you-can-eat,Menu,ビュッフェ等の説明に。,"食べ放題, All-you-can-eat, all-you-can-eat, menu",False
+飲み放題,All-you-can-drink,Menu,コースのオプション説明に。,"飲み放題, All-you-can-drink, all-you-can-drink, menu",False
+ご飯おかわり無料,Free rice refills,Menu,サービスの良さを伝える。,"ご飯おかわり無料, Free rice refills, free, rice, refills, menu",False
+セルフサービス,Self-service,Menu,水や返却の案内に。,"セルフサービス, Self-service, self-service, menu",False
+枝豆（塩ゆで）,Salted edamame,Menu,定番のおつまみ。,"枝豆（塩ゆで）, Salted edamame, salted, edamame, menu",False
+冷奴,Chilled tofu,Menu,豆腐料理の説明に。,"冷奴, Chilled tofu, chilled, tofu, menu",False
+厚揚げ,Deep-fried tofu blocks,Menu,食べ応えのある豆腐料理。,"厚揚げ, Deep-fried tofu blocks, deep-fried, tofu, blocks, menu",False
+漬物盛り合わせ,Assorted pickles,Menu,箸休めの説明に。,"漬物盛り合わせ, Assorted pickles, assorted, pickles, menu",False
+叩ききゅうり,Smashed cucumber,Menu,おつまみの定番。,"叩ききゅうり, Smashed cucumber, smashed, cucumber, menu",False
+ポテトサラダ（マヨネーズ）,Potato salad (contains mayonnaise),Menu,卵アレルギーに注意。,"ポテトサラダ（マヨネーズ）, Potato salad (contains mayonnaise), potato, salad, contains, mayonnaise, menu",False
+唐揚げ,Japanese fried chicken,Menu,人気の鶏料理。,"唐揚げ, Japanese fried chicken, japanese, fried, chicken, menu",False
+つくね,Chicken meatball skewer,Menu,焼き鳥の一種。,"つくね, Chicken meatball skewer, chicken, meatball, skewer, menu",False
+軟骨,Chicken cartilage,Menu,コリコリした食感の説明に。,"軟骨, Chicken cartilage, chicken, cartilage, menu",False
+砂肝,Chicken gizzard,Menu,内臓系の説明に。,"砂肝, Chicken gizzard, chicken, gizzard, menu",False
+豚バラ,Pork belly,Menu,脂のある部位の説明。,"豚バラ, Pork belly, pork, belly, menu",False
+和牛ステーキ,Premium Wagyu steak,Menu,高級感を伝える。,"和牛ステーキ, Premium Wagyu steak, premium, wagyu, steak, menu",False
+霜降り肉,Marbled beef,Menu,肉質の説明に。,"霜降り肉, Marbled beef, marbled, beef, menu",False
+ホルモン,Beef/pork offal,Menu,好き嫌いが分かれることを明記。,"ホルモン, Beef/pork offal, beef/pork, offal, menu",False
+だし巻き卵,Rolled omelet,Menu,出汁入りの卵料理。,"だし巻き卵, Rolled omelet, rolled, omelet, menu",False
+茶碗蒸し,Savory steamed egg custard,Menu,スープ状の卵料理。,"茶碗蒸し, Savory steamed egg custard, savory, steamed, egg, custard, menu",False
+味噌汁,Miso soup,Menu,発酵大豆のスープ。,"味噌汁, Miso soup, miso, soup, menu",False
+豚汁,Pork and vegetable miso soup,Menu,肉入りの味噌汁。,"豚汁, Pork and vegetable miso soup, pork, and, vegetable, miso, soup, menu",False
+精進揚げ,Vegetable tempura,Menu,野菜のみの天ぷら。,"精進揚げ, Vegetable tempura, vegetable, tempura, menu",False
+かき揚げ,Mixed tempura fritter,Menu,野菜と海鮮のかき揚げ。,"かき揚げ, Mixed tempura fritter, mixed, tempura, fritter, menu",False
+串カツ,Breaded skewers,Menu,ソースの注意書きに。,"串カツ, Breaded skewers, breaded, skewers, menu",False
+うなぎ蒲焼,Grilled eel with sauce,Menu,定番の蒲焼スタイル。,"うなぎ蒲焼, Grilled eel with sauce, grilled, eel, with, sauce, menu",False
+白焼き,Plain grilled eel,Menu,タレなしで提供する場合に。,"白焼き, Plain grilled eel, plain, grilled, eel, menu",False
+ちらし寿司,Chirashi sushi,Menu,散らし寿司の説明に。,"ちらし寿司, Chirashi sushi, chirashi, sushi, menu",False
+稲荷寿司,Inari sushi,Menu,甘く煮た油揚げの寿司。,"稲荷寿司, Inari sushi, inari, sushi, menu",False
+納豆巻き,Natto roll,Menu,発酵食品の好みの差に注意。,"納豆巻き, Natto roll, natto, roll, menu",False
+カッパ巻き,Cucumber roll,Menu,野菜のみの巻き寿司。,"カッパ巻き, Cucumber roll, cucumber, roll, menu",False
+おにぎり（梅）,Rice ball with pickled plum,Menu,酸味のある具材。,"おにぎり（梅）, Rice ball with pickled plum, rice, ball, with, pickled, plum, menu",False
+おにぎり（鮭）,Rice ball with grilled salmon,Menu,定番の具材表記。,"おにぎり（鮭）, Rice ball with grilled salmon, rice, ball, with, grilled, salmon, menu",False
+お茶漬け,Rice with tea/broth,Menu,締め料理の説明。,"お茶漬け, Rice with tea/broth, rice, with, tea/broth, menu",False
+焼きおにぎり,Grilled rice ball,Menu,香ばしい風味を伝える。,"焼きおにぎり, Grilled rice ball, grilled, rice, ball, menu",False
+醤油ラーメン,Soy Sauce base Ramen,Menu,醤油ベースのスープ表記。,"醤油ラーメン, Soy Sauce base Ramen, soy, sauce, base, ramen, menu",False
+豚骨ラーメン,Pork Bone Broth Ramen,Menu,豚骨ベースの濃厚スープ。,"豚骨ラーメン, Pork Bone Broth Ramen, pork, bone, broth, ramen, menu",False
+味噌ラーメン,Miso Base Ramen,Menu,味噌ベースの説明。,"味噌ラーメン, Miso Base Ramen, miso, base, ramen, menu",False
+塩ラーメン,Salt Base Ramen,Menu,あっさり系の説明。,"塩ラーメン, Salt Base Ramen, salt, base, ramen, menu",False
+担々麺,Tantan Noodles,Menu,ゴマの風味と辛さを表記。,"担々麺, Tantan Noodles, tantan, noodles, menu",False
+つけ麺,Dipping Noodles,Menu,つけ汁で食べる麺。,"つけ麺, Dipping Noodles, dipping, noodles, menu",False
+冷やし中華,Cold Chinese-style Noodles,Menu,夏季限定の冷製麺。,"冷やし中華, Cold Chinese-style Noodles, cold, chinese-style, noodles, menu",False
+蕎麦,Soba (buckwheat noodles),Menu,蕎麦粉使用の麺に注意。,"蕎麦, Soba (buckwheat noodles), soba, buckwheat, noodles, menu",False
+十割そば,100% buckwheat noodles,Menu,グルテンフリーを求める方向け。,"十割そば, 100% buckwheat noodles, 100%, buckwheat, noodles, menu",False
+うどん,Udon (thick wheat noodles),Menu,小麦麺の表記に。,"うどん, Udon (thick wheat noodles), udon, thick, wheat, noodles, menu",False
+カレーライス,Japanese curry rice,Menu,日本のカレーの説明。,"カレーライス, Japanese curry rice, japanese, curry, rice, menu",False
+カツカレー,Curry with pork cutlet,Menu,ボリューム表記に。,"カツカレー, Curry with pork cutlet, curry, with, pork, cutlet, menu",False
+丼物,Rice bowl dishes,Menu,丼の基本説明。,"丼物, Rice bowl dishes, rice, bowl, dishes, menu",False
+親子丼,Oyako-don (chicken & egg rice bowl),Menu,具材の説明に。,"親子丼, Oyako-don (chicken & egg rice bowl), oyako-don, chicken, egg, rice, bowl, menu",False
+牛丼,Beef bowl,Menu,甘辛い牛肉と玉ねぎの丼。,"牛丼, Beef bowl, beef, bowl, menu",False
+お好み焼き,Okonomiyaki,Menu,ソースやマヨの説明と共に。,"お好み焼き, Okonomiyaki, okonomiyaki, menu",False
+たこ焼き,Takoyaki (octopus balls),Menu,中が熱いことへの注意。,"たこ焼き, Takoyaki (octopus balls), takoyaki, octopus, balls, menu",False
+生ビール,Draft beer,Menu,樽生ビールの表記に。,"生ビール, Draft beer, draft, beer, menu",False
+瓶ビール,Bottled beer,Menu,瓶の種類表記に。,"瓶ビール, Bottled beer, bottled, beer, menu",False
+地酒,Local sake,Menu,地元の日本酒の案内に。,"地酒, Local sake, local, sake, menu",False
+焼酎,Shochu (distilled),Menu,原料表記があると親切。,"焼酎, Shochu (distilled), shochu, distilled, menu",False
+ハイボール,Highball (whisky & soda),Menu,人気の飲み方表記に。,"ハイボール, Highball (whisky & soda), highball, whisky, soda, menu",False
+チューハイ,Chu-hai (shochu cocktail),Menu,レモンサワー等の説明に。,"チューハイ, Chu-hai (shochu cocktail), chu-hai, shochu, cocktail, menu",False
+梅酒,Plum wine (umeshu),Menu,甘いリキュールの表記に。,"梅酒, Plum wine (umeshu), plum, wine, umeshu, menu",False
+ノンアルコール,Non-alcoholic drinks,Menu,運転者向けの説明に。,"ノンアルコール, Non-alcoholic drinks, non-alcoholic, drinks, menu",False
+ソフトドリンク,Soft drinks,Menu,ジュースやお茶の総称。,"ソフトドリンク, Soft drinks, soft, drinks, menu",False
+緑茶,Green tea,Menu,ホット/アイスの確認に。,"緑茶, Green tea, green, tea, menu",False
+デザート,Dessert,Menu,甘味メニューの総称。,"デザート, Dessert, dessert, menu",False
+わらび餅,Warabi mochi,Menu,和菓子の食感説明に。,"わらび餅, Warabi mochi, warabi, mochi, menu",False
+あんみつ,Anmitsu,Menu,寒天とあんこの和菓子。,"あんみつ, Anmitsu, anmitsu, menu",False
+ランチセット,Lunch set available,Menu,ランチのセット案内に。,"ランチセット, Lunch set available, lunch, set, available, menu",False
+ディナーコース,Dinner course,Menu,ディナーのコース案内に。,"ディナーコース, Dinner course, dinner, course, menu",False
+ベジタリアン対応,Vegetarian options available,Menu,菜食対応が可能な場合に。,"ベジタリアン対応, Vegetarian options available, vegetarian, options, available, menu",False
+キッズメニュー,Kids' menu,Menu,子ども向けメニューの案内に。,"キッズメニュー, Kids' menu, kids', menu",False
+アレルギー表示あり,Allergen information available,Menu,アレルギー表記の説明に。,"アレルギー表示あり, Allergen information available, allergen, information, available, menu",False
+持ち帰り可,Takeout available,Menu,お持ち帰りの案内に。,"持ち帰り可, Takeout available, takeout, available, menu",False
+テイクアウト窓口,Order takeaway here,Menu,テイクアウト窓口の表示に。,"テイクアウト窓口, Order takeaway here, order, takeaway, here, menu",False
+数量限定メニュー,Limited-quantity menu,Menu,本日限定メニューの案内に。,"数量限定メニュー, Limited-quantity menu, limited-quantity, menu",False
+旬のおすすめ,Seasonal recommendations,Menu,旬の食材を使ったおすすめに。,"旬のおすすめ, Seasonal recommendations, seasonal, recommendations, menu",False
+シェフのおすすめ,Chef's special,Menu,シェフ推薦の一品に。,"シェフのおすすめ, Chef's special, chef's, special, menu",False
+辛さ調整可,Spice level adjustable,Menu,辛さの調整を受け付ける場合に。,"辛さ調整可, Spice level adjustable, spice, level, adjustable, menu",False
+量を減らせます,Smaller portion available,Menu,少量での提供が可能な場合に。,"量を減らせます, Smaller portion available, smaller, portion, available, menu",False
+大盛り可,Large portion available,Menu,大盛りオプションの案内に。,"大盛り可, Large portion available, large, portion, available, menu",False
+糖質オフメニュー,Low-carb options,Menu,糖質制限の方向けに。,"糖質オフメニュー, Low-carb options, low-carb, options, menu",False
+地元産食材使用,Locally sourced ingredients,Menu,地産地消をアピールする表示に。,"地元産食材使用, Locally sourced ingredients, locally, sourced, ingredients, menu",False
+自家製ソース,House-made sauces,Menu,自家製調味料の強調に。,"自家製ソース, House-made sauces, house-made, sauces, menu",False
+デザート盛り合わせ,Dessert assortment,Menu,複数のデザートを盛り合わせた説明に。,"デザート盛り合わせ, Dessert assortment, dessert, assortment, menu",False
+アルコールは20歳以上,Alcohol for 20+ only,Menu,年齢確認の注意書きに。,"アルコールは20歳以上, Alcohol for 20+ only, alcohol, for, 20+, only, menu",False
+当店の人気メニュー,Our popular dishes,Menu,人気メニューの紹介に。,"当店の人気メニュー, Our popular dishes, our, popular, dishes, menu",False
+予約推奨,Reservation recommended,Menu,混雑する時間帯の案内に。,"予約推奨, Reservation recommended, reservation, recommended, menu",False
+お取り分け可能,Shareable portions available,Menu,複数人で分けられるメニューに。,"お取り分け可能, Shareable portions available, shareable, portions, available, menu",False
+辛さ調節無料,Free spice adjustment,Menu,辛さの微調整が無料の場合に。,"辛さ調節無料, Free spice adjustment, free, spice, adjustment, menu",False
+ニラそば,Garlic chives soba,Menu,ニラを使ったそば料理の説明に。,"ニラそば, Garlic chives soba, garlic, chives, soba, menu",False
+苺大福,Strawberry daifuku,Menu,苺を使った和菓子の説明に。,"苺大福, Strawberry daifuku, strawberry, daifuku, menu",False
+カレーうどん,Curry udon,Menu,カレー風味のうどん料理の説明に。,"カレーうどん, Curry udon, curry, udon, menu",False
+シュウマイ,Shumai,Menu,焼売(シュウマイ)料理の説明に。,"シュウマイ, Shumai, shumai, menu",False
+こんにゃく,Konjac,Menu,こんにゃく料理の説明に。,"こんにゃく, Konjac, konjac, menu",False
+餃子,Gyoza(dumplings),Menu,餃子料理の説明に。,"餃子, Gyoza(dumplings), gyoza(dumplings, menu",False
+そば,Soba,Menu,そば料理の説明に。,"そば, Soba, soba, menu",False
+うなぎ,Eel,Menu,うなぎ料理の説明に。,"うなぎ, Eel, eel, menu",False
+天ぷら,Tempura,Menu,天ぷら料理の説明に。,"天ぷら, Tempura, tempura, menu",False
+焼き鳥,Yakitori (grilled chicken skewers),Menu,焼き鳥料理の説明に。,"焼き鳥, Yakitori (grilled chicken skewers), yakitori, grilled, chicken, skewers, menu",False
+お好み焼き,Okonomiyaki (savory pancake),Menu,お好み焼き料理の説明に。,"お好み焼き, Okonomiyaki (savory pancake), okonomiyaki, savory, pancake, menu",False
+ヴィーガン,Vegan,Menu,ヴィーガン料理の説明に。,"ヴィーガン, Vegan, vegan, menu",False
+ベジタリアン,Vegetarian,Menu,ベジタリアン料理の説明に。,"ベジタリアン, Vegetarian, vegetarian, menu",False
+ハラル,Halal,Menu,ハラル料理の説明に。,"ハラル, Halal, halal, menu",False
+お好み焼き（広島風）,Hiroshima-style Okonomiyaki (Layered savory pancake),Menu,広島の名物。関西風との違いを説明する際に。,"お好み焼き（広島風）, Hiroshima-style Okonomiyaki (Layered savory pancake), hiroshima-style, okonomiyaki, layered, savory, pancake, menu",False
+たこ焼き,Takoyaki (Octopus balls),Menu,大阪の代表的なストリートフード。,"たこ焼き, Takoyaki (Octopus balls), takoyaki, octopus, balls, menu",False
+明太子,Spicy Pollock Roe,Menu,福岡・博多の名物。パスタやご飯のトッピングに。,"明太子, Spicy Pollock Roe, spicy, pollock, roe, menu",False
+ジンギスカン,Jingisukan (Grilled mutton and vegetables),Menu,北海道の名物料理。,"ジンギスカン, Jingisukan (Grilled mutton and vegetables), jingisukan, grilled, mutton, and, vegetables, menu",False
+ほうとう,Houtou (Flat udon noodles in miso pumpkin soup),Menu,山梨県のご当地料理。,"ほうとう, Houtou (Flat udon noodles in miso pumpkin soup), houtou, flat, udon, noodles, miso, pumpkin, soup, menu",False
+グルテンフリー対応可,Gluten-free options available,Menu,小麦アレルギーや食事制限のある方向けに。,"グルテンフリー対応可, Gluten-free options available, gluten-free, options, available, menu",False
+低糖質メニュー,Low-carb menu options,Menu,健康志向の方向けの案内。,"低糖質メニュー, Low-carb menu options, low-carb, menu, options",False
+仙台牛タン,Sendai Beef Tongue (Grilled),Menu,宮城・仙台の名物。,"仙台牛タン, gyutan, beef tongue, sendai, 宮城, 焼き肉, BBQ, tongue, ぎゅうたん, regional specialty",False
+わんこそば,Wanko Soba (Small bowls of buckwheat noodles),Menu,岩手県の名物。,"わんこそば, wanko soba, noodles, 岩手, iwate, all-you-can-eat, そば, 蕎麦, regional food",False
+きりたんぽ鍋,Kiritanpo Nabe (Rice stick hot pot),Menu,秋田県の名物。,"きりたんぽ, kiritanpo, hot pot, nabe, 秋田, akita, rice sticks, なべ, regional dish",False
+ひつまぶし,Hitsumabushi (Nagoya-style grilled eel over rice),Menu,愛知・名古屋の名物。,"ひつまぶし, hitsumabushi, eel, unagi, 名古屋, nagoya, うなぎ, 鰻, grilled eel",False
+宇都宮餃子,Utsunomiya Gyoza (Local pan-fried dumplings),Menu,栃木・宇都宮の名物。,"宇都宮餃子, Utsunomiya Gyoza (Local pan-fried dumplings), utsunomiya, gyoza, local, pan-fried, dumplings, menu",False
+出雲そば,Izumo Soba (Buckwheat noodles from Shimane),Menu,島根県の名物。,"出雲そば, Izumo Soba (Buckwheat noodles from Shimane), izumo, soba, buckwheat, noodles, from, shimane, menu",False
+讃岐うどん,Sanuki Udon (Firm wheat noodles),Menu,香川県の名物。,"讃岐うどん, Sanuki Udon (Firm wheat noodles), sanuki, udon, firm, wheat, noodles, menu",False
+沖縄そば,Okinawa Soba (Pork-based noodle soup),Menu,沖縄県の名物。,"沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば, regional food",False
+ゴーヤチャンプルー,Goya Champuru (Bitter melon stir-fry),Menu,沖縄の家庭料理。,"ゴーヤチャンプルー, goya, bitter melon, stir-fry, okinawa, 沖縄, tofu, pork, ちゃんぷるー",False
+クラフトビール（地ビール）,Local Craft Beer,Menu,地域の醸造所のビール。,"クラフトビール（地ビール）, Local Craft Beer, local, craft, beer, menu",False
+ノンアルコール飲料,Non-alcoholic beverages,Menu,お酒を飲まない方向けに。,"ノンアルコール飲料, Non-alcoholic beverages, non-alcoholic, beverages, menu",False
+旬（しゅん）の食材,Seasonal ingredients,Menu,今の時期に一番美味しい食材。,"旬（しゅん）の食材, Seasonal ingredients, seasonal, ingredients, menu",False
+仙台牛タン,Sendai Beef Tongue (Grilled),Menu,宮城・仙台の名物。,"仙台牛タン, gyutan, beef tongue, sendai, 宮城, 焼き肉, BBQ, tongue, ぎゅうたん, regional specialty",False
+わんこそば,Wanko Soba (Small bowls of buckwheat noodles),Menu,岩手県の名物。,"わんこそば, wanko soba, noodles, 岩手, iwate, all-you-can-eat, そば, 蕎麦, regional food",False
+きりたんぽ鍋,Kiritanpo Nabe (Rice stick hot pot),Menu,秋田県の名物。,"きりたんぽ, kiritanpo, hot pot, nabe, 秋田, akita, rice sticks, なべ, regional dish",False
+ひつまぶし,Hitsumabushi (Nagoya-style grilled eel over rice),Menu,愛知・名古屋の名物。,"ひつまぶし, hitsumabushi, eel, unagi, 名古屋, nagoya, うなぎ, 鰻, grilled eel",False
+宇都宮餃子,Utsunomiya Gyoza (Local pan-fried dumplings),Menu,栃木・宇都宮の名物。,"宇都宮餃子, Utsunomiya Gyoza (Local pan-fried dumplings), utsunomiya, gyoza, local, pan-fried, dumplings, menu",False
+出雲そば,Izumo Soba (Buckwheat noodles from Shimane),Menu,島根県の名物。,"出雲そば, Izumo Soba (Buckwheat noodles from Shimane), izumo, soba, buckwheat, noodles, from, shimane, menu",False
+讃岐うどん,Sanuki Udon (Firm wheat noodles),Menu,香川県の名物。,"讃岐うどん, Sanuki Udon (Firm wheat noodles), sanuki, udon, firm, wheat, noodles, menu",False
+沖縄そば,Okinawa Soba (Pork-based noodle soup),Menu,沖縄県の名物。,"沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば, regional food",False
+ゴーヤチャンプルー,Goya Champuru (Bitter melon stir-fry),Menu,沖縄の家庭料理。,"ゴーヤチャンプルー, goya, bitter melon, stir-fry, okinawa, 沖縄, tofu, pork, ちゃんぷるー",False
+クラフトビール（地ビール）,Local Craft Beer,Menu,地域の醸造所のビール。,"クラフトビール（地ビール）, Local Craft Beer, local, craft, beer, menu",False
+ノンアルコール飲料,Non-alcoholic beverages,Menu,お酒を飲まない方向けに。,"ノンアルコール飲料, Non-alcoholic beverages, non-alcoholic, beverages, menu",False
+旬（しゅん）の食材,Seasonal ingredients,Menu,今の時期に一番美味しい食材。,"旬（しゅん）の食材, Seasonal ingredients, seasonal, ingredients, menu",False

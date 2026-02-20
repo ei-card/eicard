@@ -1,0 +1,28 @@
+﻿jp,en,tag,context,keywords,verified
+電子マネー使えます,E-money accepted,Pay,電子マネーの案内に。,"電子マネー, e-money, IC card, Suica, Pasmo, digital payment, contactless, キャッシュレス, 支払い",False
+お会計は別々ですか？,Would you like to pay separately?,Pay,個別会計の確認に。,"お会計は別々ですか？, Would you like to pay separately?, would, you, like, pay, separately?",False
+免税手続きはこちらです,Tax-free counter is over here,Pay,買い物客への案内に。,"免税, tax free, duty free, tax refund, めんぜい, consumption tax, VAT, shopping, counter",False
+暗証番号を入力してください,Please enter your PIN,Pay,カード決済の時に。,"暗証番号を入力してください, Please enter your PIN, please, enter, your, pin, pay",False
+サインをお願いします,Please sign here,Pay,署名が必要な時に。,"サインをお願いします, Please sign here, please, sign, here, pay",False
+一括払いでよろしいですか？,One-time payment?,Pay,支払回数の確認に。,"一括払いでよろしいですか？, One-time payment?, one-time, payment?, pay",False
+レシートは必要ですか？,Would you like a receipt?,Pay,会計終了時の確認に。,"レシートは必要ですか？, Would you like a receipt?, would, you, like, receipt?, pay",False
+領収書をください,May I have a formal receipt?,Pay,領収証を求められた時に。,"領収書をください, May I have a formal receipt?, may, have, formal, receipt?, pay",False
+お釣りです,Here is your change,Pay,現金を返す時に。,"お釣りです, Here is your change, here, your, change, pay",False
+1万円札は使えません,"Cannot accept 10,000 yen notes",Pay,千円札専用の機械などで。,"1万円札は使えません, Cannot accept 10,000 yen notes, cannot, accept, 10,000, yen, notes, pay",False
+新札は使えません,Does not accept the new banknotes,Pay,古い機械での注意書きに。,"新札は使えません, Does not accept the new banknotes, does, not, accept, the, new, banknotes, pay",False
+袋は有料です,Plastic bags cost extra,Pay,レジ袋有料化の説明に。,"袋は有料です, Plastic bags cost extra, plastic, bags, cost, extra, pay",False
+袋はいりますか？,Do you need a bag?,Pay,袋の要否確認に。,"袋はいりますか？, Do you need a bag?, you, need, bag?, pay",False
+セルフ会計,Self-checkout,Pay,自動精算機の案内に。,"セルフ会計, Self-checkout, self-checkout, pay",False
+前払い制,Payment first,Pay,注文時に支払う形式の説明に。,"前払い制, Payment first, payment, first, pay",False
+後払い制,Payment after dining,Pay,レジで最後に支払う形式に。,"後払い制, Payment after dining, payment, after, dining, pay",False
+"免税対象額は5,000円以上です","Tax-free available for purchases over 5,000 yen",Pay,免税適用の条件を説明する際に。,"免税対象額は5,000円以上です, Tax-free available for purchases over 5,000 yen, tax-free, available, for, purchases, over, 5,000, yen, pay",False
+パスポートの実物が必要です（コピー不可）,Physical passport required (No copies accepted),Pay,免税手続きの厳しいルールを伝える際に。,"パスポートの実物が必要です（コピー不可）, Physical passport required (No copies accepted), physical, passport, required, no, copies, accepted, pay",False
+QRコード決済,QR Code payment,Pay,スマホ決済の利用可否を伝える際に。,"QRコード, QR code, PayPay, LinePay, mobile pay, payment, スマホ決済, barcode, 支払い",False
+タッチ決済（NFC）可能です,Contactless payment (NFC) available,Pay,VisaタッチやApple Payの案内に。,"タッチ決済, NFC, contactless, Visa touch, Apple Pay, Google Pay, tap to pay, contact-free",False
+合算できません,Receipts cannot be combined,Pay,免税やキャンペーンで複数のレシートをまとめられない時に。,"合算できません, Receipts cannot be combined, receipts, cannot, combined, pay",False
+消耗品,Consumables,Pay,免税区分の説明に。,"消耗品, consumables, food, cosmetics, tax free, めんぜい, しょうもうひん, goods, liquids",False
+一般物品,General goods,Pay,免税区分の説明に。,"一般物品, general goods, electronics, clothes, tax free, めんぜい, いっぱんぶっぴん, hardware",False
+開封厳禁（免税品）,Do not open until leaving Japan (Tax-free items),Pay,免税袋の注意書き。,"開封厳禁（免税品）, Do not open until leaving Japan (Tax-free items), not, open, until, leaving, japan, tax-free, items, pay",False
+期間限定セール,Limited-time sale,Pay,今だけの割引の案内に。,"期間限定セール, Limited-time sale, limited-time, sale, pay",False
+お一人様〇点まで,Limit of 〇 items per customer,Pay,購入制限がある場合に。,"お一人様〇点まで, Limit of 〇 items per customer, limit, items, per, customer, pay",False
+在庫切れ（再入荷未定）,Out of stock (Restock date undecided),Pay,売り切れの説明に。,"在庫切れ（再入荷未定）, Out of stock (Restock date undecided), out, stock, restock, date, undecided, pay",False

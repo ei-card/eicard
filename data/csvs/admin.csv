@@ -1,0 +1,56 @@
+﻿jp,en,tag,context,keywords,verified
+申請書にご記入ください,Please fill in the application form,Admin,窓口で書類を記入してもらう際に。,"申請書, 申し込み, 記入, form, application, しんせいしょ, 手続き, 書類, register",False
+必要書類を提出してください,Please submit the required documents,Admin,申請受付時の一般的な案内に。,"必要書類, 提出, submission, documents, しょるい, 手続き, application, required",False
+身分証明書を提示してください,Please present your ID,Admin,本人確認の依頼に。運転免許証やパスポート等。,"身分証明書, ID, 本人確認, 免許証, パスポート, identification, みぶんしょうめい, identity, verification",False
+マイナンバーをご持参ください,Please bring your My Number (Individual Number),Admin,個人番号の提示を求める場合。,"マイナンバー, 個人番号, My Number, 通知カード, ICカード, まいなんばー, 行政手続き",False
+証明写真が必要です,A passport-style photo is required,Admin,パスポートや各種申請書に必要な場合。,"証明写真, 顔写真, photo, ID photo, passport photo, 4.5x3.5, しょうめいしゃしん, photography",False
+写真は縦4.5cm×横3.5cmで背景は無地（白）,"Photo size: 4.5cm x 3.5cm, plain white background",Admin,証明写真の規格を示す表記に。,"写真は縦4.5cm×横3.5cmで背景は無地（白）, Photo size: 4.5cm x 3.5cm, plain white background, photo, size:, 4.5cm, 3.5cm, plain, white, background, admin",False
+顔がはっきり写っている必要があります,The face must be clearly visible in the photo,Admin,証明写真の注意書きに。,"顔がはっきり写っている必要があります, The face must be clearly visible in the photo, the, face, must, clearly, visible, photo, admin",False
+住民票の写しを発行します,We will issue a copy of your certificate of residence,Admin,役所での住民票発行案内に。,"住民票の写しを発行します, We will issue a copy of your certificate of residence, will, issue, copy, your, certificate, residence, admin",False
+戸籍謄本・抄本を請求する,Request a family register full/partial copy,Admin,戸籍に関する手続きの案内に。,"戸籍謄本・抄本を請求する, Request a family register full/partial copy, request, family, register, full/partial, copy, admin",False
+印鑑登録証明書が必要です,Seal registration certificate is required,Admin,不動産や各種契約で必要な場合に。,"印鑑登録証明書が必要です, Seal registration certificate is required, seal, registration, certificate, required, admin",False
+提出期限を確認してください,Please check the submission deadline,Admin,申請書類の締切を案内する際に。,"提出期限を確認してください, Please check the submission deadline, please, check, the, submission, deadline, admin",False
+申請手数料がかかります,An application fee applies,Admin,有料手続きの際に。金額と支払い方法を併記。,"申請手数料がかかります, An application fee applies, application, fee, applies, admin",False
+窓口での受領印を押します,We will stamp the receipt at the counter,Admin,書類受領の証明方法に。,"窓口での受領印を押します, We will stamp the receipt at the counter, will, stamp, the, receipt, counter, admin",False
+領収書をお受け取りください,Please take your receipt,Admin,料金支払い後の案内に。,"領収書をお受け取りください, Please take your receipt, please, take, your, receipt, admin",False
+本人確認のため現住所が必要です,Current address is required for identity verification,Admin,住所確認の説明に。,"本人確認のため現住所が必要です, Current address is required for identity verification, current, address, required, for, identity, verification, admin",False
+代理人による申請は委任状が必要です,A letter of authorization is required for proxy applications,Admin,代理申請の条件に。,"代理人による申請は委任状が必要です, A letter of authorization is required for proxy applications, letter, authorization, required, for, proxy, applications, admin",False
+申請書の不備がある場合は連絡します,We will contact you if the application is incomplete,Admin,不備対応の説明に。,"申請書の不備がある場合は連絡します, We will contact you if the application is incomplete, will, contact, you, the, application, incomplete, admin",False
+個人情報は法令に従い管理します,Personal information will be managed in accordance with the law,Admin,プライバシー・保護に関する案内に。,"個人情報は法令に従い管理します, Personal information will be managed in accordance with the law, personal, information, will, managed, accordance, with, the, law, admin",False
+税金に関する申告が必要です,A tax declaration is required,Admin,所得や税務手続きの案内に。,"税金に関する申告が必要です, A tax declaration is required, tax, declaration, required, admin",False
+確定申告の期間は毎年決まっています,The tax return period is fixed each year,Admin,確定申告の時期の説明に。,"確定申告の期間は毎年決まっています, The tax return period is fixed each year, the, tax, return, period, fixed, each, year, admin",False
+市区町村税（住民税）について相談する,Consult about municipal tax (residential tax),Admin,地方税全般の窓口案内に。,"市区町村税（住民税）について相談する, Consult about municipal tax (residential tax), consult, about, municipal, tax, residential, admin",False
+国民健康保険の加入手続きを行います,We will process your enrollment in national health insurance,Admin,国保加入の案内に。,"国民健康保険の加入手続きを行います, We will process your enrollment in national health insurance, will, process, your, enrollment, national, health, insurance, admin",False
+健康保険証を提示してください,Please present your health insurance card,Admin,医療機関や手続きでの提示依頼に。,"健康保険証を提示してください, Please present your health insurance card, please, present, your, health, insurance, card, admin",False
+保険料の支払い方法を選択してください,Please choose a payment method for insurance premiums,Admin,口座振替や納付書などの案内に。,"保険料の支払い方法を選択してください, Please choose a payment method for insurance premiums, please, choose, payment, method, for, insurance, premiums, admin",False
+保険料の減免申請が可能です,You may apply for premium reduction/exemption,Admin,低所得者向けの支援案内に。,"保険料の減免申請が可能です, You may apply for premium reduction/exemption, you, may, apply, for, premium, reduction/exemption, admin",False
+年金加入状況の照会,Inquiry about pension enrollment status,Admin,年金の加入履歴や受給資格の確認に。,"年金加入状況の照会, Inquiry about pension enrollment status, inquiry, about, pension, enrollment, status, admin",False
+扶養控除の申請を行ってください,Please apply for dependent tax deductions,Admin,税務上の控除手続きの案内に。,"扶養控除の申請を行ってください, Please apply for dependent tax deductions, please, apply, for, dependent, tax, deductions, admin",False
+所得証明書を発行します,We will issue an income certificate,Admin,奨学金や福祉申請の添付書類に。,"所得証明書を発行します, We will issue an income certificate, will, issue, income, certificate, admin",False
+住民票の住所変更手続き,Procedure for changing address on the residence certificate,Admin,転居時の必須手続きに。,"住民票の住所変更手続き, Procedure for changing address on the residence certificate, procedure, for, changing, address, the, residence, certificate, admin",False
+氏名変更の手続きを行ってください,Please carry out the name-change procedure,Admin,婚姻や改名時の届出に。,"氏名変更の手続きを行ってください, Please carry out the name-change procedure, please, carry, out, the, name-change, procedure, admin",False
+有効期限をご確認ください,Please check the expiration date,Admin,パスポートや証明書類の有効期限案内に。,"有効期限をご確認ください, Please check the expiration date, please, check, the, expiration, date, admin",False
+再発行の手続きはこちらです,Reissuance procedures are here,Admin,紛失や破損時の案内に。,"再発行の手続きはこちらです, Reissuance procedures are here, reissuance, procedures, are, here, admin",False
+申請結果は後日通知します,We will notify you of the application result later,Admin,審査後の連絡方法について。,"申請結果は後日通知します, We will notify you of the application result later, will, notify, you, the, application, result, later, admin",False
+書類は原本を提示してください,Please present original documents,Admin,コピー不可の場合の注意喚起に。,"書類は原本を提示してください, Please present original documents, please, present, original, documents, admin",False
+コピーでの提出は一部可能です,Submission by copy is partly accepted,Admin,例外的にコピーを受け付ける場合の案内に。,"コピーでの提出は一部可能です, Submission by copy is partly accepted, submission, copy, partly, accepted, admin",False
+署名または押印が必要です,Signature or personal seal required,Admin,書類の正式な記名方法の案内に。,"署名または押印が必要です, Signature or personal seal required, signature, personal, seal, required, admin",False
+写真は3か月以内に撮影したもの,Photos must have been taken within the last 3 months,Admin,証明写真の新鮮さに関する規定に。,"写真は3か月以内に撮影したもの, Photos must have been taken within the last 3 months, photos, must, have, been, taken, within, the, last, months, admin",False
+子どもの扶養関係の確認が必要です,Proof of child dependency is required,Admin,扶養控除や手当の申請に。,"子どもの扶養関係の確認が必要です, Proof of child dependency is required, proof, child, dependency, required, admin",False
+所得税の還付申請を行う,Apply for income tax refund,Admin,過納や控除適用時の手続きに。,"所得税の還付申請を行う, Apply for income tax refund, apply, for, income, tax, refund, admin",False
+税務署への相談窓口,Tax office consultation desk,Admin,税に関する個別相談の案内に。,"税務署への相談窓口, Tax office consultation desk, tax, office, consultation, desk, admin",False
+補助金・給付金の申請について,About applying for subsidies/benefits,Admin,各種支援金の申請案内に。,"補助金・給付金の申請について, About applying for subsidies/benefits, about, applying, for, subsidies/benefits, admin",False
+口座情報（振込先）を登録してください,Please register your bank account information (for transfers),Admin,支給や返金の受取口座登録に。,"口座情報（振込先）を登録してください, Please register your bank account information (for transfers), please, register, your, bank, account, information, for, transfers, admin",False
+手続きに必要な期間は約〇週間です,The processing time is approximately _ weeks,Admin,処理期間の目安を示す際に。,"手続きに必要な期間は約〇週間です, The processing time is approximately _ weeks, the, processing, time, approximately, weeks, admin",False
+書類送付先の住所を確認してください,Please confirm the mailing address for documents,Admin,郵送手続きの際の注意に。,"書類送付先の住所を確認してください, Please confirm the mailing address for documents, please, confirm, the, mailing, address, for, documents, admin",False
+本人確認書類のコピーを添付してください,Attach a copy of your ID document,Admin,郵送・オンライン申請時の添付物案内に。,"本人確認書類のコピーを添付してください, Attach a copy of your ID document, attach, copy, your, document, admin",False
+オンライン申請も可能です,Online application is also available,Admin,窓口だけでなくウェブ申請を案内する際に。,"オンライン申請も可能です, Online application is also available, online, application, also, available, admin",False
+在留カード,Residence Card,Admin,中長期在留者の身分証明として。,"在留カード, residence card, ID, visa, ざいりゅうかーど, status, identification, immigration",False
+通訳が必要な方はお申し出ください,Please let us know if you need an interpreter,Admin,窓口でのコミュニケーション支援の案内に。,"通訳が必要な方はお申し出ください, Please let us know if you need an interpreter, please, let, know, you, need, interpreter, admin",False
+委任状が必要です,Letter of attorney / Proxy form required,Admin,代理人が手続きを行う場合の案内に。,"委任状が必要です, Letter of attorney / Proxy form required, letter, attorney, proxy, form, required, admin",False
+住民税,Resident tax,Admin,納税相談や証明書発行の際に。,"住民税, tax, resident tax, city tax, じゅうみんぜい, local tax, payment, 納税",False
+戸籍抄本,Family Register (Partial/Individual extract),Admin,公的な身分関係の証明が必要な際に。,"戸籍抄本, Family Register (Partial/Individual extract), family, register, partial/individual, extract, admin",False
+印鑑証明,Seal registration certificate,Admin,銀行や車購入などの契約時に。,"印鑑証明, Seal registration certificate, seal, registration, certificate, admin",False
+再入国許可,Re-entry permit,Admin,一時出国する外国籍の方に。,"再入国許可, Re-entry permit, re-entry, permit, admin",False
+健康保険証,Health insurance card,Admin,病院や役所での提示に。,"健康保険証, Health insurance card, health, insurance, card, admin",False
+確定申告,Final tax return,Admin,個人の税申告の手続きに。,"確定申告, Final tax return, final, tax, return, admin",False
