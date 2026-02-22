@@ -328,8 +328,8 @@
     "verified": true
   },
   {
-    "jp": "手続きに必要な期間は約〇週間です",
-    "en": "The processing time is approximately _ weeks",
+    "jp": "手続きに必要な期間は約___週間です",
+    "en": "The processing time is approximately ___ weeks",
     "tag": "Admin",
     "context": "処理期間の目安を示す際に。",
     "keywords": "手続きに必要な期間は約〇週間です, The processing time is approximately _ weeks",

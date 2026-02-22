@@ -208,40 +208,47 @@ window.handlePrint = (jp, en) => {
     win.onload = () => { win.print(); win.close(); };
 };
 
-
 window.handleDownload = async (jp, en) => {
-    // Create hidden off-screen renderer
     const container = document.createElement('div');
     container.style.position = 'absolute';
     container.style.left = '-9999px';
     container.innerHTML = getUnifiedA4HTML(jp, en);
     document.body.appendChild(container);
 
-    const canvas = await html2canvas(container.querySelector('#a4-template'), {
-        scale: 2, // High resolution
-        useCORS: true
-    });
+    const canvas = await html2canvas(
+        container.querySelector('#a4-template'),
+        { scale: 2, useCORS: true }
+    );
+
     document.body.removeChild(container);
 
-    // Smart Save: Use Share API for Mobile, Direct Download for PC
     canvas.toBlob(async (blob) => {
+
         const file = new File([blob], `Eikan_${jp}.png`, { type: 'image/png' });
-        
-        // Detect Mobile Share capability
-        if (navigator.share && /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+        if (isMobile && navigator.canShare && navigator.canShare({ files: [file] })) {
             try {
                 await navigator.share({
                     files: [file],
-                    title: 'Save to Photos',
+                    title: 'Eikan Image'
                 });
-            } catch (err) { console.log("Share cancelled"); }
-        } else {
-            // Standard PC Download
-            const link = document.createElement('a');
-            link.href = canvas.toDataURL("image/png");
-            link.download = `Eikan_${jp}.png`;
-            link.click();
+                return;
+            } catch (err) {
+                console.log("Share cancelled");
+            }
         }
+
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `Eikan_${jp}.png`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+
     });
 };
 

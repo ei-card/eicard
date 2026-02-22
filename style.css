@@ -262,6 +262,21 @@ header {
     cursor: pointer;
 }
 
+.print-branding {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+    letter-spacing: 3px;
+    color: var(--text-sub);  
+    font-weight: 800;
+    opacity: 0.5;
+    pointer-events: none; 
+}
+
 /* ================= CONTACT SECTION ================= */
 
 .contact-section {
