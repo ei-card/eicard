@@ -19,7 +19,7 @@
         </div>
         
         <div class="quick-tags">
-            <button class="filter-btn" data-tag="All">すべて</button>
+            <button class="filter-btn active" data-tag="All">すべて</button>
             <button class="filter-btn" data-tag="Menu">飲食</button>
             <button class="filter-btn" data-tag="Sign">注意</button>
             <button class="filter-btn" data-tag="Pay">会計</button>
@@ -42,5 +42,11 @@
     </section>
 
     <script src="script.js"></script>
+    <div id="fullscreenOverlay">
+    <button class="close-fs" onclick="closeFullscreen()">×</button>
+    <div class="print-branding">英換</div>
+    <div id="fs-jp"></div>
+    <div id="fs-en"></div>
+</div>
 </body>
 </html>
