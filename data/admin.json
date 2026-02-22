@@ -4,431 +4,431 @@
     "en": "Please fill in the application form",
     "tag": "Admin",
     "context": "窓口で書類を記入してもらう際に。",
-    "keywords": "申請書, 申し込み, 記入, form, application, しんせいしょ, 手続き, 書類, register",
-    "verified": false
+    "keywords": "申請書にご記入ください, Please fill in the application form, 手続き, 申し込み, apply, 書き方, ペン, 記入例, かきかた, write, form",
+    "verified": true
   },
   {
     "jp": "必要書類を提出してください",
     "en": "Please submit the required documents",
     "tag": "Admin",
     "context": "申請受付時の一般的な案内に。",
-    "keywords": "必要書類, 提出, submission, documents, しょるい, 手続き, application, required",
-    "verified": false
+    "keywords": "必要書類を提出してください, Please submit the required documents",
+    "verified": true
   },
   {
     "jp": "身分証明書を提示してください",
     "en": "Please present your ID",
     "tag": "Admin",
     "context": "本人確認の依頼に。運転免許証やパスポート等。",
-    "keywords": "身分証明書, ID, 本人確認, 免許証, パスポート, identification, みぶんしょうめい, identity, verification",
-    "verified": false
+    "keywords": "身分証明書を提示してください, Please present your ID, 見せる, 本人確認, check, show, ID",
+    "verified": true
   },
   {
     "jp": "マイナンバーカードをご持参ください",
-    "en": "Please bring your My Number (Individual Number)",
+    "en": "Please bring your My Number card",
     "tag": "Admin",
     "context": "個人番号の提示を求める場合。",
-    "keywords": "マイナンバー, 個人番号, My Number, 通知カード, ICカード, まいなんばー, 行政手続き",
-    "verified": false
+    "keywords": "マイナンバーカードをご持参ください, Please bring your My Number (Individual Number)",
+    "verified": true
   },
   {
     "jp": "証明写真が必要です",
     "en": "A passport-style photo is required",
     "tag": "Admin",
     "context": "パスポートや各種申請書に必要な場合。",
-    "keywords": "証明写真, 顔写真, photo, ID photo, passport photo, 4.5x3.5, しょうめいしゃしん, photography",
-    "verified": false
+    "keywords": "証明写真が必要です, A passport-style photo is required, 顔写真, 撮影, 4.5, 3.5, photo, size",
+    "verified": true
   },
   {
-    "jp": "写真は縦4.5cm×横3.5cmで背景は無地（白）",
-    "en": "Photo size: 4.5cm x 3.5cm, plain white background",
+    "jp": "写真は縦___cm×横___cmで背景は無地（白）",
+    "en": "Photo size: ___cm x ___cm, plain white background",
     "tag": "Admin",
     "context": "証明写真の規格を示す表記に。",
-    "keywords": "写真は縦4.5cm×横3.5cmで背景は無地（白）, Photo size: 4.5cm x 3.5cm, plain white background, photo, size:, 4.5cm, 3.5cm, plain, white, background, admin",
-    "verified": false
+    "keywords": "写真は縦4.5cm×横3.5cmで背景は無地（白）, Photo size: 4.5cm x 3.5cm, plain white background, 顔写真, 撮影, 4.5, 3.5, photo, size",
+    "verified": true
   },
   {
     "jp": "顔がはっきり写っている必要があります",
     "en": "The face must be clearly visible in the photo",
     "tag": "Admin",
     "context": "証明写真の注意書きに。",
-    "keywords": "顔がはっきり写っている必要があります, The face must be clearly visible in the photo, the, face, must, clearly, visible, photo, admin",
-    "verified": false
+    "keywords": "顔がはっきり写っている必要があります, The face must be clearly visible in the photo",
+    "verified": true
   },
   {
     "jp": "住民票の写しを発行します",
     "en": "We will issue a copy of your certificate of residence",
     "tag": "Admin",
     "context": "役所での住民票発行案内に。",
-    "keywords": "住民票の写しを発行します, We will issue a copy of your certificate of residence, will, issue, copy, your, certificate, residence, admin",
-    "verified": false
+    "keywords": "住民票の写しを発行します, We will issue a copy of your certificate of residence, 住所, 世帯, 引越し, residence, address",
+    "verified": true
   },
   {
-    "jp": "戸籍証明書を請求する",
-    "en": "Request a family register full/partial copy",
+    "jp": "戸籍謄本・抄本を請求する",
+    "en": "Request a copy of the family register full(謄本) or partial(抄本)",
     "tag": "Admin",
     "context": "戸籍に関する手続きの案内に。",
-    "keywords": "戸籍謄本・抄本を請求する, Request a family register full/partial copy, request, family, register, full/partial, copy, admin",
-    "verified": false
+    "keywords": "戸籍証明書を請求する, Request a family register full/partial copy, 抄本, 謄本, 家系, family register, koseki",
+    "verified": true
   },
   {
     "jp": "印鑑登録証明書が必要です",
-    "en": "Seal registration certificate is required",
+    "en": "Certificate of Seal (Hanko) Registration is required",
     "tag": "Admin",
     "context": "不動産や各種契約で必要な場合に。",
-    "keywords": "印鑑登録証明書が必要です, Seal registration certificate is required, seal, registration, certificate, required, admin",
-    "verified": false
+    "keywords": "印鑑登録証明書が必要です, Seal registration certificate is required, ハンコ, スタンプ, 実印, seal, stamp",
+    "verified": true
   },
   {
     "jp": "提出期限を確認してください",
     "en": "Please check the submission deadline",
     "tag": "Admin",
     "context": "申請書類の締切を案内する際に。",
-    "keywords": "提出期限を確認してください, Please check the submission deadline, please, check, the, submission, deadline, admin",
-    "verified": false
+    "keywords": "提出期限を確認してください, Please check the submission deadline",
+    "verified": true
   },
   {
-    "jp": "(申請)手数料がかかります",
-    "en": "An application fee applies",
+    "jp": "手数料がかかります",
+    "en": "A fee applies",
     "tag": "Admin",
     "context": "有料手続きの際に。金額と支払い方法を併記。",
-    "keywords": "申請手数料がかかります, An application fee applies, application, fee, applies, admin",
-    "verified": false
+    "keywords": "(申請)手数料がかかります, An application fee applies, 手続き, 申し込み, apply",
+    "verified": true
   },
   {
     "jp": "窓口で受領印を押します",
     "en": "We will stamp the receipt at the counter",
     "tag": "Admin",
     "context": "書類受領の証明方法に。",
-    "keywords": "窓口での受領印を押します, We will stamp the receipt at the counter, will, stamp, the, receipt, counter, admin",
-    "verified": false
+    "keywords": "窓口で受領印を押します, We will stamp the receipt at the counter",
+    "verified": true
   },
   {
     "jp": "領収書をお受け取りください",
     "en": "Please take your receipt",
     "tag": "Admin",
     "context": "料金支払い後の案内に。",
-    "keywords": "領収書をお受け取りください, Please take your receipt, please, take, your, receipt, admin",
-    "verified": false
+    "keywords": "領収書をお受け取りください, Please take your receipt",
+    "verified": true
   },
   {
-    "jp": "代理人による申には委任状が必要です",
+    "jp": "代理人による申請には委任状が必要です",
     "en": "A letter of authorization is required for proxy applications",
     "tag": "Admin",
     "context": "代理申請の条件に。",
-    "keywords": "代理人による申請は委任状が必要です, A letter of authorization is required for proxy applications, letter, authorization, required, for, proxy, applications, admin",
-    "verified": false
+    "keywords": "代理人による申には委任状が必要です, A letter of authorization is required for proxy applications, 代わり, 代理, 本人以外, proxy, letter",
+    "verified": true
   },
   {
     "jp": "申請書に不備がある場合は連絡します",
-    "en": "We will contact you if the application is incomplete",
+    "en": "We will contact you if there is problems in the application form",
     "tag": "Admin",
     "context": "不備対応の説明に。",
-    "keywords": "申請書の不備がある場合は連絡します, We will contact you if the application is incomplete, will, contact, you, the, application, incomplete, admin",
-    "verified": false
+    "keywords": "申請書に不備がある場合は連絡します, We will contact you if the application is incomplete, 手続き, 申し込み, apply",
+    "verified": true
   },
   {
     "jp": "個人情報は法令に従い管理します",
     "en": "Personal information will be managed in accordance with the law",
     "tag": "Admin",
     "context": "プライバシー・保護に関する案内に。",
-    "keywords": "個人情報は法令に従い管理します, Personal information will be managed in accordance with the law, personal, information, will, managed, accordance, with, the, law, admin",
-    "verified": false
+    "keywords": "個人情報は法令に従い管理します, Personal information will be managed in accordance with the law",
+    "verified": true
   },
   {
     "jp": "税金に関する申告が必要です",
     "en": "A tax declaration is required",
     "tag": "Admin",
     "context": "所得や税務手続きの案内に。",
-    "keywords": "税金に関する申告が必要です, A tax declaration is required, tax, declaration, required, admin",
-    "verified": false
+    "keywords": "税金に関する申告が必要です, A tax declaration is required, 納税, 税金, 確定申告, tax, payment",
+    "verified": true
   },
   {
     "jp": "確定申告の期間は毎年決まっています",
     "en": "The tax return period is fixed each year",
     "tag": "Admin",
     "context": "確定申告の時期の説明に。",
-    "keywords": "確定申告の期間は毎年決まっています, The tax return period is fixed each year, the, tax, return, period, fixed, each, year, admin",
-    "verified": false
+    "keywords": "確定申告の期間は毎年決まっています, The tax return period is fixed each year, 納税, 税金, 確定申告, tax, payment",
+    "verified": true
   },
   {
-    "jp": "市区町村税（住民税）について相談する",
+    "jp": "市区町村税（住民税）についての相談",
     "en": "Consult about municipal tax (residential tax)",
     "tag": "Admin",
     "context": "地方税全般の窓口案内に。",
-    "keywords": "市区町村税（住民税）について相談する, Consult about municipal tax (residential tax), consult, about, municipal, tax, residential, admin",
-    "verified": false
+    "keywords": "市区町村税（住民税）について相談する, Consult about municipal tax (residential tax), 納税, 税金, 確定申告, tax, payment",
+    "verified": true
   },
   {
     "jp": "国民健康保険の加入手続きを行います",
     "en": "We will process your enrollment in national health insurance",
     "tag": "Admin",
     "context": "国保加入の案内に。",
-    "keywords": "国民健康保険の加入手続きを行います, We will process your enrollment in national health insurance, will, process, your, enrollment, national, health, insurance, admin",
-    "verified": false
+    "keywords": "国民健康保険の加入手続きを行います, We will process your enrollment in national health insurance, 健保, 国保, 社会保険, insurance, card",
+    "verified": true
   },
   {
-    "jp": "マイナ保険証を提示してください",
-    "en": "Please present your My Number health insurance card",
+    "jp": "マイナンバーカードを提示してください",
+    "en": "Please present your My Number card",
     "tag": "Admin",
     "context": "医療機関や手続きでの提示依頼に。",
-    "keywords": "健康保険証を提示してください, Please present your health insurance card, please, present, your, health, insurance, card, admin",
-    "verified": false
+    "keywords": "マイナ保険証を提示してください, Please present your My Number health insurance card, 見せる, 本人確認, check, show, ID, 健保, 国保, 社会保険, insurance, card",
+    "verified": true
   },
   {
     "jp": "保険料の支払い方法を選択してください",
-    "en": "Please choose a payment method for insurance premiums",
+    "en": "Choose your insurance payment method",
     "tag": "Admin",
     "context": "口座振替や納付書などの案内に。",
-    "keywords": "保険料の支払い方法を選択してください, Please choose a payment method for insurance premiums, please, choose, payment, method, for, insurance, premiums, admin",
-    "verified": false
+    "keywords": "保険料の支払い方法を選択してください, Please choose a payment method for insurance premiums, 健保, 国保, 社会保険, insurance, card",
+    "verified": true
   },
   {
     "jp": "保険料の減免申請が可能です",
-    "en": "You may apply for premium reduction/exemption",
+    "en": "You may apply for a premium reduction/exemption.",
     "tag": "Admin",
     "context": "低所得者向けの支援案内に。",
-    "keywords": "保険料の減免申請が可能です, You may apply for premium reduction/exemption, you, may, apply, for, premium, reduction/exemption, admin",
-    "verified": false
+    "keywords": "保険料の減免申請が可能です, You may apply for premium reduction/exemption, 手続き, 申し込み, apply, 健保, 国保, 社会保険, insurance, card",
+    "verified": true
   },
   {
     "jp": "年金加入状況の照会",
     "en": "Inquiry about pension enrollment status",
     "tag": "Admin",
     "context": "年金の加入履歴や受給資格の確認に。",
-    "keywords": "年金加入状況の照会, Inquiry about pension enrollment status, inquiry, about, pension, enrollment, status, admin",
-    "verified": false
+    "keywords": "年金加入状況の照会, Inquiry about pension enrollment status",
+    "verified": true
   },
   {
     "jp": "扶養控除の申請を行ってください",
     "en": "Please apply for dependent tax deductions",
     "tag": "Admin",
     "context": "税務上の控除手続きの案内に。",
-    "keywords": "扶養控除の申請を行ってください, Please apply for dependent tax deductions, please, apply, for, dependent, tax, deductions, admin",
-    "verified": false
+    "keywords": "扶養控除の申請を行ってください, Please apply for dependent tax deductions, 手続き, 申し込み, apply",
+    "verified": true
   },
   {
     "jp": "所得証明書を発行します",
     "en": "We will issue an income certificate",
     "tag": "Admin",
     "context": "奨学金や福祉申請の添付書類に。",
-    "keywords": "所得証明書を発行します, We will issue an income certificate, will, issue, income, certificate, admin",
-    "verified": false
+    "keywords": "所得証明書を発行します, We will issue an income certificate",
+    "verified": true
   },
   {
     "jp": "住民票の住所変更手続き",
     "en": "Procedure for changing address on the residence certificate",
     "tag": "Admin",
     "context": "転居時の必須手続きに。",
-    "keywords": "住民票の住所変更手続き, Procedure for changing address on the residence certificate, procedure, for, changing, address, the, residence, certificate, admin",
-    "verified": false
+    "keywords": "住民票の住所変更手続き, Procedure for changing address on the residence certificate, 住所, 世帯, 引越し, residence, address",
+    "verified": true
   },
   {
     "jp": "氏名変更の手続きを行ってください",
-    "en": "Please carry out the name-change procedure",
+    "en": "Please complete the name-change procedure",
     "tag": "Admin",
     "context": "婚姻や改名時の届出に。",
-    "keywords": "氏名変更の手続きを行ってください, Please carry out the name-change procedure, please, carry, out, the, name-change, procedure, admin",
-    "verified": false
+    "keywords": "氏名変更の手続きを行ってください, Please carry out the name-change procedure",
+    "verified": true
   },
   {
     "jp": "有効期限をご確認ください",
     "en": "Please check the expiration date",
     "tag": "Admin",
     "context": "パスポートや証明書類の有効期限案内に。",
-    "keywords": "有効期限をご確認ください, Please check the expiration date, please, check, the, expiration, date, admin",
-    "verified": false
+    "keywords": "有効期限をご確認ください, Please check the expiration date",
+    "verified": true
   },
   {
     "jp": "再発行の手続きはこちらです",
-    "en": "Reissuance procedures are here",
+    "en": "Reissuance procedures are handled here",
     "tag": "Admin",
     "context": "紛失や破損時の案内に。",
-    "keywords": "再発行の手続きはこちらです, Reissuance procedures are here, reissuance, procedures, are, here, admin",
-    "verified": false
+    "keywords": "再発行の手続きはこちらです, Reissuance procedures are here, なくした, 紛失, 新しく, lost, reissue",
+    "verified": true
   },
   {
     "jp": "申請結果は後日通知します",
-    "en": "We will notify you of the application result later",
+    "en": "You will be notified of the application result at a later date",
     "tag": "Admin",
     "context": "審査後の連絡方法について。",
-    "keywords": "申請結果は後日通知します, We will notify you of the application result later, will, notify, you, the, application, result, later, admin",
-    "verified": false
+    "keywords": "申請結果は後日通知します, We will notify you of the application result later, 手続き, 申し込み, apply",
+    "verified": true
   },
   {
     "jp": "書類は原本を提示してください",
     "en": "Please present original documents",
     "tag": "Admin",
     "context": "コピー不可の場合の注意喚起に。",
-    "keywords": "書類は原本を提示してください, Please present original documents, please, present, original, documents, admin",
-    "verified": false
+    "keywords": "書類は原本を提示してください, Please present original documents, 見せる, 本人確認, check, show, ID",
+    "verified": true
   },
   {
     "jp": "一部コピーでの提出は可能です",
     "en": "A copy can be accepted for part of the submission",
     "tag": "Admin",
     "context": "例外的にコピーを受け付ける場合の案内に。",
-    "keywords": "コピーでの提出は一部可能です, Submission by copy is partly accepted, submission, copy, partly, accepted, admin",
-    "verified": false
+    "keywords": "一部コピーでの提出は可能です, A copy can be accepted for part of the submission",
+    "verified": true
   },
   {
     "jp": "署名または押印が必要です",
-    "en": "Signature or personal seal required",
+    "en": "Signature or personal seal (Hanko) required",
     "tag": "Admin",
     "context": "書類の正式な記名方法の案内に。",
-    "keywords": "署名または押印が必要です, Signature or personal seal required, signature, personal, seal, required, admin",
-    "verified": false
+    "keywords": "署名または押印が必要です, Signature or personal seal required",
+    "verified": true
   },
   {
     "jp": "写真は3か月以内に撮影したもの",
     "en": "Photos must have been taken within the last 3 months",
     "tag": "Admin",
     "context": "証明写真の新鮮さに関する規定に。",
-    "keywords": "写真は3か月以内に撮影したもの, Photos must have been taken within the last 3 months, photos, must, have, been, taken, within, the, last, months, admin",
-    "verified": false
+    "keywords": "写真は3か月以内に撮影したもの, Photos must have been taken within the last 3 months, 顔写真, 撮影, 4.5, 3.5, photo, size",
+    "verified": true
   },
   {
     "jp": "子どもの扶養関係の確認が必要です",
     "en": "Proof of child dependency is required",
     "tag": "Admin",
     "context": "扶養控除や手当の申請に。",
-    "keywords": "子どもの扶養関係の確認が必要です, Proof of child dependency is required, proof, child, dependency, required, admin",
-    "verified": false
+    "keywords": "子どもの扶養関係の確認が必要です, Proof of child dependency is required",
+    "verified": true
   },
   {
     "jp": "所得税の還付申請を行う",
-    "en": "Apply for income tax refund",
+    "en": "File for income tax refund",
     "tag": "Admin",
     "context": "過納や控除適用時の手続きに。",
-    "keywords": "所得税の還付申請を行う, Apply for income tax refund, apply, for, income, tax, refund, admin",
-    "verified": false
+    "keywords": "所得税の還付申請を行う, Apply for income tax refund, 手続き, 申し込み, apply, 納税, 税金, 確定申告, tax, payment",
+    "verified": true
   },
   {
     "jp": "税務署相談窓口",
     "en": "Tax office consultation desk",
     "tag": "Admin",
     "context": "税に関する個別相談の案内に。",
-    "keywords": "税務署への相談窓口, Tax office consultation desk, tax, office, consultation, desk, admin",
-    "verified": false
+    "keywords": "税務署相談窓口, Tax office consultation desk, 納税, 税金, 確定申告, tax, payment",
+    "verified": true
   },
   {
     "jp": "補助金・給付金の申請について",
     "en": "About applying for subsidies/benefits",
     "tag": "Admin",
     "context": "各種支援金の申請案内に。",
-    "keywords": "補助金・給付金の申請について, About applying for subsidies/benefits, about, applying, for, subsidies/benefits, admin",
-    "verified": false
+    "keywords": "補助金・給付金の申請について, About applying for subsidies/benefits, 手続き, 申し込み, apply",
+    "verified": true
   },
   {
     "jp": "口座情報（振込先）を登録してください",
     "en": "Please register your bank account information (for transfers)",
     "tag": "Admin",
     "context": "支給や返金の受取口座登録に。",
-    "keywords": "口座情報（振込先）を登録してください, Please register your bank account information (for transfers), please, register, your, bank, account, information, for, transfers, admin",
-    "verified": false
+    "keywords": "口座情報（振込先）を登録してください, Please register your bank account information (for transfers)",
+    "verified": true
   },
   {
     "jp": "手続きに必要な期間は約〇週間です",
     "en": "The processing time is approximately _ weeks",
     "tag": "Admin",
     "context": "処理期間の目安を示す際に。",
-    "keywords": "手続きに必要な期間は約〇週間です, The processing time is approximately _ weeks, the, processing, time, approximately, weeks, admin",
-    "verified": false
+    "keywords": "手続きに必要な期間は約〇週間です, The processing time is approximately _ weeks",
+    "verified": true
   },
   {
     "jp": "書類送付先の住所を確認してください",
     "en": "Please confirm the mailing address for documents",
     "tag": "Admin",
     "context": "郵送手続きの際の注意に。",
-    "keywords": "書類送付先の住所を確認してください, Please confirm the mailing address for documents, please, confirm, the, mailing, address, for, documents, admin",
-    "verified": false
+    "keywords": "書類送付先の住所を確認してください, Please confirm the mailing address for documents",
+    "verified": true
   },
   {
     "jp": "本人確認書類のコピーを添付してください",
     "en": "Attach a copy of your ID document",
     "tag": "Admin",
     "context": "郵送・オンライン申請時の添付物案内に。",
-    "keywords": "本人確認書類のコピーを添付してください, Attach a copy of your ID document, attach, copy, your, document, admin",
-    "verified": false
+    "keywords": "本人確認書類のコピーを添付してください, Attach a copy of your ID document",
+    "verified": true
   },
   {
     "jp": "オンライン申請も可能です",
     "en": "Online application is also available",
     "tag": "Admin",
     "context": "窓口だけでなくウェブ申請を案内する際に。",
-    "keywords": "オンライン申請も可能です, Online application is also available, online, application, also, available, admin",
-    "verified": false
+    "keywords": "オンライン申請も可能です, Online application is also available, 手続き, 申し込み, apply",
+    "verified": true
   },
   {
     "jp": "在留カード",
     "en": "Residence Card",
     "tag": "Admin",
     "context": "中長期在留者の身分証明として。",
-    "keywords": "在留カード, residence card, ID, visa, ざいりゅうかーど, status, identification, immigration",
-    "verified": false
+    "keywords": "在留カード, Residence Card, ビザ, 入管, visa, zairyu",
+    "verified": true
   },
   {
     "jp": "通訳が必要な方はお申し出ください",
     "en": "Please let us know if you need an interpreter",
     "tag": "Admin",
     "context": "窓口でのコミュニケーション支援の案内に。",
-    "keywords": "通訳が必要な方はお申し出ください, Please let us know if you need an interpreter, please, let, know, you, need, interpreter, admin",
-    "verified": false
+    "keywords": "通訳が必要な方はお申し出ください, Please let us know if you need an interpreter, 翻訳, 英語, 手助け, interpreter, translate, english",
+    "verified": true
   },
   {
     "jp": "委任状が必要です",
     "en": "Letter of attorney / Proxy form required",
     "tag": "Admin",
     "context": "代理人が手続きを行う場合の案内に。",
-    "keywords": "委任状が必要です, Letter of attorney / Proxy form required, letter, attorney, proxy, form, required, admin",
-    "verified": false
+    "keywords": "委任状が必要です, Letter of attorney / Proxy form required, 代わり, 代理, 本人以外, proxy, letter",
+    "verified": true
   },
   {
     "jp": "住民税",
-    "en": "Resident tax",
+    "en": "Residential Tax",
     "tag": "Admin",
     "context": "納税相談や証明書発行の際に。",
-    "keywords": "住民税, tax, resident tax, city tax, じゅうみんぜい, local tax, payment, 納税",
-    "verified": false
+    "keywords": "住民税, Resident tax, 納税, 税金, 確定申告, tax, payment",
+    "verified": true
   },
   {
-    "jp": "戸籍抄本",
+    "jp": "戸籍抄本(戸籍一部事項証明書)",
     "en": "Family Register (Partial/Individual extract)",
     "tag": "Admin",
     "context": "公的な身分関係の証明が必要な際に。",
-    "keywords": "戸籍抄本, Family Register (Partial/Individual extract), family, register, partial/individual, extract, admin",
-    "verified": false
+    "keywords": "戸籍抄本, Family Register (Partial/Individual extract), 抄本, 謄本, 家系, family register, koseki",
+    "verified": true
   },
   {
-    "jp": "印鑑証明",
-    "en": "Seal registration certificate",
+    "jp": "印鑑登録証明書",
+    "en": "Certificate of Seal (Hanko) Registration",
     "tag": "Admin",
     "context": "銀行や車購入などの契約時に。",
-    "keywords": "印鑑証明, Seal registration certificate, seal, registration, certificate, admin",
-    "verified": false
+    "keywords": "印鑑証明, Seal registration certificate, ハンコ, スタンプ, 実印, seal, stamp",
+    "verified": true
   },
   {
     "jp": "再入国許可",
     "en": "Re-entry permit",
     "tag": "Admin",
     "context": "一時出国する外国籍の方に。",
-    "keywords": "再入国許可, Re-entry permit, re-entry, permit, admin",
-    "verified": false
+    "keywords": "再入国許可, Re-entry permit",
+    "verified": true
   },
   {
     "jp": "マイナ保険証",
-    "en": "Health insurance card",
+    "en": "My Number Health Insurance Card",
     "tag": "Admin",
     "context": "病院や役所での提示に。",
-    "keywords": "健康保険証, Health insurance card, health, insurance, card, admin",
-    "verified": false
+    "keywords": "マイナ保険証, Health insurance card, 健保, 国保, 社会保険, insurance, card",
+    "verified": true
   },
   {
     "jp": "確定申告",
     "en": "Final tax return",
     "tag": "Admin",
     "context": "個人の税申告の手続きに。",
-    "keywords": "確定申告, Final tax return, final, tax, return, admin",
-    "verified": false
+    "keywords": "確定申告, Final tax return, 納税, 税金, tax, payment",
+    "verified": true
   }
 ]

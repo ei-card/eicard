@@ -101,8 +101,7 @@ const getVisualTemplate = (jp, en) => `
         max-width: 95vw; 
         max-height: 95vh;
         margin: 0 auto;
-        padding: 10px; 
-        background: linear-gradient(135deg, #a8edea 0%, #fed6e3 50%, #fac1eb 100%);
+        padding: 0px; 
         display: flex;
         justify-content: center;
         align-items: center;
@@ -114,7 +113,6 @@ const getVisualTemplate = (jp, en) => `
             border-radius: 20px;
             text-align: center;
             width: 100%;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
         ">
             <div style="font-size: 20px; color: #7f8c8d; margin-bottom: 15px;">${jp}</div>
             <div style="font-size: 40px; color: #2c3e50; font-weight: 800; line-height: 1.2; margin-bottom: 25px;">${en}</div>

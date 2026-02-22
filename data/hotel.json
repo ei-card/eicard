@@ -4,455 +4,439 @@
     "en": "Charging stations available",
     "tag": "Hotel",
     "context": "コンセント開放の案内に。",
-    "keywords": "充電, じゅうでん, charge, charging, battery, power, コンセント, outlet, USB, socket",
-    "verified": false
+    "keywords": "充電できます, Charging stations available, じゅうでん, battery, charge, コンセント, 電源, outlet, plug, USB",
+    "verified": true
   },
   {
     "jp": "お名前をご記入ください",
     "en": "Please write your name here",
     "tag": "Hotel",
     "context": "ウェイティングリストの記入依頼に。",
-    "keywords": "名前, name, 記入, fill in, sign in, register, なまえ, check-in, registration",
-    "verified": false
+    "keywords": "お名前をご記入ください, Please write your name here, なまえ, write, name, sign, check-in, 署名, 記名",
+    "verified": true
   },
   {
     "jp": "パスポートを見せてください",
     "en": "May I see your passport?",
     "tag": "Hotel",
     "context": "宿泊台帳や免税の手続きに。",
-    "keywords": "パスポート, passport, ID, 提示, identity, identification, 旅券, りょけん, travel document",
-    "verified": false
+    "keywords": "パスポートを見せてください, May I see your passport?, passport, ID, 旅券, 見せる, show, identification, 身分証",
+    "verified": true
   },
   {
     "jp": "Wi-Fiパスワードはこちら",
     "en": "Wi-Fi password is here",
     "tag": "Hotel",
     "context": "ネット環境の案内に。",
-    "keywords": "Wi-Fi, wifi, ワイファイ, internet, password, パスワード, connection, ネット, free wifi",
-    "verified": false
+    "keywords": "Wi-Fiパスワードはこちら, Wi-Fi password is here, wifi, internet, password, ネット, 接続, パスワード, SSID",
+    "verified": true
   },
   {
     "jp": "チェックアウトは何時ですか？",
-    "en": "What time is check-out?",
+    "en": "What time is the check-out?",
     "tag": "Hotel",
     "context": "時間の確認に。",
-    "keywords": "チェックアウトは何時ですか？, What time is check-out?, what, time, check-out?, hotel",
-    "verified": false
+    "keywords": "チェックアウトは何時ですか？, What time is the check-out?, check-out, 出発, 時間, time, 鍵, key, 延長, 何時",
+    "verified": true
   },
   {
     "jp": "荷物を預けられますか？",
     "en": "Can I leave my luggage here?",
     "tag": "Hotel",
     "context": "クロークサービスの案内に。",
-    "keywords": "荷物, luggage, baggage, 預かり, storage, keep, counter, cloak, cloakroom, にもつ",
-    "verified": false
+    "keywords": "荷物を預けられますか？, Can I leave my luggage here?, baggage, luggage, 預かり, クローク, カバン, keep, storage, cloak",
+    "verified": true
   },
   {
     "jp": "予約していますか？",
     "en": "Do you have a reservation?",
     "tag": "Hotel",
     "context": "受付での最初の確認に。",
-    "keywords": "予約していますか？, Do you have a reservation?, you, have, reservation?, hotel",
-    "verified": false
+    "keywords": "予約していますか？, Do you have a reservation?, reservation, booking, アポ, 確認, confirm",
+    "verified": true
   },
   {
     "jp": "お名前を教えてください",
     "en": "May I have your name, please?",
     "tag": "Hotel",
     "context": "予約確認の際に。",
-    "keywords": "お名前を伺えますか？, May I have your name, please?, may, have, your, name, please?, hotel",
-    "verified": false
+    "keywords": "お名前を教えてください, May I have your name, please?, なまえ, write, name, sign, check-in, 署名, 記名",
+    "verified": true
   },
   {
     "jp": "エレベーターはあちらです",
     "en": "The elevator is over there",
     "tag": "Hotel",
     "context": "館内案内に。",
-    "keywords": "エレベーターはあちらです, The elevator is over there, the, elevator, over, there, hotel",
-    "verified": false
+    "keywords": "エレベーターはあちらです, The elevator is over there",
+    "verified": true
   },
   {
-    "jp": "朝食は7時からです",
-    "en": "Breakfast starts at 7 AM",
+    "jp": "朝食は___時からです",
+    "en": "Breakfast starts at ___AM",
     "tag": "Hotel",
     "context": "食事時間の説明に。",
-    "keywords": "朝食は7時からです, Breakfast starts at 7 AM, breakfast, starts, hotel",
-    "verified": false
+    "keywords": "朝食は___時からです, Breakfast starts at ___AM, breakfast, ご飯, モーニング, morning, 食事, 券",
+    "verified": true
   },
   {
     "jp": "外出時は鍵を預けてください",
-    "en": "Please leave your key at the desk",
+    "en": "Please leave your key at the desk before leaving",
     "tag": "Hotel",
     "context": "外出時のルールに。",
-    "keywords": "外出時は鍵を預けてください, Please leave your key at the desk, please, leave, your, key, the, desk, hotel",
-    "verified": false
+    "keywords": "外出時は鍵を預けてください, Please leave your key at the desk before leaving",
+    "verified": true
   },
   {
     "jp": "大浴場",
     "en": "Public bath",
     "tag": "Hotel",
     "context": "旅館やホテルの案内に。",
-    "keywords": "大浴場, Public bath, public, bath, hotel",
-    "verified": false
+    "keywords": "大浴場, Public bath, bath, onsen, hot spring, spa, お湯, タトゥー, 入れ墨",
+    "verified": true
   },
   {
     "jp": "露天風呂",
     "en": "Open-air bath",
     "tag": "Hotel",
     "context": "温泉の案内に。",
-    "keywords": "露天風呂, Open-air bath, open-air, bath, hotel",
-    "verified": false
+    "keywords": "露天風呂, Open-air bath, bath, onsen, hot spring, spa, お湯, タトゥー, 入れ墨",
+    "verified": true
   },
   {
     "jp": "かけ湯をしてください",
     "en": "Please rinse before entering",
     "tag": "Hotel",
     "context": "温泉のマナー説明に。",
-    "keywords": "かけ湯をしてください, Please rinse before entering, please, rinse, before, entering, hotel",
-    "verified": false
+    "keywords": "かけ湯をしてください, Please rinse before entering",
+    "verified": true
   },
   {
     "jp": "タオル持参",
     "en": "Please bring your own towel",
     "tag": "Hotel",
     "context": "銭湯などの案内に。",
-    "keywords": "タオル持参, Please bring your own towel, please, bring, your, own, towel, hotel",
-    "verified": false
+    "keywords": "タオル持参, Please bring your own towel",
+    "verified": true
   },
   {
     "jp": "刺青お断り",
     "en": "No tattoos allowed",
     "tag": "Hotel",
     "context": "公共浴場のルールに。",
-    "keywords": "刺青お断り, No tattoos allowed, tattoos, allowed, hotel",
-    "verified": false
+    "keywords": "刺青お断り, No tattoos allowed",
+    "verified": true
   },
   {
     "jp": "サウナ",
     "en": "Sauna",
     "tag": "Hotel",
     "context": "設備の案内に。",
-    "keywords": "サウナ, Sauna, sauna, hotel",
-    "verified": false
+    "keywords": "サウナ, Sauna",
+    "verified": true
   },
   {
     "jp": "貸切風呂",
     "en": "Private bath",
     "tag": "Hotel",
     "context": "家族風呂などの案内に。",
-    "keywords": "貸切風呂, Private bath, private, bath, hotel",
-    "verified": false
+    "keywords": "貸切風呂, Private bath, bath, onsen, hot spring, spa, お湯, タトゥー, 入れ墨",
+    "verified": true
   },
   {
     "jp": "門限",
     "en": "Curfew",
     "tag": "Hotel",
     "context": "夜間の入館制限に。",
-    "keywords": "門限, Curfew, curfew, hotel",
-    "verified": false
+    "keywords": "門限, Curfew",
+    "verified": true
   },
   {
-    "jp": "門限は23時です",
-    "en": "The curfew is 11 PM",
+    "jp": "門限は___時です",
+    "en": "The curfew is ___PM",
     "tag": "Hotel",
     "context": "具体的な時間の案内に。",
-    "keywords": "門限は23時です, The curfew is 11 PM, the, curfew, hotel",
-    "verified": false
+    "keywords": "門限は___時です, The curfew is ___PM",
+    "verified": true
   },
   {
     "jp": "全館禁煙",
     "en": "No smoking throughout the building",
     "tag": "Hotel",
     "context": "建物全体のルールに。",
-    "keywords": "全館禁煙, No smoking throughout the building, smoking, throughout, the, building, hotel",
-    "verified": false
+    "keywords": "全館禁煙, No smoking throughout the building",
+    "verified": true
   },
   {
     "jp": "またお越しください",
     "en": "We hope to see you again",
     "tag": "Hotel",
     "context": "お見送りの挨拶に。",
-    "keywords": "またお越しください, We hope to see you again, hope, see, you, again, hotel",
-    "verified": false
+    "keywords": "またお越しください, We hope to see you again",
+    "verified": true
   },
   {
     "jp": "良い旅を！",
     "en": "Have a nice trip!",
     "tag": "Hotel",
     "context": "最後に一言添える時に。",
-    "keywords": "良い旅を！, Have a nice trip!, have, nice, trip!, hotel",
-    "verified": false
+    "keywords": "良い旅を！, Have a nice trip!",
+    "verified": true
   },
   {
     "jp": "フロントは24時間対応です",
     "en": "Front desk open 24 hours",
     "tag": "Hotel",
     "context": "フロントの案内に。",
-    "keywords": "フロントは24時間対応です, Front desk open 24 hours, front, desk, open, hours, hotel",
-    "verified": false
+    "keywords": "フロントは24時間対応です, Front desk open 24 hours",
+    "verified": true
   },
   {
     "jp": "レイトチェックアウト可能です",
     "en": "Late check-out available",
     "tag": "Hotel",
     "context": "対応にオプションがあります。",
-    "keywords": "レイトチェックアウト可能です, Late check-out available, late, check-out, available, hotel",
-    "verified": false
+    "keywords": "レイトチェックアウト可能です, Late check-out available, check-out, 出発, 時間, time, 鍵, key, 延長, 何時",
+    "verified": true
   },
   {
     "jp": "アーリーチェックイン可能です",
     "en": "Early check-in available",
     "tag": "Hotel",
     "context": "利用にはオプションをお求めください。",
-    "keywords": "アーリーチェックイン可能です, Early check-in available, early, check-in, available, hotel",
-    "verified": false
+    "keywords": "アーリーチェックイン可能です, Early check-in available, check-in, 到着, 部屋, room, arrive",
+    "verified": true
   },
   {
     "jp": "ランドリーサービスがあります",
     "en": "Laundry service available",
     "tag": "Hotel",
     "context": "ランドリー・サービスの案内に。",
-    "keywords": "ランドリーサービスがあります, Laundry service available, laundry, service, available, hotel",
-    "verified": false
+    "keywords": "ランドリーサービスがあります, Laundry service available",
+    "verified": true
   },
   {
     "jp": "ルームサービスをご利用いただけます",
     "en": "Room service available",
     "tag": "Hotel",
     "context": "お部屋での注文に対応します。",
-    "keywords": "ルームサービスをご利用いただけます, Room service available, room, service, available, hotel",
-    "verified": false
+    "keywords": "ルームサービスをご利用いただけます, Room service available",
+    "verified": true
   },
   {
     "jp": "モーニングコール承ります",
     "en": "Wake-up call service",
     "tag": "Hotel",
     "context": "時間の予約について。",
-    "keywords": "モーニングコール承ります, Wake-up call service, wake-up, call, service, hotel",
-    "verified": false
+    "keywords": "モーニングコール承ります, Wake-up call service",
+    "verified": true
   },
   {
     "jp": "ハウスキーピングを行っています",
     "en": "Daily housekeeping",
     "tag": "Hotel",
     "context": "清掃に関する案内に。",
-    "keywords": "ハウスキーピングを行っています, Daily housekeeping, daily, housekeeping, hotel",
-    "verified": false
+    "keywords": "ハウスキーピングを行っています, Daily housekeeping",
+    "verified": true
   },
   {
     "jp": "起こさないでください",
     "en": "Do Not Disturb",
     "tag": "Hotel",
     "context": "客室ドアの表示に。",
-    "keywords": "起こさないでください, Do Not Disturb, not, disturb, hotel",
-    "verified": false
+    "keywords": "起こさないでください, Do Not Disturb",
+    "verified": true
   },
   {
     "jp": "禁煙ルーム利用可能です",
     "en": "Non-smoking rooms available",
     "tag": "Hotel",
     "context": "部屋のタイプ案内に。",
-    "keywords": "禁煙ルーム利用可能です, Non-smoking rooms available, non-smoking, rooms, available, hotel",
-    "verified": false
+    "keywords": "禁煙ルーム利用可能です, Non-smoking rooms available",
+    "verified": true
   },
   {
     "jp": "喫煙ルームもあります",
     "en": "Smoking rooms available",
     "tag": "Hotel",
     "context": "喫煙室の案内に。",
-    "keywords": "喫煙ルームもあります, Smoking rooms available, smoking, rooms, available, hotel",
-    "verified": false
+    "keywords": "喫煙ルームもあります, Smoking rooms available",
+    "verified": true
   },
   {
     "jp": "バリアフリー対応です",
     "en": "Accessible rooms available",
     "tag": "Hotel",
     "context": "設備の案内に。",
-    "keywords": "バリアフリー対応です, Accessible rooms available, accessible, rooms, available, hotel",
-    "verified": false
+    "keywords": "バリアフリー対応です, Accessible rooms available",
+    "verified": true
   },
   {
     "jp": "ベビーベッドをご用意できます",
     "en": "Baby crib available",
     "tag": "Hotel",
     "context": "小児用の備品案内に。",
-    "keywords": "ベビーベッドをご用意できます, Baby crib available, baby, crib, available, hotel",
-    "verified": false
+    "keywords": "ベビーベッドをご用意できます, Baby crib available",
+    "verified": true
   },
   {
     "jp": "ペット同伴可（要事前確認）",
     "en": "Pet-friendly rooms (on request)",
     "tag": "Hotel",
     "context": "事前にご連絡ください。",
-    "keywords": "ペット同伴可（要事前確認）, Pet-friendly rooms (on request), pet-friendly, rooms, on, request, hotel",
-    "verified": false
+    "keywords": "ペット同伴可（要事前確認）, Pet-friendly rooms (on request)",
+    "verified": true
   },
   {
     "jp": "駐車場あり",
     "en": "Parking available",
     "tag": "Hotel",
     "context": "駐車場の案内に。",
-    "keywords": "駐車場あり, Parking available, parking, available, hotel",
-    "verified": false
+    "keywords": "駐車場あり, Parking available",
+    "verified": true
   },
   {
     "jp": "バレットパーキング対応",
     "en": "Valet parking available",
     "tag": "Hotel",
     "context": "設備オプションに。",
-    "keywords": "バレットパーキング対応, Valet parking available, valet, parking, available, hotel",
-    "verified": false
+    "keywords": "バレットパーキング対応, Valet parking available",
+    "verified": true
   },
   {
     "jp": "レンタサイクルあります",
     "en": "Bicycle rental",
     "tag": "Hotel",
     "context": "スポーツ・レクリエーションに。",
-    "keywords": "レンタサイクルあります, Bicycle rental, bicycle, rental, hotel",
-    "verified": false
+    "keywords": "レンタサイクルあります, Bicycle rental",
+    "verified": true
   },
   {
     "jp": "シャトルサービスがあります",
     "en": "Shuttle service available",
     "tag": "Hotel",
     "context": "送迎サービスの案内に。",
-    "keywords": "シャトルサービスがあります, Shuttle service available, shuttle, service, available, hotel",
-    "verified": false
+    "keywords": "シャトルサービスがあります, Shuttle service available",
+    "verified": true
   },
   {
     "jp": "空港シャトルサービスあり",
     "en": "Airport shuttle service",
     "tag": "Hotel",
     "context": "予約についてはデスクに詳しく。",
-    "keywords": "空港シャトルサービスあり, Airport shuttle service, airport, shuttle, service, hotel",
-    "verified": false
+    "keywords": "空港シャトルサービスあり, Airport shuttle service",
+    "verified": true
   },
   {
     "jp": "コンシェルジュがいます",
     "en": "Concierge available",
     "tag": "Hotel",
     "context": "観光の手配に。",
-    "keywords": "コンシェルジュがいます, Concierge available, concierge, available, hotel",
-    "verified": false
-  },
-  {
-    "jp": "ツアーデスクで手配します",
-    "en": "Tour desk available",
-    "tag": "Hotel",
-    "context": "ツアーの制度について。",
-    "keywords": "ツアーデスクで手配します, Tour desk available, tour, desk, available, hotel",
-    "verified": false
+    "keywords": "コンシェルジュがいます, Concierge available",
+    "verified": true
   },
   {
     "jp": "外貨両替可能です",
     "en": "Currency exchange available",
     "tag": "Hotel",
     "context": "両替の案内に。",
-    "keywords": "外貨両替可能です, Currency exchange available, currency, exchange, available, hotel",
-    "verified": false
-  },
-  {
-    "jp": "大浴場・露天風呂",
-    "en": "Public bath / Open-air hot spring",
-    "tag": "Hotel",
-    "context": "旅館やホテルの温泉施設の案内に。",
-    "keywords": "大浴場, 露天風呂, bath, onsen, hot spring, public bath, spa, お風呂, 温泉, rotenburo",
-    "verified": false
+    "keywords": "外貨両替可能です, Currency exchange available",
+    "verified": true
   },
   {
     "jp": "タトゥー隠しシールあります",
     "en": "Tattoo cover stickers available",
     "tag": "Hotel",
     "context": "温泉利用時のマナーに関する案内に。",
-    "keywords": "タトゥー隠しシールあります, Tattoo cover stickers available, tattoo, cover, stickers, available, hotel",
-    "verified": false
+    "keywords": "タトゥー隠しシールあります, Tattoo cover stickers available, tattoo, 刺青, カバーシール, sticker, hide",
+    "verified": true
   },
   {
     "jp": "浴衣の貸出",
-    "en": "Yukata rental (Japanese cotton robe)",
+    "en": "Yukata rental (Japanese traditional robe)",
     "tag": "Hotel",
     "context": "館内着や観光用の貸出案内に。",
-    "keywords": "浴衣, yukata, rental, robe, kimono, cotton robe, 貸出, かしだし, traditional wear",
-    "verified": false
+    "keywords": "浴衣の貸出, Yukata rental (Japanese traditional robe), yukata, robe, kimono, 寝巻き, 着物",
+    "verified": true
   },
   {
     "jp": "変換プラグの貸出",
     "en": "Travel adapter rental",
     "tag": "Hotel",
     "context": "海外ゲストからの要望が多い備品。",
-    "keywords": "変換プラグの貸出, Travel adapter rental, travel, adapter, rental, hotel",
-    "verified": false
+    "keywords": "変換プラグの貸出, Travel adapter rental, adapter, plug, 変換, volt, voltage",
+    "verified": true
   },
   {
     "jp": "連泊中の清掃不要（エコ）",
     "en": "No cleaning needed (Eco-friendly stay)",
     "tag": "Hotel",
     "context": "清掃を辞退する場合のドアカードなどに。",
-    "keywords": "連泊中の清掃不要（エコ）, No cleaning needed (Eco-friendly stay), cleaning, needed, eco-friendly, stay, hotel",
-    "verified": false
+    "keywords": "連泊中の清掃不要（エコ）, No cleaning needed (Eco-friendly stay), cleaning, clean, 掃除, eco, タオル, towel",
+    "verified": true
   },
   {
     "jp": "仲居さん",
     "en": "Ryokan staff / Room attendant",
     "tag": "Hotel",
     "context": "旅館の給仕担当者。",
-    "keywords": "仲居（なかい）さん, Ryokan staff / Room attendant, ryokan, staff, room, attendant, hotel",
-    "verified": false
+    "keywords": "仲居さん, Ryokan staff / Room attendant",
+    "verified": true
   },
   {
     "jp": "布団敷きサービス",
     "en": "Futon-laying service",
     "tag": "Hotel",
     "context": "夜に布団を準備するサービス。",
-    "keywords": "布団敷きサービス, Futon-laying service, futon-laying, service, hotel",
-    "verified": false
+    "keywords": "布団敷きサービス, Futon-laying service, futon, bed, 寝具, ベッド",
+    "verified": true
   },
   {
     "jp": "貸切風呂（家族風呂）",
-    "en": "Private reservation bath",
+    "en": "Private (family) bath reservation",
     "tag": "Hotel",
     "context": "家族やカップルで貸切るお風呂。",
-    "keywords": "貸切風呂（家族風呂）, Private reservation bath, private, reservation, bath, hotel",
-    "verified": false
+    "keywords": "貸切風呂（家族風呂）, Private (family) bath reservation, bath, onsen, hot spring, spa, お湯, タトゥー, 入れ墨",
+    "verified": true
   },
   {
     "jp": "部屋食",
     "en": "In-room dining",
     "tag": "Hotel",
     "context": "部屋で食事をいただくスタイル。",
-    "keywords": "部屋食（へやしょく）, In-room dining, in-room, dining, hotel",
-    "verified": false
+    "keywords": "部屋食, In-room dining, in-room dining, meal, 弁当, dinner",
+    "verified": true
   },
   {
     "jp": "モーニングコール設定",
     "en": "Wake-up call setup",
     "tag": "Hotel",
     "context": "起床時間の予約に。",
-    "keywords": "モーニングコール設定, Wake-up call setup, wake-up, call, setup, hotel",
-    "verified": false
+    "keywords": "モーニングコール設定, Wake-up call setup",
+    "verified": true
   },
   {
     "jp": "体調不良・救急車",
-    "en": "Feeling unwell / Call an ambulance",
+    "en": "Feeling unwell / Ambulance",
     "tag": "Hotel",
     "context": "緊急時の連絡に。",
-    "keywords": "体調不良・救急車, Feeling unwell / Call an ambulance, feeling, unwell, call, ambulance, hotel",
-    "verified": false
+    "keywords": "体調不良・救急車, Feeling unwell / Ambulance",
+    "verified": true
   },
   {
     "jp": "近隣のコンビニ案内",
     "en": "Directions to nearby convenience stores",
     "tag": "Hotel",
     "context": "買い物場所の案内に。",
-    "keywords": "近隣のコンビニ案内, Directions to nearby convenience stores, directions, nearby, convenience, stores, hotel",
-    "verified": false
+    "keywords": "近隣のコンビニ案内, Directions to nearby convenience stores",
+    "verified": true
   },
   {
     "jp": "加湿器の貸出",
     "en": "Humidifier rental",
     "tag": "Hotel",
     "context": "乾燥対策の備品案内に。",
-    "keywords": "加湿器の貸出, Humidifier rental, humidifier, rental, hotel",
-    "verified": false
+    "keywords": "加湿器の貸出, Humidifier rental",
+    "verified": true
   }
 ]

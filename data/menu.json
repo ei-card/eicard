@@ -12,1199 +12,1215 @@
     "en": "Japanese fish and seaweed stock",
     "tag": "Menu",
     "context": "和食のベース。魚が使われていることを明確にする際に。",
-    "keywords": "出汁,dashi,だし,Japanese stock,鰹出汁,昆布出汁,bonito dashi,kombu dashi,umami broth,awase dashi",
-    "verified": false
+    "keywords": "出汁（だし）, Japanese fish and seaweed stock, dashi, stock, soup, base, 鰹, 昆布, 旨味",
+    "verified": true
   },
   {
     "jp": "鰹だし",
     "en": "Bonito (fish) stock",
     "tag": "Menu",
     "context": "魚由来であることをベジタリアンに伝える際に。",
-    "keywords": "鰹だし, Bonito stock, Katsuobushi, Dashi, Japanese broth, かつおだし, Bonito flakes, 出汁, Instant dashi, Dashi powder",
-    "verified": false
+    "keywords": "鰹だし, Bonito (fish) stock, dashi, stock, soup, base, 鰹, 昆布, 旨味",
+    "verified": true
   },
   {
     "jp": "昆布だし",
     "en": "Kelp (seaweed) stock",
     "tag": "Menu",
     "context": "ベジタリアン・ヴィーガン対応の際に。",
-    "keywords": "昆布だし,Kelp stock,Dashi,Seaweed stock,Kombu stock,出汁,Japanese broth,Vegan dashi,旨味,こんぶ出汁",
-    "verified": false
+    "keywords": "昆布だし, Kelp (seaweed) stock, dashi, stock, soup, base, 鰹, 昆布, 旨味",
+    "verified": true
   },
   {
     "jp": "植物性100%",
     "en": "100% plant-based",
     "tag": "Menu",
     "context": "ヴィーガン対応メニューの表記に。",
-    "keywords": "植物性100%, 100% plant-based, プラントベース, vegan, ヴィーガン, 動物性不使用, animal-free, 菜食主義, 完全植物性, plant-only",
-    "verified": false
+    "keywords": "植物性100%, 100% plant-based, plant-based, vegan, ヴィーガン, 動物性不使用",
+    "verified": true
   },
   {
     "jp": "肉不使用",
     "en": "Meat-free",
     "tag": "Menu",
     "context": "お肉が入っていないことを示す際に。",
-    "keywords": "Meat-free,肉不使用,Vegetarian,ベジタリアン,Vegan,ヴィーガン,Plant-based,プラントベース,Meatless,肉なし",
-    "verified": false
+    "keywords": "肉不使用, Meat-free, meat-free, vegetarian, vegan, ベジタリアン, ヴィーガン",
+    "verified": true
   },
   {
     "jp": "魚介不使用",
     "en": "Seafood-free",
     "tag": "Menu",
     "context": "魚や貝が使われていないことを示す際に。",
-    "keywords": "Seafood-free, 魚介不使用, No seafood, シーフードフリー, Fish-free, 魚不使用, Shellfish-free, 貝不使用, Vegan seafood, ヴィーガンシーフード",
-    "verified": false
+    "keywords": "魚介不使用, Seafood-free, fish, seafood, allergy, アレルギー, さかな",
+    "verified": true
   },
   {
     "jp": "乳製品不使用",
     "en": "Dairy-free",
     "tag": "Menu",
     "context": "牛乳やバターを使っていないメニューに。",
-    "keywords": "Dairy-free,乳製品不使用,Vegan,ヴィーガン,Plant-based,プラントベース,Lactose-free,ラクトースフリー,Dairy alternative,代替乳製品",
-    "verified": false
+    "keywords": "乳製品不使用, Dairy-free, ミルク, milk, dairy, allergy, アレルギー",
+    "verified": true
   },
   {
     "jp": "卵不使用",
     "en": "Egg-free",
     "tag": "Menu",
     "context": "マヨネーズなども含め卵を使っていない場合に。",
-    "keywords": "STOP_SCRIPT",
-    "verified": false
+    "keywords": "卵不使用, Egg-free, たまご, egg, allergy, アレルギー, 鶏卵",
+    "verified": true
   },
   {
     "jp": "五葷（にんにく・ねぎ等）不使用",
     "en": "No pungent vegetables (No garlic/onions)",
     "tag": "Menu",
     "context": "宗教や嗜好に合わせた表記に。",
-    "keywords": "五葷, ごくん, gokun, no garlic, no onion, no leeks, oriental vegan, 精進料理, にんにく不使用, ねぎ不使用",
-    "verified": false
+    "keywords": "五葷（にんにく・ねぎ等）不使用, No pungent vegetables (No garlic/onions), gokun, no garlic, no onion, oriental vegan, にんにく, ねぎ",
+    "verified": true
   },
   {
     "jp": "グルテンフリー",
     "en": "Gluten-free",
     "tag": "Menu",
     "context": "小麦粉を一切使用していないメニューに。",
-    "keywords": "グルテンフリー, gluten-free, 小麦不使用, wheat-free, 米粉, rice flour, セリアック, celiac, 小麦粉なし",
-    "verified": false
+    "keywords": "グルテンフリー, Gluten-free, gluten, wheat, allergy, アレルギー, こむぎ",
+    "verified": true
   },
   {
     "jp": "醤油（小麦含む）",
     "en": "Soy sauce (contains wheat)",
     "tag": "Menu",
     "context": "醤油に小麦が含まれることを注意喚起する際に。",
-    "keywords": "醤油（小麦含む）, Soy sauce (contains wheat), soy, sauce, contains, wheat, menu",
-    "verified": false
+    "keywords": "醤油（小麦含む）, Soy sauce (contains wheat), gluten, wheat, allergy, アレルギー, こむぎ",
+    "verified": true
   },
   {
     "jp": "炭火焼き",
     "en": "Charcoal-grilled",
     "tag": "Menu",
     "context": "香ばしさをアピールする調理法の説明。",
-    "keywords": "炭火焼き, Charcoal-grilled, charcoal-grilled, menu",
-    "verified": false
+    "keywords": "炭火焼き, Charcoal-grilled",
+    "verified": true
   },
   {
     "jp": "煮込み",
     "en": "Slow-cooked / Simmered",
     "tag": "Menu",
     "context": "煮魚や煮物の美味しそうな表現。",
-    "keywords": "煮込み, Slow-cooked / Simmered, slow-cooked, simmered, menu",
-    "verified": false
+    "keywords": "煮込み, Slow-cooked / Simmered",
+    "verified": true
   },
   {
     "jp": "天ぷら（サクサク）",
     "en": "Crispy tempura",
     "tag": "Menu",
     "context": "衣の食感を伝える際に。",
-    "keywords": "天ぷら（サクサク）, Crispy tempura, crispy, tempura, menu",
-    "verified": false
+    "keywords": "天ぷら（サクサク）, Crispy tempura",
+    "verified": true
   },
   {
     "jp": "素揚げ",
     "en": "Deep-fried without batter",
     "tag": "Menu",
     "context": "野菜の素揚げなどの説明。",
-    "keywords": "素揚げ, Deep-fried without batter, deep-fried, without, batter, menu",
-    "verified": false
+    "keywords": "素揚げ, Deep-fried without batter",
+    "verified": true
   },
   {
     "jp": "和え物",
     "en": "Marinated side dish",
     "tag": "Menu",
     "context": "小鉢料理の説明に。",
-    "keywords": "和え物, Marinated side dish, marinated, side, dish, menu",
-    "verified": false
+    "keywords": "和え物, Marinated side dish",
+    "verified": true
   },
   {
     "jp": "湯通し",
     "en": "Blanched",
     "tag": "Menu",
     "context": "さっと火を通した料理の説明に。",
-    "keywords": "湯通し, Blanched, blanched, menu",
-    "verified": false
+    "keywords": "湯通し, Blanched",
+    "verified": true
   },
   {
     "jp": "鉄板焼き",
     "en": "Teppanyaki / Griddle grilled",
     "tag": "Menu",
     "context": "ステーキや粉もんの説明に。",
-    "keywords": "鉄板焼き, Teppanyaki / Griddle grilled, teppanyaki, griddle, grilled, menu",
-    "verified": false
+    "keywords": "鉄板焼き, Teppanyaki / Griddle grilled",
+    "verified": true
   },
   {
     "jp": "塩麹漬け",
     "en": "Marinated in salted rice malt",
     "tag": "Menu",
     "context": "発酵調味料のニュアンスを伝える際に。",
-    "keywords": "塩麹漬け, Marinated in salted rice malt, marinated, salted, rice, malt, menu",
-    "verified": false
+    "keywords": "塩麹漬け, Marinated in salted rice malt",
+    "verified": true
   },
   {
     "jp": "西京焼き",
     "en": "Grilled with sweet miso glaze",
     "tag": "Menu",
     "context": "西京味噌で漬けた焼き物の説明に。",
-    "keywords": "西京焼き, Grilled with sweet miso glaze, grilled, with, sweet, miso, glaze, menu",
-    "verified": false
+    "keywords": "西京焼き, Grilled with sweet miso glaze",
+    "verified": true
   },
   {
     "jp": "照り焼き",
     "en": "Teriyaki (sweet soy glaze)",
     "tag": "Menu",
     "context": "外国人に馴染みのある用語で説明。",
-    "keywords": "照り焼き, Teriyaki (sweet soy glaze), teriyaki, sweet, soy, glaze, menu",
-    "verified": false
+    "keywords": "照り焼き, Teriyaki (sweet soy glaze)",
+    "verified": true
   },
   {
     "jp": "刺身盛り合わせ",
     "en": "Assorted sashimi",
     "tag": "Menu",
     "context": "生魚であることを明確に。",
-    "keywords": "刺身盛り合わせ, Assorted sashimi, assorted, sashimi, menu",
-    "verified": false
+    "keywords": "刺身盛り合わせ, Assorted sashimi",
+    "verified": true
   },
   {
     "jp": "旬の地魚",
     "en": "Local seasonal fish",
     "tag": "Menu",
     "context": "地元の新鮮さをアピール。",
-    "keywords": "旬の地魚, Local seasonal fish, local, seasonal, fish, menu",
-    "verified": false
+    "keywords": "旬の地魚, Local seasonal fish, fish, seafood, allergy, アレルギー, さかな",
+    "verified": true
   },
   {
     "jp": "脂ののった",
-    "en": "Fatty / Succulent",
+    "en": "Fatty",
     "tag": "Menu",
     "context": "魚の部位の特徴を伝える。",
-    "keywords": "脂ののった, Fatty / Succulent, fatty, succulent, menu",
-    "verified": false
+    "keywords": "脂ののった, Fatty",
+    "verified": true
   },
   {
     "jp": "あっさり",
     "en": "Light and refreshing",
     "tag": "Menu",
     "context": "さっぱり系の味付けに。",
-    "keywords": "あっさり, Light and refreshing, light, and, refreshing, menu",
-    "verified": false
+    "keywords": "あっさり, Light and refreshing",
+    "verified": true
   },
   {
     "jp": "濃厚",
     "en": "Rich / Creamy",
     "tag": "Menu",
     "context": "こってりした味わいに。",
-    "keywords": "濃厚, Rich / Creamy, rich, creamy, menu",
-    "verified": false
+    "keywords": "濃厚, Rich / Creamy",
+    "verified": true
   },
   {
     "jp": "ピリ辛",
     "en": "Mildly spicy",
     "tag": "Menu",
     "context": "少し辛めの表記に。",
-    "keywords": "ピリ辛, Mildly spicy, mildly, spicy, menu",
-    "verified": false
+    "keywords": "ピリ辛, Mildly spicy",
+    "verified": true
   },
   {
     "jp": "薬味",
     "en": "Condiments / Garnish",
     "tag": "Menu",
     "context": "わさび、生姜、ネギなどの総称。",
-    "keywords": "薬味, Condiments / Garnish, condiments, garnish, menu",
-    "verified": false
+    "keywords": "薬味, Condiments / Garnish",
+    "verified": true
   },
   {
     "jp": "自家製",
-    "en": "House-made / Homemade",
+    "en": "Homemade",
     "tag": "Menu",
     "context": "自家製調味料や料理のアピールに。",
-    "keywords": "自家製, House-made / Homemade, house-made, homemade, menu",
-    "verified": false
+    "keywords": "自家製, Homemade",
+    "verified": true
   },
   {
     "jp": "数量限定",
     "en": "Limited quantity",
     "tag": "Menu",
     "context": "数量限定メニューに。",
-    "keywords": "数量限定, Limited quantity, limited, quantity, menu",
-    "verified": false
+    "keywords": "数量限定, Limited quantity",
+    "verified": true
   },
   {
     "jp": "お通し（席料）",
     "en": "Mandatory appetizer (cover charge)",
     "tag": "Menu",
     "context": "席料がかかる場合の表記に。",
-    "keywords": "お通し（席料）, Mandatory appetizer (cover charge), mandatory, appetizer, cover, charge, menu",
-    "verified": false
+    "keywords": "お通し（席料）, Mandatory appetizer (cover charge)",
+    "verified": true
   },
   {
     "jp": "ワンドリンク制",
     "en": "One-drink minimum",
     "tag": "Menu",
     "context": "注文ルールの説明に。",
-    "keywords": "ワンドリンク制, One-drink minimum, one-drink, minimum, menu",
-    "verified": false
+    "keywords": "ワンドリンク制, One-drink minimum",
+    "verified": true
   },
   {
     "jp": "食べ放題",
     "en": "All-you-can-eat",
     "tag": "Menu",
     "context": "ビュッフェ等の説明に。",
-    "keywords": "食べ放題, All-you-can-eat, all-you-can-eat, menu",
-    "verified": false
+    "keywords": "食べ放題, All-you-can-eat",
+    "verified": true
   },
   {
     "jp": "飲み放題",
     "en": "All-you-can-drink",
     "tag": "Menu",
     "context": "コースのオプション説明に。",
-    "keywords": "飲み放題, All-you-can-drink, all-you-can-drink, menu",
-    "verified": false
+    "keywords": "飲み放題, All-you-can-drink",
+    "verified": true
   },
   {
     "jp": "ご飯おかわり無料",
     "en": "Free rice refills",
     "tag": "Menu",
     "context": "サービスの良さを伝える。",
-    "keywords": "ご飯おかわり無料, Free rice refills, free, rice, refills, menu",
-    "verified": false
+    "keywords": "ご飯おかわり無料, Free rice refills",
+    "verified": true
   },
   {
     "jp": "セルフサービス",
     "en": "Self-service",
     "tag": "Menu",
     "context": "水や返却の案内に。",
-    "keywords": "セルフサービス, Self-service, self-service, menu",
-    "verified": false
+    "keywords": "セルフサービス, Self-service",
+    "verified": true
   },
   {
     "jp": "枝豆（塩ゆで）",
     "en": "Salted edamame",
     "tag": "Menu",
     "context": "定番のおつまみ。",
-    "keywords": "枝豆（塩ゆで）, Salted edamame, salted, edamame, menu",
-    "verified": false
+    "keywords": "枝豆（塩ゆで）, Salted edamame",
+    "verified": true
   },
   {
     "jp": "冷奴",
     "en": "Chilled tofu",
     "tag": "Menu",
     "context": "豆腐料理の説明に。",
-    "keywords": "冷奴, Chilled tofu, chilled, tofu, menu",
-    "verified": false
+    "keywords": "冷奴, Chilled tofu",
+    "verified": true
   },
   {
     "jp": "厚揚げ",
     "en": "Deep-fried tofu blocks",
     "tag": "Menu",
     "context": "食べ応えのある豆腐料理。",
-    "keywords": "厚揚げ, Deep-fried tofu blocks, deep-fried, tofu, blocks, menu",
-    "verified": false
+    "keywords": "厚揚げ, Deep-fried tofu blocks",
+    "verified": true
   },
   {
     "jp": "漬物盛り合わせ",
     "en": "Assorted pickles",
     "tag": "Menu",
     "context": "箸休めの説明に。",
-    "keywords": "漬物盛り合わせ, Assorted pickles, assorted, pickles, menu",
-    "verified": false
+    "keywords": "漬物盛り合わせ, Assorted pickles",
+    "verified": true
   },
   {
     "jp": "叩ききゅうり",
     "en": "Smashed cucumber",
     "tag": "Menu",
     "context": "おつまみの定番。",
-    "keywords": "叩ききゅうり, Smashed cucumber, smashed, cucumber, menu",
-    "verified": false
+    "keywords": "叩ききゅうり, Smashed cucumber",
+    "verified": true
   },
   {
     "jp": "ポテトサラダ（マヨネーズ）",
     "en": "Potato salad (contains mayonnaise)",
     "tag": "Menu",
     "context": "卵アレルギーに注意。",
-    "keywords": "ポテトサラダ（マヨネーズ）, Potato salad (contains mayonnaise), potato, salad, contains, mayonnaise, menu",
-    "verified": false
+    "keywords": "ポテトサラダ（マヨネーズ）, Potato salad (contains mayonnaise)",
+    "verified": true
   },
   {
     "jp": "唐揚げ",
     "en": "Japanese fried chicken",
     "tag": "Menu",
     "context": "人気の鶏料理。",
-    "keywords": "唐揚げ, Japanese fried chicken, japanese, fried, chicken, menu",
-    "verified": false
+    "keywords": "唐揚げ, Japanese fried chicken",
+    "verified": true
   },
   {
     "jp": "つくね",
     "en": "Chicken meatball skewer",
     "tag": "Menu",
     "context": "焼き鳥の一種。",
-    "keywords": "つくね, Chicken meatball skewer, chicken, meatball, skewer, menu",
-    "verified": false
+    "keywords": "つくね, Chicken meatball skewer",
+    "verified": true
   },
   {
     "jp": "軟骨",
     "en": "Chicken cartilage",
     "tag": "Menu",
     "context": "コリコリした食感の説明に。",
-    "keywords": "軟骨, Chicken cartilage, chicken, cartilage, menu",
-    "verified": false
+    "keywords": "軟骨, Chicken cartilage",
+    "verified": true
   },
   {
     "jp": "砂肝",
     "en": "Chicken gizzard",
     "tag": "Menu",
     "context": "内臓系の説明に。",
-    "keywords": "砂肝, Chicken gizzard, chicken, gizzard, menu",
-    "verified": false
+    "keywords": "砂肝, Chicken gizzard",
+    "verified": true
   },
   {
     "jp": "豚バラ",
     "en": "Pork belly",
     "tag": "Menu",
     "context": "脂のある部位の説明。",
-    "keywords": "豚バラ, Pork belly, pork, belly, menu",
-    "verified": false
+    "keywords": "豚バラ, Pork belly, pork, pig, ぶた, とん",
+    "verified": true
   },
   {
     "jp": "和牛ステーキ",
     "en": "Premium Wagyu steak",
     "tag": "Menu",
     "context": "高級感を伝える。",
-    "keywords": "和牛ステーキ, Premium Wagyu steak, premium, wagyu, steak, menu",
-    "verified": false
+    "keywords": "和牛ステーキ, Premium Wagyu steak, beef, cow, うし, ぎゅう",
+    "verified": true
   },
   {
     "jp": "霜降り肉",
     "en": "Marbled beef",
     "tag": "Menu",
     "context": "肉質の説明に。",
-    "keywords": "霜降り肉, Marbled beef, marbled, beef, menu",
-    "verified": false
+    "keywords": "霜降り肉, Marbled beef",
+    "verified": true
   },
   {
     "jp": "ホルモン",
     "en": "Beef/pork offal",
     "tag": "Menu",
     "context": "好き嫌いが分かれることを明記。",
-    "keywords": "ホルモン, Beef/pork offal, beef/pork, offal, menu",
-    "verified": false
+    "keywords": "ホルモン, Beef/pork offal",
+    "verified": true
   },
   {
     "jp": "だし巻き卵",
     "en": "Rolled omelet",
     "tag": "Menu",
     "context": "出汁入りの卵料理。",
-    "keywords": "だし巻き卵, Rolled omelet, rolled, omelet, menu",
-    "verified": false
+    "keywords": "だし巻き卵, Rolled omelet, たまご, egg, allergy, アレルギー, 鶏卵, dashi, stock, soup, base, 鰹, 昆布, 旨味",
+    "verified": true
   },
   {
     "jp": "茶碗蒸し",
     "en": "Savory steamed egg custard",
     "tag": "Menu",
     "context": "スープ状の卵料理。",
-    "keywords": "茶碗蒸し, Savory steamed egg custard, savory, steamed, egg, custard, menu",
-    "verified": false
+    "keywords": "茶碗蒸し, Savory steamed egg custard",
+    "verified": true
   },
   {
     "jp": "味噌汁",
     "en": "Miso soup",
     "tag": "Menu",
     "context": "発酵大豆のスープ。",
-    "keywords": "味噌汁, Miso soup, miso, soup, menu",
-    "verified": false
+    "keywords": "味噌汁, Miso soup",
+    "verified": true
   },
   {
     "jp": "豚汁",
     "en": "Pork and vegetable miso soup",
     "tag": "Menu",
     "context": "肉入りの味噌汁。",
-    "keywords": "豚汁, Pork and vegetable miso soup, pork, and, vegetable, miso, soup, menu",
-    "verified": false
+    "keywords": "豚汁, Pork and vegetable miso soup, pork, pig, ぶた, とん",
+    "verified": true
   },
   {
     "jp": "精進揚げ",
     "en": "Vegetable tempura",
     "tag": "Menu",
     "context": "野菜のみの天ぷら。",
-    "keywords": "精進揚げ, Vegetable tempura, vegetable, tempura, menu",
-    "verified": false
+    "keywords": "精進揚げ, Vegetable tempura",
+    "verified": true
   },
   {
     "jp": "かき揚げ",
     "en": "Mixed tempura fritter",
     "tag": "Menu",
     "context": "野菜と海鮮のかき揚げ。",
-    "keywords": "かき揚げ, Mixed tempura fritter, mixed, tempura, fritter, menu",
-    "verified": false
+    "keywords": "かき揚げ, Mixed tempura fritter",
+    "verified": true
   },
   {
     "jp": "串カツ",
     "en": "Breaded skewers",
     "tag": "Menu",
     "context": "ソースの注意書きに。",
-    "keywords": "串カツ, Breaded skewers, breaded, skewers, menu",
-    "verified": false
+    "keywords": "串カツ, Breaded skewers",
+    "verified": true
   },
   {
     "jp": "うなぎ蒲焼",
     "en": "Grilled eel with sauce",
     "tag": "Menu",
     "context": "定番の蒲焼スタイル。",
-    "keywords": "うなぎ蒲焼, Grilled eel with sauce, grilled, eel, with, sauce, menu",
-    "verified": false
+    "keywords": "うなぎ蒲焼, Grilled eel with sauce, eel, unagi, grilled",
+    "verified": true
   },
   {
     "jp": "白焼き",
     "en": "Plain grilled eel",
     "tag": "Menu",
     "context": "タレなしで提供する場合に。",
-    "keywords": "白焼き, Plain grilled eel, plain, grilled, eel, menu",
-    "verified": false
+    "keywords": "白焼き, Plain grilled eel",
+    "verified": true
   },
   {
     "jp": "ちらし寿司",
-    "en": "Chirashi sushi",
+    "en": "Scattered Sushi ",
     "tag": "Menu",
     "context": "散らし寿司の説明に。",
-    "keywords": "ちらし寿司, Chirashi sushi, chirashi, sushi, menu",
-    "verified": false
+    "keywords": "ちらし寿司, Scattered Sushi",
+    "verified": true
   },
   {
     "jp": "稲荷寿司",
-    "en": "Inari sushi",
+    "en": "Sushi in Fried Tofu Pouches",
     "tag": "Menu",
     "context": "甘く煮た油揚げの寿司。",
-    "keywords": "稲荷寿司, Inari sushi, inari, sushi, menu",
-    "verified": false
+    "keywords": "稲荷寿司, Sushi in Fried Tofu Pouches",
+    "verified": true
   },
   {
     "jp": "納豆巻き",
     "en": "Natto roll",
     "tag": "Menu",
     "context": "発酵食品の好みの差に注意。",
-    "keywords": "納豆巻き, Natto roll, natto, roll, menu",
-    "verified": false
+    "keywords": "納豆巻き, Natto roll",
+    "verified": true
   },
   {
     "jp": "カッパ巻き",
     "en": "Cucumber roll",
     "tag": "Menu",
     "context": "野菜のみの巻き寿司。",
-    "keywords": "カッパ巻き, Cucumber roll, cucumber, roll, menu",
-    "verified": false
+    "keywords": "カッパ巻き, Cucumber roll",
+    "verified": true
   },
   {
     "jp": "おにぎり（梅）",
     "en": "Rice ball with pickled plum",
     "tag": "Menu",
     "context": "酸味のある具材。",
-    "keywords": "おにぎり（梅）, Rice ball with pickled plum, rice, ball, with, pickled, plum, menu",
-    "verified": false
+    "keywords": "おにぎり（梅）, Rice ball with pickled plum",
+    "verified": true
   },
   {
     "jp": "おにぎり（鮭）",
     "en": "Rice ball with grilled salmon",
     "tag": "Menu",
     "context": "定番の具材表記。",
-    "keywords": "おにぎり（鮭）, Rice ball with grilled salmon, rice, ball, with, grilled, salmon, menu",
-    "verified": false
+    "keywords": "おにぎり（鮭）, Rice ball with grilled salmon",
+    "verified": true
   },
   {
     "jp": "お茶漬け",
     "en": "Rice with tea/broth",
     "tag": "Menu",
     "context": "締め料理の説明。",
-    "keywords": "お茶漬け, Rice with tea/broth, rice, with, tea/broth, menu",
-    "verified": false
+    "keywords": "お茶漬け, Rice with tea/broth",
+    "verified": true
   },
   {
     "jp": "焼きおにぎり",
     "en": "Grilled rice ball",
     "tag": "Menu",
     "context": "香ばしい風味を伝える。",
-    "keywords": "焼きおにぎり, Grilled rice ball, grilled, rice, ball, menu",
-    "verified": false
+    "keywords": "焼きおにぎり, Grilled rice ball",
+    "verified": true
   },
   {
     "jp": "醤油ラーメン",
-    "en": "Soy Sauce base Ramen",
+    "en": "Soy Sauce Base Ramen",
     "tag": "Menu",
     "context": "醤油ベースのスープ表記。",
-    "keywords": "醤油ラーメン, Soy Sauce base Ramen, soy, sauce, base, ramen, menu",
-    "verified": false
+    "keywords": "醤油ラーメン, Soy Sauce Base Ramen, ramen, noodles, pork, wheat",
+    "verified": true
   },
   {
     "jp": "豚骨ラーメン",
     "en": "Pork Bone Broth Ramen",
     "tag": "Menu",
     "context": "豚骨ベースの濃厚スープ。",
-    "keywords": "豚骨ラーメン, Pork Bone Broth Ramen, pork, bone, broth, ramen, menu",
-    "verified": false
+    "keywords": "豚骨ラーメン, Pork Bone Broth Ramen, ramen, noodles, pork, wheat, pig, ぶた, とん",
+    "verified": true
   },
   {
     "jp": "味噌ラーメン",
     "en": "Miso Base Ramen",
     "tag": "Menu",
     "context": "味噌ベースの説明。",
-    "keywords": "味噌ラーメン, Miso Base Ramen, miso, base, ramen, menu",
-    "verified": false
+    "keywords": "味噌ラーメン, Miso Base Ramen, ramen, noodles, pork, wheat",
+    "verified": true
   },
   {
     "jp": "塩ラーメン",
     "en": "Salt Base Ramen",
     "tag": "Menu",
     "context": "あっさり系の説明。",
-    "keywords": "塩ラーメン, Salt Base Ramen, salt, base, ramen, menu",
-    "verified": false
+    "keywords": "塩ラーメン, Salt Base Ramen, ramen, noodles, pork, wheat",
+    "verified": true
   },
   {
     "jp": "担々麺",
     "en": "Tantan Noodles",
     "tag": "Menu",
     "context": "ゴマの風味と辛さを表記。",
-    "keywords": "担々麺, Tantan Noodles, tantan, noodles, menu",
-    "verified": false
+    "keywords": "担々麺, Tantan Noodles",
+    "verified": true
   },
   {
     "jp": "つけ麺",
     "en": "Dipping Noodles",
     "tag": "Menu",
     "context": "つけ汁で食べる麺。",
-    "keywords": "つけ麺, Dipping Noodles, dipping, noodles, menu",
-    "verified": false
+    "keywords": "つけ麺, Dipping Noodles",
+    "verified": true
   },
   {
     "jp": "冷やし中華",
     "en": "Cold Chinese-style Noodles",
     "tag": "Menu",
     "context": "夏季限定の冷製麺。",
-    "keywords": "冷やし中華, Cold Chinese-style Noodles, cold, chinese-style, noodles, menu",
-    "verified": false
+    "keywords": "冷やし中華, Cold Chinese-style Noodles",
+    "verified": true
   },
   {
     "jp": "蕎麦",
     "en": "Soba (buckwheat noodles)",
     "tag": "Menu",
     "context": "蕎麦粉使用の麺に注意。",
-    "keywords": "蕎麦,そば,ソバ, Soba (buckwheat noodles), soba, buckwheat, noodles, menu",
-    "verified": false
+    "keywords": "蕎麦, Soba (buckwheat noodles), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
+    "verified": true
   },
   {
     "jp": "十割そば",
     "en": "100% buckwheat noodles",
     "tag": "Menu",
     "context": "グルテンフリーを求める方向け。",
-    "keywords": "十割そば, 100% buckwheat noodles, 100%, buckwheat, 蕎麦,noodles, menu",
-    "verified": false
+    "keywords": "十割そば, 100% buckwheat noodles, soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
+    "verified": true
   },
   {
     "jp": "うどん",
     "en": "Udon (thick wheat noodles)",
     "tag": "Menu",
     "context": "小麦麺の表記に。",
-    "keywords": "うどん, Udon (thick wheat noodles), udon, thick, wheat, noodles, menu",
-    "verified": false
+    "keywords": "うどん, Udon (thick wheat noodles), udon, noodles, wheat, 小麦",
+    "verified": true
   },
   {
     "jp": "カレーライス",
     "en": "Japanese curry rice",
     "tag": "Menu",
     "context": "日本のカレーの説明。",
-    "keywords": "カレーライス, Japanese curry rice, japanese, curry, rice, menu",
-    "verified": false
+    "keywords": "カレーライス, Japanese curry rice",
+    "verified": true
   },
   {
     "jp": "カツカレー",
     "en": "Curry with pork cutlet",
     "tag": "Menu",
     "context": "ボリューム表記に。",
-    "keywords": "カツカレー, Curry with pork cutlet, curry, with, pork, cutlet, menu",
-    "verified": false
+    "keywords": "カツカレー, Curry with pork cutlet",
+    "verified": true
   },
   {
     "jp": "丼物",
     "en": "Rice bowl dishes",
     "tag": "Menu",
     "context": "丼の基本説明。",
-    "keywords": "丼物, Rice bowl dishes, rice, bowl, dishes, menu",
-    "verified": false
+    "keywords": "丼物, Rice bowl dishes",
+    "verified": true
   },
   {
     "jp": "親子丼",
     "en": "Oyako-don (chicken & egg rice bowl)",
     "tag": "Menu",
     "context": "具材の説明に。",
-    "keywords": "親子丼, Oyako-don (chicken & egg rice bowl), oyako-don, chicken, egg, rice, bowl, menu",
-    "verified": false
+    "keywords": "親子丼, Oyako-don (chicken & egg rice bowl)",
+    "verified": true
   },
   {
     "jp": "牛丼",
     "en": "Beef bowl",
     "tag": "Menu",
     "context": "甘辛い牛肉と玉ねぎの丼。",
-    "keywords": "牛丼, Beef bowl, beef, bowl, menu",
-    "verified": false
+    "keywords": "牛丼, Beef bowl, beef, cow, うし, ぎゅう",
+    "verified": true
   },
   {
     "jp": "お好み焼き",
     "en": "Okonomiyaki",
     "tag": "Menu",
     "context": "ソースやマヨの説明と共に。",
-    "keywords": "お好み焼き, Okonomiyaki, okonomiyaki, menu",
-    "verified": false
+    "keywords": "お好み焼き, Okonomiyaki",
+    "verified": true
   },
   {
     "jp": "たこ焼き",
     "en": "Takoyaki (octopus balls)",
     "tag": "Menu",
     "context": "中が熱いことへの注意。",
-    "keywords": "たこ焼き, Takoyaki (octopus balls), takoyaki, octopus, balls, menu",
-    "verified": false
+    "keywords": "たこ焼き, Takoyaki (octopus balls)",
+    "verified": true
   },
   {
     "jp": "生ビール",
     "en": "Draft beer",
     "tag": "Menu",
     "context": "樽生ビールの表記に。",
-    "keywords": "生ビール, Draft beer, draft, beer, menu",
-    "verified": false
+    "keywords": "生ビール, Draft beer",
+    "verified": true
   },
   {
     "jp": "瓶ビール",
     "en": "Bottled beer",
     "tag": "Menu",
     "context": "瓶の種類表記に。",
-    "keywords": "瓶ビール, Bottled beer, bottled, beer, menu",
-    "verified": false
+    "keywords": "瓶ビール, Bottled beer",
+    "verified": true
   },
   {
     "jp": "地酒",
     "en": "Local sake",
     "tag": "Menu",
     "context": "地元の日本酒の案内に。",
-    "keywords": "地酒, Local sake, local, sake, menu",
-    "verified": false
+    "keywords": "地酒, Local sake, alcohol, liquor, sake, 飲酒, のみもの",
+    "verified": true
   },
   {
     "jp": "焼酎",
     "en": "Shochu (distilled)",
     "tag": "Menu",
     "context": "原料表記があると親切。",
-    "keywords": "焼酎, Shochu (distilled), shochu, distilled, menu",
-    "verified": false
+    "keywords": "焼酎, Shochu (distilled)",
+    "verified": true
   },
   {
     "jp": "ハイボール",
     "en": "Highball (whisky & soda)",
     "tag": "Menu",
     "context": "人気の飲み方表記に。",
-    "keywords": "ハイボール, Highball (whisky & soda), highball, whisky, soda, menu",
-    "verified": false
+    "keywords": "ハイボール, Highball (whisky & soda)",
+    "verified": true
   },
   {
     "jp": "チューハイ",
     "en": "Chu-hai (shochu cocktail)",
     "tag": "Menu",
     "context": "レモンサワー等の説明に。",
-    "keywords": "チューハイ, Chu-hai (shochu cocktail), chu-hai, shochu, cocktail, menu",
-    "verified": false
+    "keywords": "チューハイ, Chu-hai (shochu cocktail)",
+    "verified": true
   },
   {
     "jp": "梅酒",
     "en": "Plum wine (umeshu)",
     "tag": "Menu",
     "context": "甘いリキュールの表記に。",
-    "keywords": "梅酒, Plum wine (umeshu), plum, wine, umeshu, menu",
-    "verified": false
+    "keywords": "梅酒, Plum wine (umeshu), alcohol, liquor, sake, 飲酒, のみもの",
+    "verified": true
   },
   {
     "jp": "ノンアルコール",
     "en": "Non-alcoholic drinks",
     "tag": "Menu",
     "context": "運転者向けの説明に。",
-    "keywords": "ノンアルコール, Non-alcoholic drinks, non-alcoholic, drinks, menu",
-    "verified": false
+    "keywords": "ノンアルコール, Non-alcoholic drinks, alcohol, liquor, sake, 飲酒, のみもの",
+    "verified": true
   },
   {
     "jp": "ソフトドリンク",
     "en": "Soft drinks",
     "tag": "Menu",
     "context": "ジュースやお茶の総称。",
-    "keywords": "ソフトドリンク, Soft drinks, soft, drinks, menu",
-    "verified": false
+    "keywords": "ソフトドリンク, Soft drinks",
+    "verified": true
   },
   {
     "jp": "緑茶",
     "en": "Green tea",
     "tag": "Menu",
     "context": "ホット/アイスの確認に。",
-    "keywords": "緑茶, Green tea, green, tea, menu",
-    "verified": false
+    "keywords": "緑茶, Green tea",
+    "verified": true
   },
   {
     "jp": "デザート",
     "en": "Dessert",
     "tag": "Menu",
     "context": "甘味メニューの総称。",
-    "keywords": "デザート, Dessert, dessert, menu",
-    "verified": false
+    "keywords": "デザート, Dessert",
+    "verified": true
   },
   {
     "jp": "わらび餅",
-    "en": "Warabi mochi",
+    "en": "Warabi mochi / Chilled Jelly-like Mochi ",
     "tag": "Menu",
     "context": "和菓子の食感説明に。",
-    "keywords": "わらび餅, Warabi mochi, warabi, mochi, menu",
-    "verified": false
+    "keywords": "わらび餅, Warabi mochi / Chilled Jelly-like Mochi",
+    "verified": true
   },
   {
     "jp": "あんみつ",
-    "en": "Anmitsu",
+    "en": "Anmitsu / Agar Jelly Bowl with Sweet Toppings",
     "tag": "Menu",
     "context": "寒天とあんこの和菓子。",
-    "keywords": "あんみつ, Anmitsu, anmitsu, menu",
-    "verified": false
+    "keywords": "あんみつ, Anmitsu / Agar Jelly Bowl with Sweet Toppings",
+    "verified": true
   },
   {
     "jp": "ランチセット",
     "en": "Lunch set available",
     "tag": "Menu",
     "context": "ランチのセット案内に。",
-    "keywords": "ランチセット, Lunch set available, lunch, set, available, menu",
-    "verified": false
+    "keywords": "ランチセット, Lunch set available",
+    "verified": true
   },
   {
     "jp": "ディナーコース",
     "en": "Dinner course",
     "tag": "Menu",
     "context": "ディナーのコース案内に。",
-    "keywords": "ディナーコース, Dinner course, dinner, course, menu",
-    "verified": false
+    "keywords": "ディナーコース, Dinner course",
+    "verified": true
   },
   {
     "jp": "ベジタリアン対応",
     "en": "Vegetarian options available",
     "tag": "Menu",
     "context": "菜食対応が可能な場合に。",
-    "keywords": "ベジタリアン対応, Vegetarian options available, vegetarian, options, available, menu",
-    "verified": false
+    "keywords": "ベジタリアン対応, Vegetarian options available",
+    "verified": true
   },
   {
     "jp": "キッズメニュー",
     "en": "Kids' menu",
     "tag": "Menu",
     "context": "子ども向けメニューの案内に。",
-    "keywords": "キッズメニュー, Kids' menu, kids', menu",
-    "verified": false
+    "keywords": "キッズメニュー, Kids' menu, menu, list, food, order",
+    "verified": true
   },
   {
     "jp": "アレルギー表示あり",
     "en": "Allergen information available",
     "tag": "Menu",
     "context": "アレルギー表記の説明に。",
-    "keywords": "アレルギー表示あり, Allergen information available, allergen, information, available, menu",
-    "verified": false
+    "keywords": "アレルギー表示あり, Allergen information available",
+    "verified": true
   },
   {
     "jp": "持ち帰り可",
     "en": "Takeout available",
     "tag": "Menu",
     "context": "お持ち帰りの案内に。",
-    "keywords": "持ち帰り可, Takeout available, takeout, available, menu",
-    "verified": false
+    "keywords": "持ち帰り可, Takeout available",
+    "verified": true
   },
   {
     "jp": "テイクアウト窓口",
     "en": "Order takeaway here",
     "tag": "Menu",
     "context": "テイクアウト窓口の表示に。",
-    "keywords": "テイクアウト窓口, Order takeaway here, order, takeaway, here, menu",
-    "verified": false
+    "keywords": "テイクアウト窓口, Order takeaway here",
+    "verified": true
   },
   {
     "jp": "数量限定メニュー",
     "en": "Limited-quantity menu",
     "tag": "Menu",
     "context": "本日限定メニューの案内に。",
-    "keywords": "数量限定メニュー, Limited-quantity menu, limited-quantity, menu",
-    "verified": false
+    "keywords": "数量限定メニュー, Limited-quantity menu, menu, list, food, order",
+    "verified": true
   },
   {
     "jp": "旬のおすすめ",
     "en": "Seasonal recommendations",
     "tag": "Menu",
     "context": "旬の食材を使ったおすすめに。",
-    "keywords": "旬のおすすめ, Seasonal recommendations, seasonal, recommendations, menu",
-    "verified": false
+    "keywords": "旬のおすすめ, Seasonal recommendations",
+    "verified": true
   },
   {
     "jp": "シェフのおすすめ",
     "en": "Chef's special",
     "tag": "Menu",
     "context": "シェフ推薦の一品に。",
-    "keywords": "シェフのおすすめ, Chef's special, chef's, special, menu",
-    "verified": false
+    "keywords": "シェフのおすすめ, Chef's special",
+    "verified": true
   },
   {
     "jp": "辛さ調整可",
     "en": "Spice level adjustable",
     "tag": "Menu",
     "context": "辛さの調整を受け付ける場合に。",
-    "keywords": "辛さ調整可, Spice level adjustable, spice, level, adjustable, menu",
-    "verified": false
+    "keywords": "辛さ調整可, Spice level adjustable",
+    "verified": true
   },
   {
     "jp": "量を減らせます",
     "en": "Smaller portion available",
     "tag": "Menu",
     "context": "少量での提供が可能な場合に。",
-    "keywords": "量を減らせます, Smaller portion available, smaller, portion, available, menu",
-    "verified": false
+    "keywords": "量を減らせます, Smaller portion available",
+    "verified": true
   },
   {
     "jp": "大盛り可",
     "en": "Large portion available",
     "tag": "Menu",
     "context": "大盛りオプションの案内に。",
-    "keywords": "大盛り可, Large portion available, large, portion, available, menu",
-    "verified": false
+    "keywords": "大盛り可, Large portion available",
+    "verified": true
   },
   {
     "jp": "糖質オフメニュー",
     "en": "Low-carb options",
     "tag": "Menu",
     "context": "糖質制限の方向けに。",
-    "keywords": "糖質オフメニュー, Low-carb options, low-carb, options, menu",
-    "verified": false
+    "keywords": "糖質オフメニュー, Low-carb options, menu, list, food, order",
+    "verified": true
   },
   {
     "jp": "地元産食材使用",
     "en": "Locally sourced ingredients",
     "tag": "Menu",
     "context": "地産地消をアピールする表示に。",
-    "keywords": "地元産食材使用, Locally sourced ingredients, locally, sourced, ingredients, menu",
-    "verified": false
+    "keywords": "地元産食材使用, Locally sourced ingredients",
+    "verified": true
   },
   {
     "jp": "自家製ソース",
-    "en": "House-made sauces",
+    "en": "Homemade sauces",
     "tag": "Menu",
     "context": "自家製調味料の強調に。",
-    "keywords": "自家製ソース, House-made sauces, house-made, sauces, menu",
-    "verified": false
+    "keywords": "自家製ソース, Homemade sauces",
+    "verified": true
   },
   {
     "jp": "デザート盛り合わせ",
     "en": "Dessert assortment",
     "tag": "Menu",
     "context": "複数のデザートを盛り合わせた説明に。",
-    "keywords": "デザート盛り合わせ, Dessert assortment, dessert, assortment, menu",
-    "verified": false
+    "keywords": "デザート盛り合わせ, Dessert assortment",
+    "verified": true
   },
   {
     "jp": "アルコールは20歳以上",
-    "en": "Alcohol for 20+ only",
+    "en": "Alcohol is for those 20 and over.",
     "tag": "Menu",
     "context": "年齢確認の注意書きに。",
-    "keywords": "アルコールは20歳以上, Alcohol for 20+ only, alcohol, for, 20+, only, menu",
-    "verified": false
+    "keywords": "アルコールは20歳以上, Alcohol is for those 20 and over., alcohol, liquor, sake, 飲酒, のみもの",
+    "verified": true
   },
   {
     "jp": "当店の人気メニュー",
     "en": "Our popular dishes",
     "tag": "Menu",
     "context": "人気メニューの紹介に。",
-    "keywords": "当店の人気メニュー, Our popular dishes, our, popular, dishes, menu",
-    "verified": false
+    "keywords": "当店の人気メニュー, Our popular dishes, menu, list, food, order",
+    "verified": true
   },
   {
     "jp": "予約推奨",
     "en": "Reservation recommended",
     "tag": "Menu",
     "context": "混雑する時間帯の案内に。",
-    "keywords": "予約推奨, Reservation recommended, reservation, recommended, menu",
-    "verified": false
+    "keywords": "予約推奨, Reservation recommended",
+    "verified": true
   },
   {
     "jp": "お取り分け可能",
     "en": "Shareable portions available",
     "tag": "Menu",
     "context": "複数人で分けられるメニューに。",
-    "keywords": "お取り分け可能, Shareable portions available, shareable, portions, available, menu",
-    "verified": false
+    "keywords": "お取り分け可能, Shareable portions available",
+    "verified": true
   },
   {
     "jp": "辛さ調節無料",
     "en": "Free spice adjustment",
     "tag": "Menu",
     "context": "辛さの微調整が無料の場合に。",
-    "keywords": "辛さ調節無料, Free spice adjustment, free, spice, adjustment, menu",
-    "verified": false
+    "keywords": "辛さ調節無料, Free spice adjustment",
+    "verified": true
   },
   {
     "jp": "ニラそば",
     "en": "Garlic chives soba",
     "tag": "Menu",
     "context": "ニラを使ったそば料理の説明に。",
-    "keywords": "ニラそば, Garlic chives soba, garlic, chives, soba,蕎麦, menu",
-    "verified": false
+    "keywords": "ニラそば, Garlic chives soba, soba, buckwheat, noodles, allergy, アレルギー",
+    "verified": true
   },
   {
     "jp": "苺大福",
-    "en": "Strawberry daifuku",
+    "en": "Strawberry Mochi",
     "tag": "Menu",
     "context": "苺を使った和菓子の説明に。",
-    "keywords": "苺大福, Strawberry daifuku, strawberry, daifuku, menu",
-    "verified": false
+    "keywords": "苺大福, Strawberry Mochi",
+    "verified": true
   },
   {
     "jp": "カレーうどん",
     "en": "Curry udon",
     "tag": "Menu",
     "context": "カレー風味のうどん料理の説明に。",
-    "keywords": "カレーうどん, Curry udon, curry, udon, menu",
-    "verified": false
+    "keywords": "カレーうどん, Curry udon, udon, noodles, wheat, 小麦",
+    "verified": true
   },
   {
-    "jp": "シュウマイ",
-    "en": "Shumai",
+    "jp": "シュウマイ(豚)",
+    "en": "Steamed Pork Dumplings",
     "tag": "Menu",
     "context": "焼売(シュウマイ)料理の説明に。",
-    "keywords": "シュウマイ, Shumai, shumai, menu",
-    "verified": false
+    "keywords": "シュウマイ(豚), Steamed Pork Dumplings, pork, pig, ぶた, とん",
+    "verified": true
+  },
+  {
+    "jp": "シュウマイ(えび)",
+    "en": "Steamed Shrimp Dumplings",
+    "tag": "Menu",
+    "context": "焼売(シュウマイ)料理の説明に。",
+    "keywords": "シュウマイ(えび), Steamed Shrimp Dumplings",
+    "verified": true
+  },
+  {
+    "jp": "シュウマイ(___)",
+    "en": "Steamed ____ Dumplings",
+    "tag": "Menu",
+    "context": "焼売(シュウマイ)料理の説明に。（記入欄あり）",
+    "keywords": "シュウマイ(___), Steamed ____ Dumplings",
+    "verified": true
   },
   {
     "jp": "こんにゃく",
     "en": "Konjac",
     "tag": "Menu",
     "context": "こんにゃく料理の説明に。",
-    "keywords": "こんにゃく, Konjac, konjac, menu",
-    "verified": false
+    "keywords": "こんにゃく, Konjac",
+    "verified": true
   },
   {
     "jp": "餃子",
     "en": "Gyoza(dumplings)",
     "tag": "Menu",
     "context": "餃子料理の説明に。",
-    "keywords": "餃子, Gyoza(dumplings), gyoza(dumplings, menu",
-    "verified": false
+    "keywords": "餃子, Gyoza(dumplings), gyoza, dumplings, fried",
+    "verified": true
   },
   {
     "jp": "そば",
-    "en": "Soba",
+    "en": "Soba (buckwheat)",
     "tag": "Menu",
     "context": "そば料理の説明に。",
-    "keywords": "そば, Soba, soba, menu,蕎麦, buckwheat noodles",
-    "verified": false
+    "keywords": "そば, Soba (buckwheat), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
+    "verified": true
   },
   {
     "jp": "うなぎ",
     "en": "Eel",
     "tag": "Menu",
     "context": "うなぎ料理の説明に。",
-    "keywords": "うなぎ, Eel, eel, menu",
-    "verified": false
+    "keywords": "うなぎ, Eel, eel, unagi, grilled",
+    "verified": true
   },
   {
     "jp": "天ぷら",
     "en": "Tempura",
     "tag": "Menu",
     "context": "天ぷら料理の説明に。",
-    "keywords": "天ぷら, Tempura, tempura, menu",
-    "verified": false
+    "keywords": "天ぷら, Tempura",
+    "verified": true
   },
   {
     "jp": "焼き鳥",
     "en": "Yakitori (grilled chicken skewers)",
     "tag": "Menu",
     "context": "焼き鳥料理の説明に。",
-    "keywords": "焼き鳥, Yakitori (grilled chicken skewers), yakitori, grilled, chicken, skewers, menu",
-    "verified": false
+    "keywords": "焼き鳥, Yakitori (grilled chicken skewers)",
+    "verified": true
   },
   {
     "jp": "ヴィーガン",
     "en": "Vegan",
     "tag": "Menu",
     "context": "ヴィーガン料理の説明に。",
-    "keywords": "ヴィーガン, Vegan, vegan, menu",
-    "verified": false
+    "keywords": "ヴィーガン, Vegan",
+    "verified": true
   },
   {
     "jp": "ベジタリアン",
     "en": "Vegetarian",
     "tag": "Menu",
     "context": "ベジタリアン料理の説明に。",
-    "keywords": "ベジタリアン, Vegetarian, vegetarian, menu",
-    "verified": false
+    "keywords": "ベジタリアン, Vegetarian",
+    "verified": true
   },
   {
     "jp": "ハラル",
     "en": "Halal",
     "tag": "Menu",
     "context": "ハラル料理の説明に。",
-    "keywords": "ハラル, Halal, halal, menu",
-    "verified": false
+    "keywords": "ハラル, Halal, halal, muslim friendly, イスラム",
+    "verified": true
   },
   {
     "jp": "お好み焼き（広島風）",
     "en": "Hiroshima-style Okonomiyaki (Layered savory pancake)",
     "tag": "Menu",
     "context": "広島の名物。関西風との違いを説明する際に。",
-    "keywords": "お好み焼き（広島風）, Hiroshima-style Okonomiyaki (Layered savory pancake), hiroshima-style, okonomiyaki, layered, savory, pancake, menu",
-    "verified": false
+    "keywords": "お好み焼き（広島風）, Hiroshima-style Okonomiyaki (Layered savory pancake)",
+    "verified": true
   },
   {
     "jp": "明太子",
     "en": "Spicy Pollock Roe",
     "tag": "Menu",
     "context": "福岡・博多の名物。パスタやご飯のトッピングに。",
-    "keywords": "明太子, Spicy Pollock Roe, spicy, pollock, roe, menu",
-    "verified": false
+    "keywords": "明太子, Spicy Pollock Roe",
+    "verified": true
   },
   {
     "jp": "ジンギスカン",
     "en": "Jingisukan (Grilled mutton and vegetables)",
     "tag": "Menu",
     "context": "北海道の名物料理。",
-    "keywords": "ジンギスカン, Jingisukan (Grilled mutton and vegetables), jingisukan, grilled, mutton, and, vegetables, menu",
-    "verified": false
+    "keywords": "ジンギスカン, Jingisukan (Grilled mutton and vegetables)",
+    "verified": true
   },
   {
     "jp": "ほうとう",
-    "en": "Houtou (Flat udon noodles in miso pumpkin soup)",
+    "en": "Houtou (Flat udon noodles)",
     "tag": "Menu",
     "context": "山梨県のご当地料理。",
-    "keywords": "ほうとう, Houtou (Flat udon noodles in miso pumpkin soup), houtou, flat, udon, noodles, miso, pumpkin, soup, menu",
-    "verified": false
+    "keywords": "ほうとう, Houtou (Flat udon noodles)",
+    "verified": true
   },
   {
     "jp": "グルテンフリー対応可",
     "en": "Gluten-free options available",
     "tag": "Menu",
     "context": "小麦アレルギーや食事制限のある方向けに。",
-    "keywords": "グルテンフリー対応可, Gluten-free options available, gluten-free, options, available, menu",
-    "verified": false
+    "keywords": "グルテンフリー対応可, Gluten-free options available, gluten, wheat, allergy, アレルギー, こむぎ",
+    "verified": true
   },
   {
     "jp": "低糖質メニュー",
     "en": "Low-carb menu options",
     "tag": "Menu",
     "context": "健康志向の方向けの案内。",
-    "keywords": "低糖質メニュー, Low-carb menu options, low-carb, menu, options",
-    "verified": false
+    "keywords": "低糖質メニュー, Low-carb menu options, menu, list, food, order",
+    "verified": true
   },
   {
     "jp": "仙台牛タン",
     "en": "Sendai Beef Tongue (Grilled)",
     "tag": "Menu",
     "context": "宮城・仙台の名物。",
-    "keywords": "仙台牛タン, gyutan, beef tongue, sendai, 宮城, 焼き肉, BBQ, tongue, ぎゅうたん, regional specialty",
-    "verified": false
+    "keywords": "仙台牛タン, Sendai Beef Tongue (Grilled), beef, cow, うし, ぎゅう",
+    "verified": true
   },
   {
     "jp": "わんこそば",
     "en": "Wanko Soba (Small bowls of buckwheat noodles)",
     "tag": "Menu",
     "context": "岩手県の名物。",
-    "keywords": "わんこそば, wanko soba, noodles, 岩手, iwate, all-you-can-eat, そば, 蕎麦, regional food",
-    "verified": false
+    "keywords": "わんこそば, Wanko Soba (Small bowls of buckwheat noodles), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
+    "verified": true
   },
   {
     "jp": "きりたんぽ鍋",
     "en": "Kiritanpo Nabe (Rice stick hot pot)",
     "tag": "Menu",
     "context": "秋田県の名物。",
-    "keywords": "きりたんぽ, kiritanpo, hot pot, nabe, 秋田, akita, rice sticks, なべ, regional dish",
-    "verified": false
+    "keywords": "きりたんぽ鍋, Kiritanpo Nabe (Rice stick hot pot), nabe, hot pot, soup",
+    "verified": true
   },
   {
     "jp": "ひつまぶし",
     "en": "Hitsumabushi (Nagoya-style grilled eel over rice)",
     "tag": "Menu",
     "context": "愛知・名古屋の名物。",
-    "keywords": "ひつまぶし, hitsumabushi, eel, unagi, 名古屋, nagoya, うなぎ, 鰻, grilled eel",
-    "verified": false
+    "keywords": "ひつまぶし, Hitsumabushi (Nagoya-style grilled eel over rice)",
+    "verified": true
   },
   {
     "jp": "宇都宮餃子",
     "en": "Utsunomiya Gyoza (Local pan-fried dumplings)",
     "tag": "Menu",
     "context": "栃木・宇都宮の名物。",
-    "keywords": "宇都宮餃子, Utsunomiya Gyoza (Local pan-fried dumplings), utsunomiya, gyoza, local, pan-fried, dumplings, menu",
-    "verified": false
+    "keywords": "宇都宮餃子, Utsunomiya Gyoza (Local pan-fried dumplings), gyoza, dumplings, fried",
+    "verified": true
   },
   {
     "jp": "出雲そば",
     "en": "Izumo Soba (Buckwheat noodles from Shimane)",
     "tag": "Menu",
     "context": "島根県の名物。",
-    "keywords": "出雲そば, Izumo Soba (Buckwheat noodles from Shimane), izumo, soba, buckwheat, noodles, from, shimane, menu",
-    "verified": false
+    "keywords": "出雲そば, Izumo Soba (Buckwheat noodles from Shimane), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
+    "verified": true
   },
   {
     "jp": "讃岐うどん",
     "en": "Sanuki Udon (Firm wheat noodles)",
     "tag": "Menu",
     "context": "香川県の名物。",
-    "keywords": "讃岐うどん, Sanuki Udon (Firm wheat noodles), sanuki, udon, firm, wheat, noodles, menu",
-    "verified": false
+    "keywords": "讃岐うどん, Sanuki Udon (Firm wheat noodles), udon, noodles, wheat, 小麦",
+    "verified": true
   },
   {
     "jp": "沖縄そば",
     "en": "Okinawa Soba (Pork-based noodle soup)",
     "tag": "Menu",
     "context": "沖縄県の名物。",
-    "keywords": "沖縄そば, okinawa soba, noodles, pork soup, soki, おきなわそば, regional food",
-    "verified": false
+    "keywords": "沖縄そば, Okinawa Soba (Pork-based noodle soup), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
+    "verified": true
   },
   {
     "jp": "ゴーヤチャンプルー",
     "en": "Goya Champuru (Bitter melon stir-fry)",
     "tag": "Menu",
     "context": "沖縄の家庭料理。",
-    "keywords": "ゴーヤチャンプルー, goya, bitter melon, stir-fry, okinawa, 沖縄, tofu, pork, ちゃんぷるー",
-    "verified": false
+    "keywords": "ゴーヤチャンプルー, Goya Champuru (Bitter melon stir-fry)",
+    "verified": true
   },
   {
     "jp": "クラフトビール（地ビール）",
     "en": "Local Craft Beer",
     "tag": "Menu",
     "context": "地域の醸造所のビール。",
-    "keywords": "クラフトビール（地ビール）, Local Craft Beer, local, craft, beer, menu",
-    "verified": false
+    "keywords": "クラフトビール（地ビール）, Local Craft Beer",
+    "verified": true
   },
   {
     "jp": "ノンアルコール飲料",
     "en": "Non-alcoholic beverages",
     "tag": "Menu",
     "context": "お酒を飲まない方向けに。",
-    "keywords": "ノンアルコール飲料, Non-alcoholic beverages, non-alcoholic, beverages, menu",
-    "verified": false
+    "keywords": "ノンアルコール飲料, Non-alcoholic beverages, alcohol, liquor, sake, 飲酒, のみもの",
+    "verified": true
   },
   {
     "jp": "旬の食材",
     "en": "Seasonal ingredients",
     "tag": "Menu",
     "context": "今の時期に一番美味しい食材。",
-    "keywords": "旬（しゅん）の食材, Seasonal ingredients, seasonal, ingredients, menu",
-    "verified": false
+    "keywords": "旬の食材, Seasonal ingredients",
+    "verified": true
   }
 ]

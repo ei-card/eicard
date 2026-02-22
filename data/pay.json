@@ -4,215 +4,223 @@
     "en": "E-money accepted",
     "tag": "Pay",
     "context": "電子マネーの案内に。",
-    "keywords": "電子マネー, e-money, IC card, Suica, Pasmo, digital payment, contactless, キャッシュレス, 支払い,対応",
-    "verified": false
+    "keywords": "電子マネー対応, E-money accepted, キャッシュレス, Suica, Pasmo, IC, カード, digital, cashless",
+    "verified": true
   },
   {
     "jp": "お会計は別々ですか？",
     "en": "Would you like to pay separately?",
     "tag": "Pay",
     "context": "個別会計の確認に。",
-    "keywords": "お会計は別々ですか？, Would you like to pay separately?, would, you, like, pay, separately?",
-    "verified": false
+    "keywords": "お会計は別々ですか？, Would you like to pay separately?, 分ける, チェック, split, bill, separate",
+    "verified": true
   },
   {
-    "jp": "免税手続きはこちらです",
+    "jp": "免税カウンターはこちらです",
     "en": "Tax-free counter is over here",
     "tag": "Pay",
     "context": "買い物客への案内に。",
-    "keywords": "免税, tax free, duty free, tax refund, めんぜい, consumption tax, VAT, shopping, counter",
-    "verified": false
+    "keywords": "免税カウンターはこちらです, Tax-free counter is over here, tax-free, refund, 8%, 10%, consumption tax, duty free, めんぜい",
+    "verified": true
   },
   {
     "jp": "暗証番号を入力してください",
     "en": "Please enter your PIN",
     "tag": "Pay",
     "context": "カード決済の時に。",
-    "keywords": "暗証番号を入力してください, Please enter your PIN, please, enter, your, pin, pay",
-    "verified": false
+    "keywords": "暗証番号を入力してください, Please enter your PIN, パスワード, pin, code, security, 入力",
+    "verified": true
   },
   {
     "jp": "サインをお願いします",
     "en": "Please sign here",
     "tag": "Pay",
     "context": "署名が必要な時に。",
-    "keywords": "サインをお願いします, Please sign here, please, sign, here, pay",
-    "verified": false
+    "keywords": "サインをお願いします, Please sign here, 署名, sign, signature, 名前",
+    "verified": true
   },
   {
     "jp": "一括払いでよろしいですか？",
     "en": "One-time payment?",
     "tag": "Pay",
     "context": "支払回数の確認に。",
-    "keywords": "一括払いでよろしいですか？, One-time payment?, one-time, payment?, pay",
-    "verified": false
+    "keywords": "一括払いでよろしいですか？, One-time payment?, one-time, single, payment",
+    "verified": true
   },
   {
     "jp": "レシートは必要ですか？",
     "en": "Would you like a receipt?",
     "tag": "Pay",
     "context": "会計終了時の確認に。",
-    "keywords": "レシートは必要ですか？, Would you like a receipt?, would, you, like, receipt?, pay",
-    "verified": false
+    "keywords": "レシートは必要ですか？, Would you like a receipt?, receipt, bill, proof, 明細",
+    "verified": true
+  },
+  {
+    "jp": "領収書は必要ですか？",
+    "en": "Would you like a formal receipt?",
+    "tag": "Pay",
+    "context": "会計終了時の確認に。",
+    "keywords": "領収書は必要ですか？, Would you like a formal receipt?, receipt, bill, proof, 明細",
+    "verified": true
   },
   {
     "jp": "領収書をください",
     "en": "May I have a formal receipt?",
     "tag": "Pay",
     "context": "領収証を求められた時に。",
-    "keywords": "領収書をください, May I have a formal receipt?, may, have, formal, receipt?, pay",
-    "verified": false
+    "keywords": "領収書をください, May I have a formal receipt?, receipt, bill, proof, 明細",
+    "verified": true
   },
   {
     "jp": "お釣りです",
     "en": "Here is your change",
     "tag": "Pay",
     "context": "現金を返す時に。",
-    "keywords": "お釣りです, Here is your change, here, your, change, pay",
-    "verified": false
+    "keywords": "お釣りです, Here is your change",
+    "verified": true
   },
   {
     "jp": "1万円札は使えません",
     "en": "Cannot accept 10,000 yen notes",
     "tag": "Pay",
     "context": "千円札専用の機械などで。",
-    "keywords": "1万円札は使えません, Cannot accept 10,000 yen notes, cannot, accept, 10,000, yen, notes, pay",
-    "verified": false
+    "keywords": "1万円札は使えません, Cannot accept 10,000 yen notes",
+    "verified": true
   },
   {
     "jp": "新札は使えません",
     "en": "Does not accept the new banknotes",
     "tag": "Pay",
     "context": "古い機械での注意書きに。",
-    "keywords": "新札は使えません, Does not accept the new banknotes, does, not, accept, the, new, banknotes, pay",
-    "verified": false
+    "keywords": "新札は使えません, Does not accept the new banknotes",
+    "verified": true
   },
   {
     "jp": "袋は有料です",
-    "en": "Plastic bags cost extra",
+    "en": "There is a charge for plastic bags",
     "tag": "Pay",
     "context": "レジ袋有料化の説明に。",
-    "keywords": "袋は有料です, Plastic bags cost extra, plastic, bags, cost, extra, pay",
-    "verified": false
+    "keywords": "袋は有料です, There is a charge for plastic bags",
+    "verified": true
   },
   {
     "jp": "袋はいりますか？",
     "en": "Do you need a bag?",
     "tag": "Pay",
     "context": "袋の要否確認に。",
-    "keywords": "袋はいりますか？, Do you need a bag?, you, need, bag?, pay",
-    "verified": false
+    "keywords": "袋はいりますか？, Do you need a bag?",
+    "verified": true
   },
   {
     "jp": "セルフ会計",
     "en": "Self-checkout",
     "tag": "Pay",
     "context": "自動精算機の案内に。",
-    "keywords": "セルフ会計, Self-checkout, self-checkout, pay",
-    "verified": false
+    "keywords": "セルフ会計, Self-checkout",
+    "verified": true
   },
   {
     "jp": "前払い制",
     "en": "Payment first",
     "tag": "Pay",
     "context": "注文時に支払う形式の説明に。",
-    "keywords": "前払い制, Payment first, payment, first, pay",
-    "verified": false
+    "keywords": "前払い制, Payment first",
+    "verified": true
   },
   {
     "jp": "後払い制",
     "en": "Payment after dining",
     "tag": "Pay",
     "context": "レジで最後に支払う形式に。",
-    "keywords": "後払い制, Payment after dining, payment, after, dining, pay",
-    "verified": false
+    "keywords": "後払い制, Payment after dining",
+    "verified": true
   },
   {
-    "jp": "免税対象額は5,000円以上です",
-    "en": "Tax-free available for purchases over 5,000 yen",
+    "jp": "免税対象額は_______円以上です",
+    "en": "Tax-free available for purchases over _______ yen",
     "tag": "Pay",
     "context": "免税適用の条件を説明する際に。",
-    "keywords": "免税対象額は5,000円以上です, Tax-free available for purchases over 5,000 yen, tax-free, available, for, purchases, over, 5,000, yen, pay",
-    "verified": false
+    "keywords": "免税対象額は_______円以上です, Tax-free available for purchases over _______ yen, tax-free, refund, 8%, 10%, consumption tax, duty free, めんぜい",
+    "verified": true
   },
   {
     "jp": "パスポートの実物が必要です（コピー不可）",
     "en": "Physical passport required (No copies accepted)",
     "tag": "Pay",
     "context": "免税手続きの厳しいルールを伝える際に。",
-    "keywords": "パスポートの実物が必要です（コピー不可）, Physical passport required (No copies accepted), physical, passport, required, no, copies, accepted, pay",
-    "verified": false
+    "keywords": "パスポートの実物が必要です（コピー不可）, Physical passport required (No copies accepted), passport, ID, copy, original, 提示",
+    "verified": true
   },
   {
     "jp": "QRコード決済",
     "en": "QR Code payment",
     "tag": "Pay",
     "context": "スマホ決済の利用可否を伝える際に。",
-    "keywords": "QRコード, QR code, PayPay, LinePay, mobile pay, payment, スマホ決済, barcode, 支払い",
-    "verified": false
+    "keywords": "QRコード決済, QR Code payment, スマホ, 決済, barcode, line pay, aupay, d払い",
+    "verified": true
   },
   {
     "jp": "タッチ決済（NFC）可能です",
     "en": "Contactless payment (NFC) available",
     "tag": "Pay",
     "context": "VisaタッチやApple Payの案内に。",
-    "keywords": "タッチ決済, NFC, contactless, Visa touch, Apple Pay, Google Pay, tap to pay, contact-free",
-    "verified": false
+    "keywords": "タッチ決済（NFC）可能です, Contactless payment (NFC) available, contactless, apple pay, google pay, visa touch",
+    "verified": true
   },
   {
     "jp": "合算できません",
     "en": "Receipts cannot be combined",
     "tag": "Pay",
     "context": "免税やキャンペーンで複数のレシートをまとめられない時に。",
-    "keywords": "合算できません, Receipts cannot be combined, receipts, cannot, combined, pay",
-    "verified": false
+    "keywords": "合算できません, Receipts cannot be combined",
+    "verified": true
   },
   {
     "jp": "消耗品",
     "en": "Consumables",
     "tag": "Pay",
     "context": "免税区分の説明に。",
-    "keywords": "消耗品, consumables, food, cosmetics, tax free, めんぜい, しょうもうひん, goods, liquids",
-    "verified": false
+    "keywords": "消耗品, Consumables, food, cosmetics, liquid, tax-free, rules",
+    "verified": true
   },
   {
     "jp": "一般物品",
     "en": "General goods",
     "tag": "Pay",
     "context": "免税区分の説明に。",
-    "keywords": "一般物品, general goods, electronics, clothes, tax free, めんぜい, いっぱんぶっぴん, hardware",
-    "verified": false
+    "keywords": "一般物品, General goods, electronics, clothes, shoes, tax-free",
+    "verified": true
   },
   {
     "jp": "開封厳禁（免税品）",
     "en": "Do not open until leaving Japan (Tax-free items)",
     "tag": "Pay",
     "context": "免税袋の注意書き。",
-    "keywords": "開封厳禁（免税品）, Do not open until leaving Japan (Tax-free items), not, open, until, leaving, japan, tax-free, items, pay",
-    "verified": false
+    "keywords": "開封厳禁（免税品）, Do not open until leaving Japan (Tax-free items), tax-free, refund, 8%, 10%, consumption tax, duty free, めんぜい, do not open, sealed, bag, customs",
+    "verified": true
   },
   {
     "jp": "期間限定セール",
     "en": "Limited-time sale",
     "tag": "Pay",
     "context": "今だけの割引の案内に。",
-    "keywords": "期間限定セール, Limited-time sale, limited-time, sale, pay",
-    "verified": false
+    "keywords": "期間限定セール, Limited-time sale",
+    "verified": true
   },
   {
-    "jp": "お一人様〇点まで",
-    "en": "Limit of 〇 items per customer",
+    "jp": "お一人様___点まで",
+    "en": "Limit of ___ items per customer",
     "tag": "Pay",
     "context": "購入制限がある場合に。",
-    "keywords": "お一人様〇点まで, Limit of 〇 items per customer, limit, items, per, customer, pay",
-    "verified": false
+    "keywords": "お一人様___点まで, Limit of ___ items per customer",
+    "verified": true
   },
   {
     "jp": "在庫切れ（再入荷未定）",
     "en": "Out of stock (Restock date undecided)",
     "tag": "Pay",
     "context": "売り切れの説明に。",
-    "keywords": "在庫切れ（再入荷未定）, Out of stock (Restock date undecided), out, stock, restock, date, undecided, pay",
-    "verified": false
+    "keywords": "在庫切れ（再入荷未定）, Out of stock (Restock date undecided)",
+    "verified": true
   }
 ]
