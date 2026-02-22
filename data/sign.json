@@ -1,6 +1,6 @@
 [
   {
-    "jp": "貴重品は自己管理で",
+    "jp": "貴重品は自己管理してください",
     "en": "Keep valuables with you",
     "tag": "Sign",
     "context": "盗難防止の注意喚起に。",
@@ -16,8 +16,8 @@
     "verified": false
   },
   {
-    "jp": "写真はご遠慮ください",
-    "en": "No photos, please",
+    "jp": "写真撮影禁止",
+    "en": "Photos prohibited",
     "tag": "Sign",
     "context": "撮影禁止の場所に。",
     "keywords": "撮影禁止, no photo, no photography, camera, flash, photography prohibited, さつえいきんし, copyright",
@@ -32,8 +32,8 @@
     "verified": false
   },
   {
-    "jp": "本日終了しました",
-    "en": "Sold out for today",
+    "jp": "本日の営業は終了しました",
+    "en": "Closed for today",
     "tag": "Sign",
     "context": "売り切れや閉店の案内に。",
     "keywords": "本日終了しました, Sold out for today, sold, out, for, today, sign",
@@ -177,10 +177,10 @@
   },
   {
     "jp": "撮影禁止",
-    "en": "No photography",
+    "en": "No photos or video",
     "tag": "Sign",
     "context": "美術館や劇場で。",
-    "keywords": "撮影禁止, No photography, photography, sign",
+    "keywords": "撮影禁止, No photography, photography, sign, no video,写真",
     "verified": false
   },
   {
@@ -208,11 +208,11 @@
     "verified": false
   },
   {
-    "jp": "携帯電話はお控えください",
-    "en": "Please refrain from using mobile phones",
+    "jp": "通話禁止",
+    "en": "No calling",
     "tag": "Sign",
     "context": "静かな場所でのマナーに。",
-    "keywords": "携帯電話はお控えください, Please refrain from using mobile phones, please, refrain, from, using, mobile, phones, sign",
+    "keywords": "携帯,電話,お控えください, Please refrain from using mobile phones, please, refrain, from, using, mobile, phones, sign,通話",
     "verified": false
   },
   {
@@ -360,7 +360,7 @@
     "verified": false
   },
   {
-    "jp": "自転車はここに止めないでください",
+    "jp": "自転車をここに止めないでください",
     "en": "No bicycle parking here",
     "tag": "Sign",
     "context": "駐輪禁止エリアに。",
@@ -461,14 +461,6 @@
     "tag": "Sign",
     "context": "一方通行の出口に。",
     "keywords": "こちらは出口専用です, Exit only, exit, only, sign",
-    "verified": false
-  },
-  {
-    "jp": "撮影禁止（フラッシュ不可）",
-    "en": "No photography (Flash strictly prohibited)",
-    "tag": "Sign",
-    "context": "寺院内などでよく使われます。",
-    "keywords": "撮影禁止（フラッシュ不可）, No photography (Flash strictly prohibited), photography, flash, strictly, prohibited, sign",
     "verified": false
   },
   {

@@ -1,10 +1,10 @@
 [
   {
-    "jp": "電子マネー使えます",
+    "jp": "電子マネー対応",
     "en": "E-money accepted",
     "tag": "Pay",
     "context": "電子マネーの案内に。",
-    "keywords": "電子マネー, e-money, IC card, Suica, Pasmo, digital payment, contactless, キャッシュレス, 支払い",
+    "keywords": "電子マネー, e-money, IC card, Suica, Pasmo, digital payment, contactless, キャッシュレス, 支払い,対応",
     "verified": false
   },
   {

@@ -1,5 +1,13 @@
 [
   {
+    "jp": "お品書き",
+    "en": "Menu",
+    "tag": "Menu",
+    "context": "メニューのタイトルに。",
+    "keywords": "御品書き.おしながき,お品,品,がき,メニュー,menu,お品がき",
+    "verified": true
+  },
+  {
     "jp": "出汁（だし）",
     "en": "Japanese fish and seaweed stock",
     "tag": "Menu",
@@ -596,7 +604,7 @@
     "en": "Soba (buckwheat noodles)",
     "tag": "Menu",
     "context": "蕎麦粉使用の麺に注意。",
-    "keywords": "蕎麦, Soba (buckwheat noodles), soba, buckwheat, noodles, menu",
+    "keywords": "蕎麦,そば,ソバ, Soba (buckwheat noodles), soba, buckwheat, noodles, menu",
     "verified": false
   },
   {
@@ -1192,7 +1200,7 @@
     "verified": false
   },
   {
-    "jp": "旬（しゅん）の食材",
+    "jp": "旬の食材",
     "en": "Seasonal ingredients",
     "tag": "Menu",
     "context": "今の時期に一番美味しい食材。",

@@ -24,7 +24,7 @@
     "verified": false
   },
   {
-    "jp": "マイナンバーをご持参ください",
+    "jp": "マイナンバーカードをご持参ください",
     "en": "Please bring your My Number (Individual Number)",
     "tag": "Admin",
     "context": "個人番号の提示を求める場合。",
@@ -64,7 +64,7 @@
     "verified": false
   },
   {
-    "jp": "戸籍謄本・抄本を請求する",
+    "jp": "戸籍証明書を請求する",
     "en": "Request a family register full/partial copy",
     "tag": "Admin",
     "context": "戸籍に関する手続きの案内に。",
@@ -88,7 +88,7 @@
     "verified": false
   },
   {
-    "jp": "申請手数料がかかります",
+    "jp": "(申請)手数料がかかります",
     "en": "An application fee applies",
     "tag": "Admin",
     "context": "有料手続きの際に。金額と支払い方法を併記。",
@@ -96,7 +96,7 @@
     "verified": false
   },
   {
-    "jp": "窓口での受領印を押します",
+    "jp": "窓口で受領印を押します",
     "en": "We will stamp the receipt at the counter",
     "tag": "Admin",
     "context": "書類受領の証明方法に。",
@@ -112,15 +112,7 @@
     "verified": false
   },
   {
-    "jp": "本人確認のため現住所が必要です",
-    "en": "Current address is required for identity verification",
-    "tag": "Admin",
-    "context": "住所確認の説明に。",
-    "keywords": "本人確認のため現住所が必要です, Current address is required for identity verification, current, address, required, for, identity, verification, admin",
-    "verified": false
-  },
-  {
-    "jp": "代理人による申請は委任状が必要です",
+    "jp": "代理人による申には委任状が必要です",
     "en": "A letter of authorization is required for proxy applications",
     "tag": "Admin",
     "context": "代理申請の条件に。",
@@ -128,7 +120,7 @@
     "verified": false
   },
   {
-    "jp": "申請書の不備がある場合は連絡します",
+    "jp": "申請書に不備がある場合は連絡します",
     "en": "We will contact you if the application is incomplete",
     "tag": "Admin",
     "context": "不備対応の説明に。",
@@ -176,8 +168,8 @@
     "verified": false
   },
   {
-    "jp": "健康保険証を提示してください",
-    "en": "Please present your health insurance card",
+    "jp": "マイナ保険証を提示してください",
+    "en": "Please present your My Number health insurance card",
     "tag": "Admin",
     "context": "医療機関や手続きでの提示依頼に。",
     "keywords": "健康保険証を提示してください, Please present your health insurance card, please, present, your, health, insurance, card, admin",
@@ -272,8 +264,8 @@
     "verified": false
   },
   {
-    "jp": "コピーでの提出は一部可能です",
-    "en": "Submission by copy is partly accepted",
+    "jp": "一部コピーでの提出は可能です",
+    "en": "A copy can be accepted for part of the submission",
     "tag": "Admin",
     "context": "例外的にコピーを受け付ける場合の案内に。",
     "keywords": "コピーでの提出は一部可能です, Submission by copy is partly accepted, submission, copy, partly, accepted, admin",
@@ -312,7 +304,7 @@
     "verified": false
   },
   {
-    "jp": "税務署への相談窓口",
+    "jp": "税務署相談窓口",
     "en": "Tax office consultation desk",
     "tag": "Admin",
     "context": "税に関する個別相談の案内に。",
@@ -424,7 +416,7 @@
     "verified": false
   },
   {
-    "jp": "健康保険証",
+    "jp": "マイナ保険証",
     "en": "Health insurance card",
     "tag": "Admin",
     "context": "病院や役所での提示に。",

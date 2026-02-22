@@ -56,7 +56,7 @@
     "verified": false
   },
   {
-    "jp": "お名前を伺えますか？",
+    "jp": "お名前を教えてください",
     "en": "May I have your name, please?",
     "tag": "Hotel",
     "context": "予約確認の際に。",
@@ -368,7 +368,7 @@
     "verified": false
   },
   {
-    "jp": "浴衣（ゆかた）の貸出",
+    "jp": "浴衣の貸出",
     "en": "Yukata rental (Japanese cotton robe)",
     "tag": "Hotel",
     "context": "館内着や観光用の貸出案内に。",
@@ -392,7 +392,7 @@
     "verified": false
   },
   {
-    "jp": "仲居（なかい）さん",
+    "jp": "仲居さん",
     "en": "Ryokan staff / Room attendant",
     "tag": "Hotel",
     "context": "旅館の給仕担当者。",
@@ -416,7 +416,7 @@
     "verified": false
   },
   {
-    "jp": "部屋食（へやしょく）",
+    "jp": "部屋食",
     "en": "In-room dining",
     "tag": "Hotel",
     "context": "部屋で食事をいただくスタイル。",
