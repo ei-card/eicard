@@ -1,4 +1,3 @@
-const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 const grid = document.getElementById('translationGrid');
 const searchInput = document.getElementById('searchInput');
@@ -11,6 +10,7 @@ const toKatakana = (str) => {
 };
 
 async function initializeApp() {
+    let searchTimeout;
     grid.innerHTML = "<p class='loading'>データを読み込み中...</p>";
     const categories = ['menu', 'sign', 'pay', 'hotel', 'admin'];
     try {
@@ -21,19 +21,26 @@ async function initializeApp() {
         allData = results.flat(); 
         displayTranslations(); 
 
-        searchInput.addEventListener('input', () => displayTranslations(currentActiveCategory));
+        searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                displayTranslations(currentActiveCategory);
+            }, 150);
+        });
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-                // 1. Remove 'active' class from all buttons
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                
-                // 2. Add 'active' class to the clicked button
+
+                if (btn.classList.contains('active')) return;
+
+                document.querySelectorAll('.filter-btn')
+                    .forEach(b => b.classList.remove('active'));
+
                 btn.classList.add('active');
-                
-                // 3. Filter the data
-                const tag = btn.getAttribute('data-tag');
-                currentActiveCategory = tag;
-                displayTranslations(tag);
+
+                currentActiveCategory = btn.getAttribute('data-tag');
+
+                searchInput.value = ""; // reset search when switching mode
+                displayTranslations(currentActiveCategory);
             });
         });
 
@@ -45,29 +52,61 @@ async function initializeApp() {
 }
 
 function displayTranslations(categoryFilter = "All") {
+
     const term = searchInput.value.toLowerCase();
     const katakanaTerm = toKatakana(term);
     grid.innerHTML = "";
 
-    const filtered = allData.filter(item => {
-        const matchesCategory = (categoryFilter === "All" || item.tag === categoryFilter);
-        const matchesSearch = 
-            item.jp.toLowerCase().includes(term) || 
-            item.en.toLowerCase().includes(term) || 
-            (item.keywords && item.keywords.toLowerCase().includes(term)) || // Hits
-            toKatakana(item.jp).includes(katakanaTerm);
-        return matchesCategory && matchesSearch;
-    });
+    const isSearching = term.length > 0;
 
-        for (let i = filtered.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [filtered[i], filtered[j]] = [filtered[j], filtered[i]];
-        }
-        // Limit to 8
-        const limited = filtered.slice(0, 12);
+    const filtered = allData
+        .filter(item => {
 
+            const matchesCategory =
+                isSearching ? true :
+                (categoryFilter === "All" || item.tag === categoryFilter);
+
+            const matchesSearch =
+                item.jp.toLowerCase().includes(term) ||
+                item.en.toLowerCase().includes(term) ||
+                (item.keywords && item.keywords.toLowerCase().includes(term)) ||
+                toKatakana(item.jp).includes(katakanaTerm);
+
+            return matchesCategory && matchesSearch;
+        })
+        .sort((a, b) => a.en.localeCompare(b.en));
+
+    if (isSearching) {
+    document.querySelectorAll('.filter-btn')
+        .forEach(b => b.classList.remove('active'));
+
+    const allBtn = document.querySelector('[data-tag="All"]');
+    if (allBtn) allBtn.classList.add('active');
+
+    currentActiveCategory = "All";
+    }
+
+    if (filtered.length === 0) {
+
+        const message = isSearching
+            ? `「${term}」に一致するフレーズが見つかりません。`
+            : `該当するフレーズが見つかりません。`;
+
+        grid.innerHTML = `
+            <div class="empty-state">
+                <p>${message}</p>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">
+                    別のキーワードをお試しください。
+                </p>
+            </div>
+        `;
+        resultInfo.textContent = "";
+        return;
+    }
+
+    const limited = filtered.slice(0, 8);
+    
     limited.forEach(item => {
-        // Prepare Report URL
         const reportSummary = `${item.jp}\n${item.en}${item.context ? `\n${item.context}` : ''}`;
         const reportUrl = `https://docs.google.com/forms/d/e/1FAIpQLSfpbhutXoLYXMmI6aKyk0huRF_zpWxHVUwzdPWBwE8Q79xeIQ/viewform?usp=dialog&entry.1588045473=${encodeURIComponent(reportSummary)}`;
 

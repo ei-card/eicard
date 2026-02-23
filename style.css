@@ -249,7 +249,6 @@ header {
     color: white;
     border-color: var(--accent);
 }
-
 /* ================= MENU ================= */
 
 .menu-container {
@@ -318,24 +317,21 @@ header {
     padding: 8vw;
 }
 
-/* Japanese Main */
-
-#fs-jp {
+#fs-en {
     font-weight: 800;
-    font-size: clamp(2.4rem, 6vw, 4.2rem);
-    color: var(--primary);
-    margin-bottom: 3vh;
+    font-size: clamp(2.6rem, 6vw, 4.4rem);
+    color: var(--text-main);
     line-height: 1.15;
+    max-width: 900px;
+    margin-bottom: 1.5rem;
 }
 
-/* English */
-
-#fs-en {
-    font-weight: 500;
-    font-size: clamp(1.2rem, 3vw, 1.8rem);
+#fs-jp {
+    font-weight: 400;
+    font-size: clamp(1.2rem, 2.2vw, 1.6rem);
     color: var(--text-sub);
-    line-height: 1.35;
-    max-width: 800px;
+    line-height: 1.4;
+    max-width: 700px;
 }
 
 /* Close button */
