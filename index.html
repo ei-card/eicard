@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
     <title>英換 EiKan | 英語に変換！</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
@@ -11,9 +12,9 @@
     <header>
         <div class="brand-container">
             <h1 class="logo">英換</h1>
-            <p class="tagline">あれもこれも英語に変換しよう！</p>
+            <div class="brand-divider"></div>
+            <p class="tagline">伝わる、広がる、街の英語。</p>
         </div>
-        
         <div class="search-container">
             <input type="text" id="searchInput" placeholder="例: 予約, アレルギー, 免税...">
         </div>
@@ -44,7 +45,7 @@
     <script src="script.js"></script>
     <div id="fullscreenOverlay">
     <button class="close-fs" onclick="closeFullscreen()">×</button>
-    <div class="print-branding">英換 EIKAN PROJECT</div>
+    <div class="print-branding">英換 - EIKAN PROJECT</div>
     <div id="fs-jp"></div>
     <div id="fs-en"></div>
 </div>

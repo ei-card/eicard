@@ -92,9 +92,7 @@ function displayTranslations(categoryFilter = "All") {
             </div>
             <div class="en-text">${item.en}</div>
                 ${item.context ? `<p class="context-text">${item.context}</p>` : ''}
-            <div class="card-actions">
                 <button class="copy-btn" onclick="handleCopy(this, '${item.en}')">コピー</button>
-            </div>
         `;
         grid.appendChild(card);
     });
@@ -144,7 +142,7 @@ const getUnifiedA4HTML = (jp, en) => `
         text-align: center; 
         padding: 20mm;
         margin: 0 auto;
-        font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans JP', 'Hiragino Sans', sans-serif;
     ">
         <div style="
             background: rgba(255, 255, 255, 0.95);
@@ -153,8 +151,12 @@ const getUnifiedA4HTML = (jp, en) => `
             text-align: center;
             width: 100%;
         ">
-            <div style="font-size: 36pt; color: #7f8c8d; margin-bottom: 15px;">${jp}</div>
-            <div style="font-size: 70pt; color: #2c3e50; font-weight: 800; line-height: 1.2; margin-bottom: 25px;">${en}</div>
+           <div style="font-size: 28pt; font-weight: 600; color: #1a2a3a; margin-bottom: 10px;">
+                ${jp}
+            </div>
+            <div style="font-size: 56pt; font-weight: 700; color: #1a2a3a; margin-bottom: 10px; line-height: 1.15;">
+                ${en}
+            </div>
             <div style="
                 border-top: 2px solid #f1f2f6;
                 padding-top: 20px;
@@ -169,7 +171,7 @@ const getUnifiedA4HTML = (jp, en) => `
                     font-weight: bold; 
                     letter-spacing: 2px;
                     text-transform: uppercase;
-                ">英換 EIKAN PROJECT</span>
+                ">英換 - EIKAN PROJECT</span>
         </div>
     </div>
 `;
@@ -190,7 +192,7 @@ window.handlePrint = (jp, en) => {
                         overflow: hidden;
                     }
                     @page { 
-                        size: A4 landscape; 
+                        size: A4 landscape;
                         margin: 0; 
                     }
                     .a4-container {
