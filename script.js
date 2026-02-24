@@ -1,13 +1,27 @@
 const body = document.body;
 const grid = document.getElementById('translationGrid');
 const searchInput = document.getElementById('searchInput');
+const showMoreBtn = document.getElementById('showMoreBtn');
+const showMoreContainer = document.getElementById('showMoreContainer');
 
 let allData = []; 
 let currentActiveCategory = "All";
+let visibleCount = window.innerWidth < 600 ? 6 : 8;
+const LOAD_INCREMENT = 20;
+let shuffledAllData = [];
 
 const toKatakana = (str) => {
     return str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
 };
+
+function shuffleArray(array) {
+    const copy = [...array];
+    for (let i = copy.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+    }
+    return copy;
+}
 
 async function initializeApp() {
     let searchTimeout;
@@ -19,6 +33,13 @@ async function initializeApp() {
         );
         const results = await Promise.all(fetchPromises);
         allData = results.flat(); 
+        const featured = allData.filter(item => item.featured === true);
+        const nonFeatured = allData.filter(item => item.featured !== true);
+
+        shuffledAllData = [
+            ...featured,
+            ...shuffleArray(nonFeatured)
+        ];
         displayTranslations(); 
 
         searchInput.addEventListener('input', () => {
@@ -29,7 +50,6 @@ async function initializeApp() {
         });
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
-
                 if (btn.classList.contains('active')) return;
 
                 document.querySelectorAll('.filter-btn')
@@ -40,6 +60,7 @@ async function initializeApp() {
                 currentActiveCategory = btn.getAttribute('data-tag');
 
                 searchInput.value = ""; // reset search when switching mode
+                visibleCount = 8;
                 displayTranslations(currentActiveCategory);
             });
         });
@@ -52,71 +73,61 @@ async function initializeApp() {
 }
 
 function displayTranslations(categoryFilter = "All") {
-
     const term = searchInput.value.toLowerCase();
     const katakanaTerm = toKatakana(term);
     grid.innerHTML = "";
-
     const isSearching = term.length > 0;
 
-    const filtered = allData
-        .filter(item => {
+    const sourceData = categoryFilter === "All" ? shuffledAllData : allData;
 
-            const matchesCategory =
-                isSearching ? true :
-                (categoryFilter === "All" || item.tag === categoryFilter);
+    let filtered = sourceData.filter(item => {
+        const matchesTag = (categoryFilter === "All" || item.tag === categoryFilter);
+        const matchesSearch = !term || 
+            item.jp.toLowerCase().includes(term) || 
+            item.en.toLowerCase().includes(term) ||
+            (item.keywords && item.keywords.toLowerCase().includes(term)) ||
+            (item.keywords && item.keywords.includes(katakanaTerm));
+        return matchesTag && matchesSearch;
+    });
 
-            const matchesSearch =
-                item.jp.toLowerCase().includes(term) ||
-                item.en.toLowerCase().includes(term) ||
-                (item.keywords && item.keywords.toLowerCase().includes(term)) ||
-                toKatakana(item.jp).includes(katakanaTerm);
+    // Featured first
+    filtered.sort((a, b) => (b.featured === true ? 1 : 0) - (a.featured === true ? 1 : 0));
 
-            return matchesCategory && matchesSearch;
-        })
-        .sort((a, b) => a.en.localeCompare(b.en));
+    let itemsToRender = filtered;
 
-    if (isSearching) {
-    document.querySelectorAll('.filter-btn')
-        .forEach(b => b.classList.remove('active'));
+    if (!isSearching) {
 
-    const allBtn = document.querySelector('[data-tag="All"]');
-    if (allBtn) allBtn.classList.add('active');
+        itemsToRender = filtered.slice(0, visibleCount);
 
-    currentActiveCategory = "All";
+        if (visibleCount < filtered.length) {
+            showMoreContainer.style.display = "block";
+        } else {
+            showMoreContainer.style.display = "none";
+        }
+
+    } else {
+        itemsToRender = filtered;
+        showMoreContainer.style.display = "none";
     }
 
     if (filtered.length === 0) {
-
-        const message = isSearching
-            ? `「${term}」に一致するフレーズが見つかりません。`
-            : `該当するフレーズが見つかりません。`;
-
-        grid.innerHTML = `
-            <div class="empty-state">
-                <p>${message}</p>
-                <p style="color: var(--text-sub); font-size: 0.9rem;">
-                    別のキーワードをお試しください。
-                </p>
-            </div>
-        `;
-        resultInfo.textContent = "";
+        grid.innerHTML = "<p class='no-results'>該当する表現が見つかりませんでした。</p>";
         return;
     }
 
-    const limited = filtered.slice(0, 8);
-    
-    limited.forEach(item => {
+    itemsToRender.forEach(item => {
         const reportSummary = `${item.jp}\n${item.en}${item.context ? `\n${item.context}` : ''}`;
         const reportUrl = `https://docs.google.com/forms/d/e/1FAIpQLSfpbhutXoLYXMmI6aKyk0huRF_zpWxHVUwzdPWBwE8Q79xeIQ/viewform?usp=dialog&entry.1588045473=${encodeURIComponent(reportSummary)}`;
 
         const card = document.createElement('div');
         card.className = 'card';
+
         card.onclick = (e) => {
             if (!e.target.closest('button') && !e.target.closest('.menu-container')) {
                 openFullscreen(item.jp, item.en);
             }
         };
+
         card.innerHTML = `
             <div class="card-header-row">
                 <div class="jp-text">${item.jp}</div>
@@ -125,15 +136,23 @@ function displayTranslations(categoryFilter = "All") {
                     <div class="menu-content">
                         <a href="#" onclick="handleDownload('${item.jp}', '${item.en}')">画像を保存</a>
                         <a href="#" onclick="handlePrint('${item.jp}', '${item.en}')">印刷</a>
-                        <div class ="report-item"><a href="${reportUrl}" target="_blank">報告</a></div>
+                        <div class="report-item">
+                            <a href="${reportUrl}" target="_blank">報告</a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="en-text">${item.en}</div>
-                ${item.context ? `<p class="context-text">${item.context}</p>` : ''}
-                <button class="copy-btn" onclick="handleCopy(this, '${item.en}')">コピー</button>
+            ${item.context ? `<p class="context-text">${item.context}</p>` : ''}
+            <button class="copy-btn" onclick="handleCopy(this, '${item.en}')">コピー</button>
         `;
+
         grid.appendChild(card);
+    });
+
+    // Stagger animation
+    document.querySelectorAll('.card').forEach((card, index) => {
+        setTimeout(() => card.classList.add('show'), index * 40);
     });
 }
 
@@ -148,6 +167,7 @@ window.toggleMenu = (e) => {
 
 // 1. Fullscreen with Dynamic Font Scaling
 window.openFullscreen = (jp, en) => {
+    
     const fs = document.getElementById('fullscreenOverlay');
     const jpEl = document.getElementById('fs-jp');
     const enEl = document.getElementById('fs-en');
@@ -250,6 +270,7 @@ window.handlePrint = (jp, en) => {
 };
 
 window.handleDownload = async (jp, en) => {
+    trackAction('download_png', jp);
     const container = document.createElement('div');
     container.style.position = 'absolute';
     container.style.left = '-9999px';
@@ -320,6 +341,45 @@ document.addEventListener('click', (e) => {
     if (!e.target.closest('.menu-container')) {
         document.querySelectorAll('.menu-content').forEach(m => m.classList.remove('show'));
     }
+});
+
+// --- 1. GA4 TRACKING HELPER ---
+const trackAction = (actionName, label) => {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', actionName, { 'event_label': label });
+    }
+};
+
+// --- 2. ABOUT/GUIDE CONTENT ---
+const pageData = {
+        about: `
+        <h2 style="color:var(--accent); font-weight:900;">英換 (EIKAN) について</h2>
+        <p>英換は、日本の店舗や公共施設が外国人のお客様と円滑にコミュニケーションを取るために作成した表現集です。</p>
+        <p>現場で自然に使える英語表現を厳選し、検索・表示・印刷までシンプルに行えるよう設計しています。</p>
+        <p>どなたでも無料でご利用いただけます。店頭掲示やタブレット表示など、現場に合わせてご活用ください。</p>
+        `,
+        guide: `
+        <h2 style="color:var(--accent); font-weight:900;">使い方</h2>
+        <p><strong>1. 探す：</strong> キーワード検索、またはカテゴリーから必要な表現を見つけます。</p>
+        <p><strong>2. 表示する：</strong> カードをクリックすると全画面表示ができます。各カードのメニューから印刷や画像保存も可能です。</p>
+        <p><strong>3. 伝える：</strong> 印刷して掲示したり、そのまま画面で提示してご活用ください。</p>
+        `
+};
+
+window.showPage = (key) => {
+    document.getElementById('pageBody').innerHTML = pageData[key];
+    document.getElementById('pageOverlay').style.display = 'flex';
+};
+
+window.closePage = () => {
+    document.getElementById('pageOverlay').style.display = 'none';
+};
+
+showMoreBtn.addEventListener('click', () => {
+    visibleCount += LOAD_INCREMENT;
+    displayTranslations(currentActiveCategory);
+
+    window.scrollBy({ top: 300, behavior: 'smooth' });
 });
 
 initializeApp();

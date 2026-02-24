@@ -21,7 +21,8 @@
     "tag": "Admin",
     "context": "本人確認の依頼に。運転免許証やパスポート等。",
     "keywords": "身分証明書を提示してください, Please present your ID, 見せる, 本人確認, check, show, ID",
-    "verified": true
+    "verified": true,
+    "featured": true
   },
   {
     "jp": "マイナンバーカードをご持参ください",
@@ -429,6 +430,126 @@
     "tag": "Admin",
     "context": "個人の税申告の手続きに。",
     "keywords": "確定申告, Final tax return, 納税, 税金, tax, payment",
+    "verified": true
+  },
+  {
+    "jp": "番号札をお取りください",
+    "en": "Please take a numbered ticket",
+    "tag": "Admin",
+    "context": "窓口の順番待ち案内に。",
+    "keywords": "番号札, waiting number, queue, 順番, ticket, counter",
+    "verified": true
+  },
+  {
+    "jp": "お呼びするまでお待ちください",
+    "en": "Please wait until your number is called",
+    "tag": "Admin",
+    "context": "待合案内に。",
+    "keywords": "お待ちください, waiting, 呼ぶ, called, 順番, counter",
+    "verified": true
+  },
+  {
+    "jp": "本日中に発行できます",
+    "en": "It can be issued today",
+    "tag": "Admin",
+    "context": "即日発行の案内に。",
+    "keywords": "即日, 本日, issue, 発行, today, certificate",
+    "verified": true
+  },
+  {
+    "jp": "後日郵送します",
+    "en": "It will be mailed to you later",
+    "tag": "Admin",
+    "context": "即日発行不可の場合。",
+    "keywords": "郵送, mail, send, later, delivery, 書類",
+    "verified": true
+  },
+  {
+    "jp": "予約が必要です",
+    "en": "An appointment is required",
+    "tag": "Admin",
+    "context": "事前予約制の案内に。",
+    "keywords": "予約, appointment, required, 必要, booking, 事前",
+    "verified": true
+  },
+  {
+    "jp": "予約なしでも受付可能です",
+    "en": "Walk-ins are accepted",
+    "tag": "Admin",
+    "context": "予約不要の案内に。",
+    "keywords": "予約不要, walk-in, available, 受付, counter",
+    "verified": true
+  },
+  {
+    "jp": "受付時間は___時までです",
+    "en": "Reception is open until ___",
+    "tag": "Admin",
+    "context": "窓口時間の案内に。",
+    "keywords": "受付時間, open hours, closing time, counter, ___時",
+    "verified": true
+  },
+  {
+    "jp": "コピーは1枚___円です",
+    "en": "Copies are ___ yen per page",
+    "tag": "Admin",
+    "context": "コピー料金案内に。",
+    "keywords": "コピー, copy, price, 円, page, document",
+    "verified": true
+  },
+  {
+    "jp": "支払いは現金のみです",
+    "en": "Cash payment only",
+    "tag": "Admin",
+    "context": "決済方法の制限に。",
+    "keywords": "現金のみ, cash only, payment, 支払い, counter",
+    "verified": true
+  },
+  {
+    "jp": "クレジットカードは利用できません",
+    "en": "Credit cards are not accepted",
+    "tag": "Admin",
+    "context": "支払い方法制限に。",
+    "keywords": "クレジットカード不可, card not accepted, payment, 支払い",
+    "verified": true
+  },
+  {
+    "jp": "日本語での記入が必要です",
+    "en": "The form must be filled out in Japanese",
+    "tag": "Admin",
+    "context": "記入言語指定に。",
+    "keywords": "日本語記入, Japanese only, form, 書類, write, requirement",
+    "verified": true
+  },
+  {
+    "jp": "英語の記入例はこちらです",
+    "en": "An English sample form is available here",
+    "tag": "Admin",
+    "context": "外国人対応支援に。",
+    "keywords": "英語, sample, example, 記入例, English, form",
+    "verified": true
+  },
+  {
+    "jp": "書類に不備があります",
+    "en": "There is an issue with your documents",
+    "tag": "Admin",
+    "context": "不備通知に。",
+    "keywords": "不備, incomplete, problem, documents, 修正, fix",
+    "verified": true
+  },
+  {
+    "jp": "こちらに署名してください",
+    "en": "Please sign here",
+    "tag": "Admin",
+    "context": "署名箇所の案内に。",
+    "keywords": "署名, sign, signature, 名前, document, here",
+    "verified": true
+  },
+  {
+    "jp": "押印してください",
+    "en": "Please affix your seal (Hanko)",
+    "tag": "Admin",
+    "context": "印鑑押印箇所に。",
+    "keywords": "押印, seal, hanko, stamp, 印鑑, document",
     "verified": true
   }
 ]

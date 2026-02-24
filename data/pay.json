@@ -21,7 +21,8 @@
     "tag": "Pay",
     "context": "買い物客への案内に。",
     "keywords": "免税カウンターはこちらです, Tax-free counter is over here, tax-free, refund, 8%, 10%, consumption tax, duty free, めんぜい",
-    "verified": true
+    "verified": true,
+    "featured": true
   },
   {
     "jp": "暗証番号を入力してください",
@@ -222,5 +223,150 @@
     "context": "売り切れの説明に。",
     "keywords": "在庫切れ（再入荷未定）, Out of stock (Restock date undecided)",
     "verified": true
-  }
+  },
+  {
+  "jp": "このカードはご利用いただけません",
+  "en": "This card cannot be accepted",
+  "tag": "Pay",
+  "context": "カードが使えない場合に。",
+  "keywords": "このカードはご利用いただけません, card declined, not accepted, payment error",
+  "verified": true
+},
+{
+  "jp": "通信エラーです。もう一度お試しください",
+  "en": "Connection error. Please try again",
+  "tag": "Pay",
+  "context": "決済端末のエラー時に。",
+  "keywords": "通信エラー, try again, payment error, terminal",
+  "verified": true
+},
+{
+  "jp": "残高不足です",
+  "en": "Insufficient balance",
+  "tag": "Pay",
+  "context": "電子マネーやカード残高不足時に。",
+  "keywords": "残高不足, insufficient funds, balance",
+  "verified": true
+},
+{
+  "jp": "別のお支払い方法はございますか？",
+  "en": "Do you have another payment method?",
+  "tag": "Pay",
+  "context": "決済不可時の確認に。",
+  "keywords": "別のお支払い方法, another payment method",
+  "verified": true
+},
+{
+  "jp": "宛名はございますか？",
+  "en": "What name should we put on the receipt?",
+  "tag": "Pay",
+  "context": "領収書の宛名確認に。",
+  "keywords": "宛名, receipt name, invoice name",
+  "verified": true
+},
+{
+  "jp": "但し書きはどうなさいますか？",
+  "en": "What should we write as the description?",
+  "tag": "Pay",
+  "context": "領収書の但し書き確認に。",
+  "keywords": "但し書き, description, receipt note",
+  "verified": true
+},
+{
+  "jp": "明細付きレシート",
+  "en": "Itemized receipt",
+  "tag": "Pay",
+  "context": "明細表示のあるレシート。",
+  "keywords": "明細付き, itemized receipt",
+  "verified": true
+},
+{
+  "jp": "クレジットカードのみ対応",
+  "en": "Credit cards only",
+  "tag": "Pay",
+  "context": "現金不可の店舗表示。",
+  "keywords": "クレジットカードのみ, credit card only",
+  "verified": true
+},
+{
+  "jp": "現金のみ",
+  "en": "Cash only",
+  "tag": "Pay",
+  "context": "カード不可の店舗表示。",
+  "keywords": "現金のみ, cash only",
+  "verified": true,
+  "featured": true
+},
+{
+  "jp": "キャッシュレスのみ",
+  "en": "Cashless only",
+  "tag": "Pay",
+  "context": "カード不可の店舗表示。",
+  "keywords": "キャッシュレスのみ, cashless only",
+  "verified": true
+},
+{
+  "jp": "両替はできません",
+  "en": "Money exchange is not available",
+  "tag": "Pay",
+  "context": "両替不可の案内。",
+  "keywords": "両替できません, no exchange",
+  "verified": true
+},
+{
+  "jp": "返金はできません",
+  "en": "No refunds available",
+  "tag": "Pay",
+  "context": "返金不可ポリシー。",
+  "keywords": "返金できません, no refund",
+  "verified": true
+},
+{
+  "jp": "テーブルでお会計します",
+  "en": "We will process the payment at your table",
+  "tag": "Pay",
+  "context": "テーブル会計制の説明。",
+  "keywords": "テーブル会計, pay at table",
+  "verified": true
+},
+{
+  "jp": "サービス料が含まれています",
+  "en": "Service charge is included",
+  "tag": "Pay",
+  "context": "サービス料込みの案内。",
+  "keywords": "サービス料, service charge included",
+  "verified": true
+},
+{
+  "jp": "サービス料は含まれていません",
+  "en": "Service charge is not included",
+  "tag": "Pay",
+  "context": "サービス料別途の案内。",
+  "keywords": "サービス料なし, no service charge",
+  "verified": true
+},
+{
+  "jp": "免税手続きにはお時間がかかります",
+  "en": "Tax-free processing may take some time",
+  "tag": "Pay",
+  "context": "混雑時の案内。",
+  "keywords": "免税手続き, processing time, tax free",
+  "verified": true
+},
+{
+  "jp": "当日購入分のみ対象です",
+  "en": "Only purchases made today are eligible",
+  "tag": "Pay",
+  "context": "免税対象条件の説明。",
+  "keywords": "当日購入分のみ, same day only, tax free",
+  "verified": true
+},
+{
+  "jp": "パスポートの提示をお願いします",
+  "en": "Please present your passport",
+  "tag": "Pay",
+  "context": "免税時の一般案内。",
+  "keywords": "パスポート提示, passport required",
+  "verified": true
+}
 ]

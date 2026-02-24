@@ -1117,7 +1117,8 @@
     "tag": "Menu",
     "context": "小麦アレルギーや食事制限のある方向けに。",
     "keywords": "グルテンフリー対応可, Gluten-free options available, gluten, wheat, allergy, アレルギー, こむぎ",
-    "verified": true
+    "verified": true,
+    "featured": true
   },
   {
     "jp": "低糖質メニュー",
@@ -1222,5 +1223,222 @@
     "context": "今の時期に一番美味しい食材。",
     "keywords": "旬の食材, Seasonal ingredients",
     "verified": true
-  }
+  },
+  {
+  "jp": "ナッツ使用",
+  "en": "Contains nuts",
+  "tag": "Menu",
+  "context": "ナッツアレルギーの注意喚起に。",
+  "keywords": "ナッツ使用, Contains nuts, nuts, allergy, アレルギー, ピーナッツ, くるみ",
+  "verified": true
+},
+{
+  "jp": "甲殻類使用（えび・かに）",
+  "en": "Contains shellfish (shrimp/crab)",
+  "tag": "Menu",
+  "context": "甲殻類アレルギーへの注意。",
+  "keywords": "甲殻類使用, shellfish, shrimp, crab, allergy, アレルギー",
+  "verified": true
+},
+{
+  "jp": "ごま使用",
+  "en": "Contains sesame",
+  "tag": "Menu",
+  "context": "ごまアレルギーへの注意。",
+  "keywords": "ごま使用, sesame, allergy, アレルギー",
+  "verified": true
+},
+{
+  "jp": "大豆使用",
+  "en": "Contains soy",
+  "tag": "Menu",
+  "context": "大豆アレルギーの注意。",
+  "keywords": "大豆使用, soy, allergy, アレルギー",
+  "verified": true
+},
+{
+  "jp": "アルコール使用",
+  "en": "Contains alcohol",
+  "tag": "Menu",
+  "context": "調理にアルコールが含まれる場合。",
+  "keywords": "アルコール使用, alcohol, liquor, 調理酒",
+  "verified": true
+},
+{
+  "jp": "ゼラチン使用",
+  "en": "Contains gelatin",
+  "tag": "Menu",
+  "context": "動物由来ゼラチン使用の注意。",
+  "keywords": "ゼラチン使用, gelatin, allergy, animal",
+  "verified": true
+},
+{
+  "jp": "豚肉使用",
+  "en": "Contains pork",
+  "tag": "Menu",
+  "context": "宗教上の理由などで豚肉を避ける方向け。",
+  "keywords": "豚肉使用, pork, pig, ぶた, とん",
+  "verified": true
+},
+{
+  "jp": "牛肉使用",
+  "en": "Contains beef",
+  "tag": "Menu",
+  "context": "牛肉が含まれる場合。",
+  "keywords": "牛肉使用, beef, cow, うし, ぎゅう",
+  "verified": true
+},
+{
+  "jp": "鶏肉使用",
+  "en": "Contains chicken",
+  "tag": "Menu",
+  "context": "鶏肉使用の明示。",
+  "keywords": "鶏肉使用, chicken, 鶏",
+  "verified": true
+},
+{
+  "jp": "魚介類使用",
+  "en": "Contains seafood",
+  "tag": "Menu",
+  "context": "魚介類が含まれる場合。",
+  "keywords": "魚介類使用, seafood, fish, shellfish",
+  "verified": true
+},
+{
+  "jp": "完全菜食対応可",
+  "en": "Vegan option available upon request",
+  "tag": "Menu",
+  "context": "事前相談で対応可能な場合。",
+  "keywords": "完全菜食対応可, vegan option, plant-based",
+  "verified": true,
+  "featured": true
+},
+{
+  "jp": "ハラル対応可（要相談）",
+  "en": "Halal options available (upon request)",
+  "tag": "Menu",
+  "context": "ハラル対応可能な場合。",
+  "keywords": "ハラル対応可, halal, muslim friendly",
+  "verified": true
+},
+{
+  "jp": "辛くありません",
+  "en": "Not spicy",
+  "tag": "Menu",
+  "context": "辛味がないことを明示。",
+  "keywords": "辛くありません, not spicy",
+  "verified": true
+},
+{
+  "jp": "とても辛いです",
+  "en": "Very spicy",
+  "tag": "Menu",
+  "context": "強い辛味の注意。",
+  "keywords": "とても辛い, very spicy",
+  "verified": true
+},
+{
+  "jp": "にんにく入り",
+  "en": "Contains garlic",
+  "tag": "Menu",
+  "context": "にんにく使用の明示。",
+  "keywords": "にんにく入り, garlic",
+  "verified": true
+},
+{
+  "jp": "生魚です",
+  "en": "Contains raw fish",
+  "tag": "Menu",
+  "context": "刺身などの注意表示。",
+  "keywords": "生魚, raw fish, sashimi",
+  "verified": true
+},
+{
+  "jp": "完全に加熱済みです",
+  "en": "Fully cooked",
+  "tag": "Menu",
+  "context": "加熱済み料理の安心表示。",
+  "keywords": "完全に加熱済み, fully cooked",
+  "verified": true
+},
+{
+  "jp": "ご注文はお決まりですか？",
+  "en": "Are you ready to order?",
+  "tag": "Menu",
+  "context": "注文確認時に。",
+  "keywords": "ご注文はお決まりですか, order",
+  "verified": true
+},
+{
+  "jp": "こちらがおすすめです",
+  "en": "This is our recommendation",
+  "tag": "Menu",
+  "context": "おすすめ紹介時に。",
+  "keywords": "おすすめです, recommendation",
+  "verified": true
+},
+{
+  "jp": "お時間少々いただきます",
+  "en": "This will take some time",
+  "tag": "Menu",
+  "context": "調理時間が長い料理に。",
+  "keywords": "時間, wait, cooking time",
+  "verified": true
+},
+{
+  "jp": "お取り分け用のお皿です",
+  "en": "Plates for sharing",
+  "tag": "Menu",
+  "context": "シェア用の皿提供時。",
+  "keywords": "取り分け, share plate",
+  "verified": true
+},
+{
+  "jp": "お会計はこちらです",
+  "en": "Please pay here",
+  "tag": "Menu",
+  "context": "レジ案内に。",
+  "keywords": "お会計, pay here, cashier",
+  "verified": true
+},
+{
+  "jp": "とんかつ",
+  "en": "Pork cutlet",
+  "tag": "Menu",
+  "context": "揚げ物料理。",
+  "keywords": "とんかつ, pork, pig, ぶた",
+  "verified": true
+},
+{
+  "jp": "寿司盛り合わせ",
+  "en": "Assorted sushi",
+  "tag": "Menu",
+  "context": "人気の盛り合わせ。",
+  "keywords": "寿司盛り合わせ, sushi",
+  "verified": true
+},
+{
+  "jp": "焼きそば",
+  "en": "Fried noodles",
+  "tag": "Menu",
+  "context": "屋台料理の説明に。",
+  "keywords": "焼きそば, noodles, wheat",
+  "verified": true
+},
+{
+  "jp": "抹茶アイス",
+  "en": "Matcha ice cream",
+  "tag": "Menu",
+  "context": "人気デザート。",
+  "keywords": "抹茶アイス, dessert, matcha",
+  "verified": true
+},
+{
+  "jp": "団子",
+  "en": "Rice dumplings (Dango)",
+  "tag": "Menu",
+  "context": "和菓子の説明。",
+  "keywords": "団子, dango, dessert",
+  "verified": true
+}
 ]

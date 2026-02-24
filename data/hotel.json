@@ -24,12 +24,13 @@
     "verified": true
   },
   {
-    "jp": "Wi-Fiパスワードはこちら",
-    "en": "Wi-Fi password is here",
+    "jp": "Wi-Fiのパスワードはこちらです",
+    "en": "Here is the Wi-Fi password",
     "tag": "Hotel",
     "context": "ネット環境の案内に。",
-    "keywords": "Wi-Fiパスワードはこちら, Wi-Fi password is here, wifi, internet, password, ネット, 接続, パスワード, SSID",
-    "verified": true
+    "keywords": "Wi-Fiのパスワードはこちらです, Here is the Wi-Fi password., wifi, internet, password, ネット, 接続, パスワード, SSID",
+    "verified": true,
+    "featured": true
   },
   {
     "jp": "チェックアウトは何時ですか？",
@@ -437,6 +438,110 @@
     "tag": "Hotel",
     "context": "乾燥対策の備品案内に。",
     "keywords": "加湿器の貸出, Humidifier rental",
+    "verified": true
+  },
+  {
+    "jp": "チェックインは___時からです",
+    "en": "Check-in starts at ___",
+    "tag": "Hotel",
+    "context": "チェックイン開始時間の案内に。",
+    "keywords": "check-in time, arrival time, ___時, front desk, hotel time",
+    "verified": true
+  },
+  {
+    "jp": "満室です",
+    "en": "We are fully booked",
+    "tag": "Hotel",
+    "context": "空室がない場合に。",
+    "keywords": "fully booked, no vacancy, 満室, sold out, reservation full",
+    "verified": true
+  },
+  {
+    "jp": "空室があります",
+    "en": "Rooms are available",
+    "tag": "Hotel",
+    "context": "当日宿泊可能な場合に。",
+    "keywords": "room available, vacancy, 空室, available room, tonight",
+    "verified": true
+  },
+  {
+    "jp": "デポジットが必要です",
+    "en": "A deposit is required",
+    "tag": "Hotel",
+    "context": "チェックイン時の保証金案内に。",
+    "keywords": "deposit, security deposit, 保証金, payment, check-in fee",
+    "verified": true
+  },
+  {
+    "jp": "クレジットカードをお預かりします",
+    "en": "We will hold your credit card",
+    "tag": "Hotel",
+    "context": "保証目的でのカード預かりに。",
+    "keywords": "credit card hold, card deposit, payment hold, front desk",
+    "verified": true
+  },
+  {
+    "jp": "お部屋は___階です",
+    "en": "Your room is on the ___ floor",
+    "tag": "Hotel",
+    "context": "客室案内に。",
+    "keywords": "room floor, ___階, elevator, level, hotel floor",
+    "verified": true
+  },
+  {
+    "jp": "こちらがお部屋の鍵です",
+    "en": "Here is your room key",
+    "tag": "Hotel",
+    "context": "チェックイン時に。",
+    "keywords": "room key, key card, 鍵, card key, check-in",
+    "verified": true
+  },
+  {
+    "jp": "タクシーをお呼びしましょうか？",
+    "en": "Would you like us to call a taxi?",
+    "tag": "Hotel",
+    "context": "外出サポートに。",
+    "keywords": "taxi, call taxi, transportation, ride, front desk help",
+    "verified": true
+  },
+  {
+    "jp": "空港まで___分です",
+    "en": "It takes about ___ minutes to the airport",
+    "tag": "Hotel",
+    "context": "移動時間案内に。",
+    "keywords": "airport, minutes, travel time, transport, shuttle",
+    "verified": true
+  },
+  {
+    "jp": "観光案内マップはこちらです",
+    "en": "Here is a local sightseeing map",
+    "tag": "Hotel",
+    "context": "観光サポートに。",
+    "keywords": "map, sightseeing, tourist map, 観光, local guide",
+    "verified": true
+  },
+  {
+    "jp": "最寄り駅は___駅です",
+    "en": "The nearest station is ___ Station",
+    "tag": "Hotel",
+    "context": "交通案内に。",
+    "keywords": "nearest station, train, access, transportation, map",
+    "verified": true
+  },
+  {
+    "jp": "お湯が出るまで少し時間がかかります",
+    "en": "Hot water may take a few moments",
+    "tag": "Hotel",
+    "context": "給湯の注意に。",
+    "keywords": "hot water, shower, bathroom, wait, water heater",
+    "verified": true
+  },
+  {
+    "jp": "緊急の場合はフロントにご連絡ください",
+    "en": "Please contact the front desk in case of emergency",
+    "tag": "Hotel",
+    "context": "緊急連絡案内に。",
+    "keywords": "emergency, front desk, help, urgent, call",
     "verified": true
   }
 ]
