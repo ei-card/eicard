@@ -9,6 +9,8 @@ let currentActiveCategory = "All";
 let visibleCount = window.innerWidth < 600 ? 6 : 8;
 const LOAD_INCREMENT = 20;
 let shuffledAllData = [];
+let selectedItems = new Map(); 
+let selectionMode = false;
 
 const toKatakana = (str) => {
     return str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
@@ -121,11 +123,31 @@ function displayTranslations(categoryFilter = "All") {
 
         const card = document.createElement('div');
         card.className = 'card';
+        card.dataset.jp = item.jp;
+        card.dataset.en = item.en;
 
         card.onclick = (e) => {
-            if (!e.target.closest('button') && !e.target.closest('.menu-container')) {
-                openFullscreen(item.jp, item.en);
+            if (
+                e.target.closest('button') ||
+                e.target.closest('.menu-container')
+            ) return;
+
+            if (selectionMode) {
+                const key = item.jp;
+
+                if (selectedItems.has(key)) {
+                    selectedItems.delete(key);
+                    card.classList.remove('selected');
+                } else {
+                    selectedItems.set(key, { jp: item.jp, en: item.en });
+                    card.classList.add('selected');
+                }
+
+                updateSelectionBar();
+                return;
             }
+
+            openFullscreen(item.jp, item.en);
         };
 
         card.innerHTML = `
@@ -163,6 +185,11 @@ window.toggleMenu = (e) => {
         if (m !== menu) m.classList.remove('show');
     });
     menu.classList.toggle('show');
+    document.querySelectorAll('.card').forEach(c => 
+    c.classList.remove('menu-open')
+);
+
+e.target.closest('.card').classList.add('menu-open');
 };
 
 // 1. Fullscreen with Dynamic Font Scaling
@@ -210,7 +237,7 @@ const getUnifiedA4HTML = (jp, en) => `
             text-align: center;
             width: 100%;
         ">
-           <div style="font-size: 28pt; font-weight: 600; color: #1a2a3a; margin-bottom: 10px;">
+           <div style="font-size: 28pt; font-weight: 500; color: #a4abb8ff; margin-bottom: 10px;">
                 ${jp}
             </div>
             <div style="font-size: 56pt; font-weight: 700; color: #1a2a3a; margin-bottom: 10px; line-height: 1.15;">
@@ -381,5 +408,167 @@ showMoreBtn.addEventListener('click', () => {
 
     window.scrollBy({ top: 300, behavior: 'smooth' });
 });
+
+const backToTopBtn = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTopBtn.classList.add('show');
+    } else {
+        backToTopBtn.classList.remove('show');
+    }
+});
+
+backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+const selectionBar = document.getElementById('selectionBar');
+const selectionCount = document.getElementById('selectionCount');
+
+function updateSelectionBar() {
+    const count = selectedItems.size;
+
+    selectionCount.innerText = `選択中 (${count})`;
+
+    if (selectionMode) {
+        selectionBar.classList.add('show');
+    } else {
+        selectionBar.classList.remove('show');
+    }
+    // Enable/disable buttons
+    const actionButtons = document.querySelectorAll('.selection-actions button');
+
+    actionButtons.forEach(btn => {
+        btn.disabled = count === 0;
+    });
+}
+
+window.clearSelection = () => {
+    selectedItems.clear();
+
+    document.querySelectorAll('.card.selected')
+        .forEach(card => card.classList.remove('selected'));
+
+    updateSelectionBar();
+};
+
+window.toggleSelect = (e, jp, en) => {
+    e.stopPropagation();
+
+    const card = e.target.closest('.card');
+
+    if (e.target.checked) {
+        selectedItems.set(jp, { jp, en });
+        card.classList.add('selected');
+    } else {
+        selectedItems.delete(jp);
+        card.classList.remove('selected');
+    }
+
+    updateSelectionBar();
+};
+
+const multiSelectFab = document.getElementById('multiSelectFab');
+
+multiSelectFab.addEventListener('click', function () {
+
+    selectionMode = !selectionMode;
+
+    document.body.classList.toggle('selection-mode', selectionMode);
+    this.classList.toggle('active', selectionMode);
+
+    if (selectionMode) {
+        this.innerText = "✕";
+    } else {
+        this.innerText = "✓";
+        clearSelection();
+    }
+
+    updateSelectionBar();
+});
+
+window.printSelected = () => {
+    if (selectedItems.size === 0) return;
+
+    const win = window.open('', '_blank');
+
+    let pages = '';
+
+    selectedItems.forEach(item => {
+        pages += `
+            <div style="page-break-after: always;">
+                ${getUnifiedA4HTML(item.jp, item.en)}
+            </div>
+        `;
+    });
+
+    win.document.write(`
+        <html>
+            <head>
+                <style>
+                    * { box-sizing: border-box; }
+                    html, body { 
+                        margin: 0; 
+                        padding: 0; 
+                        width: 100%;
+                        height: 100%;
+                    }
+                    @page { size: A4 landscape; margin: 0; }
+                    body { margin: 0; }
+                </style>
+            </head>
+            <body>${pages}</body>
+        </html>
+    `);
+
+    win.document.close();
+    win.onload = () => {
+        win.print();
+        win.close();
+    };
+};
+
+window.downloadSelectedPDF = async () => {
+    if (selectedItems.size === 0) return;
+
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF({
+        orientation: 'landscape',
+        unit: 'mm',
+        format: 'a4'
+    });
+
+    let first = true;
+
+    for (const item of selectedItems.values()) {
+
+        const container = document.createElement('div');
+        container.style.position = 'absolute';
+        container.style.left = '-9999px';
+        container.innerHTML = getUnifiedA4HTML(item.jp, item.en);
+        document.body.appendChild(container);
+
+        const canvas = await html2canvas(
+            container.querySelector('#a4-template'),
+            { scale: 2 }
+        );
+
+        document.body.removeChild(container);
+
+        const imgData = canvas.toDataURL('image/png');
+
+        if (!first) pdf.addPage();
+
+        pdf.addImage(imgData, 'PNG', 0, 0, 297, 210);
+
+        first = false;
+    }
+
+    pdf.save('Eikan_看板.pdf');
+};
 
 initializeApp();

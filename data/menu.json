@@ -603,8 +603,8 @@
     "jp": "蕎麦",
     "en": "Soba (buckwheat noodles)",
     "tag": "Menu",
-    "context": "蕎麦粉使用の麺に注意。",
-    "keywords": "蕎麦, Soba (buckwheat noodles), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
+    "context": "そば料理の説明に",
+    "keywords": "蕎麦, Soba (buckwheat), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
     "verified": true
   },
   {
@@ -1021,14 +1021,6 @@
     "tag": "Menu",
     "context": "餃子料理の説明に。",
     "keywords": "餃子, Gyoza(dumplings), gyoza, dumplings, fried",
-    "verified": true
-  },
-  {
-    "jp": "そば",
-    "en": "Soba (buckwheat)",
-    "tag": "Menu",
-    "context": "そば料理の説明に。",
-    "keywords": "そば, Soba (buckwheat), soba, buckwheat, noodles, allergy, アレルギー,蕎麦,そば,ソバ",
     "verified": true
   },
   {
