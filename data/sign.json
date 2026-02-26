@@ -648,5 +648,77 @@
   "context": "ホテルの案内表示に。",
   "keywords": "貴重品, front desk, valuables",
   "verified": true
+},
+{
+  "jp": "自由にお取りください",
+  "en": "Feel free to take one",
+  "tag": "Sign",
+  "context": "チラシや割り箸などに。",
+  "keywords": "自由にお取りください, free to take, please take one",
+  "verified": true
+},
+{
+  "jp": "券売機で食券をお買い求めください",
+  "en": "Please purchase a meal ticket from the vending machine",
+  "tag": "Sign",
+  "context": "ラーメン店入口。",
+  "keywords": "券売機で食券をお買い求めください, ticket machine, ramen shop",
+  "verified": true
+},
+{
+  "jp": "満席",
+  "en": "Full",
+  "tag": "Sign",
+  "context": "座席満席時。",
+  "keywords": "満席, full, no seats available",
+  "verified": true
+},
+{
+  "jp": "相席をお願いします",
+  "en": "Please share a table",
+  "tag": "Sign",
+  "context": "混雑時。",
+  "keywords": "相席をお願いします, share table, crowded",
+  "verified": true
+},
+{
+  "jp": "危険　手や頭を出さないでください",
+  "en": "Danger – Do not put your hands or head out",
+  "tag": "Sign",
+  "context": "安全注意。",
+  "keywords": "危険 手や頭を出さないでください, danger, safety warning",
+  "verified": true
+},
+{
+  "jp": "不法投棄禁止",
+  "en": "Illegal dumping prohibited",
+  "tag": "Sign",
+  "context": "ゴミ問題対策。",
+  "keywords": "不法投棄禁止, illegal dumping prohibited, trash, garbage",
+  "verified": true
+},
+{
+  "jp": "自転車乗り入れ禁止",
+  "en": "No bicycles allowed",
+  "tag": "Sign",
+  "context": "敷地内注意。",
+  "keywords": "自転車乗り入れ禁止, no bicycles, cycling prohibited",
+  "verified": true
+},
+{
+  "jp": "フンは持ち帰りましょう",
+  "en": "Please take your pet's waste home",
+  "tag": "Sign",
+  "context": "公園や敷地内。",
+  "keywords": "フンは持ち帰りましょう, pet waste, dog poop, clean up",
+  "verified": true
+},
+{
+  "jp": "ラストオーダーは__時__分です",
+  "en": "Last order is at __:__",
+  "tag": "Sign",
+  "context": "営業時間案内。",
+  "keywords": "ラストオーダー, last order, closing time",
+  "verified": true
 }
 ]

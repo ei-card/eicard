@@ -1,13 +1,5 @@
 [
   {
-    "jp": "お品書き",
-    "en": "Menu",
-    "tag": "Menu",
-    "context": "メニューのタイトルに。",
-    "keywords": "御品書き.おしながき,お品,品,がき,メニュー,menu,お品がき",
-    "verified": true
-  },
-  {
     "jp": "出汁（だし）",
     "en": "Japanese fish and seaweed stock",
     "tag": "Menu",
@@ -16,11 +8,51 @@
     "verified": true
   },
   {
-    "jp": "鰹だし",
-    "en": "Bonito (fish) stock",
+    "jp": "辛味噌ラーメン",
+    "en": "Spicy miso ramen",
     "tag": "Menu",
-    "context": "魚由来であることをベジタリアンに伝える際に。",
-    "keywords": "鰹だし, Bonito (fish) stock, dashi, stock, soup, base, 鰹, 昆布, 旨味",
+    "context": "辛口表記に。",
+    "keywords": "辛味噌ラーメン, spicy miso ramen, spicy, ramen, noodles",
+    "verified": true
+  },
+  {
+    "jp": "ピリ辛",
+    "en": "Mildly spicy",
+    "tag": "Menu",
+    "context": "少し辛めの表記に。",
+    "keywords": "ピリ辛, Mildly spicy",
+    "verified": true
+  },
+  {
+    "jp": "薬味",
+    "en": "Condiments / Garnish",
+    "tag": "Menu",
+    "context": "わさび、生姜、ネギなどの総称。",
+    "keywords": "薬味, Condiments / Garnish",
+    "verified": true
+  },
+  {
+    "jp": "持ち帰り可",
+    "en": "Takeout available",
+    "tag": "Menu",
+    "context": "お持ち帰りの案内に。",
+    "keywords": "持ち帰り可, Takeout available",
+    "verified": true
+  },
+  {
+    "jp": "テイクアウト窓口",
+    "en": "Order takeaway here",
+    "tag": "Menu",
+    "context": "テイクアウト窓口の表示に。",
+    "keywords": "テイクアウト窓口, Order takeaway here",
+    "verified": true
+  },
+  {
+    "jp": "数量限定メニュー",
+    "en": "Limited-quantity menu",
+    "tag": "Menu",
+    "context": "本日限定メニューの案内に。",
+    "keywords": "数量限定メニュー, Limited-quantity menu, menu, list, food, order",
     "verified": true
   },
   {
@@ -36,7 +68,7 @@
     "en": "100% plant-based",
     "tag": "Menu",
     "context": "ヴィーガン対応メニューの表記に。",
-    "keywords": "植物性100%, 100% plant-based, plant-based, vegan, ヴィーガン, 動物性不使用",
+    "keywords": "植物性100%, 100% plant-based, plant-based, vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース,, ヴィーガン, ヴィーガン, ビーガン, ベジ, 動物性不使用",
     "verified": true
   },
   {
@@ -44,7 +76,7 @@
     "en": "Meat-free",
     "tag": "Menu",
     "context": "お肉が入っていないことを示す際に。",
-    "keywords": "肉不使用, Meat-free, meat-free, vegetarian, vegan, ベジタリアン, ヴィーガン",
+    "keywords": "肉不使用, Meat-free, meat-free, vegetarian, vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース,, ベジタリアン, ビーガン, ベジ, ヴィーガン",
     "verified": true
   },
   {
@@ -76,7 +108,7 @@
     "en": "No pungent vegetables (No garlic/onions)",
     "tag": "Menu",
     "context": "宗教や嗜好に合わせた表記に。",
-    "keywords": "五葷（にんにく・ねぎ等）不使用, No pungent vegetables (No garlic/onions), gokun, no garlic, no onion, oriental vegan, にんにく, ねぎ",
+    "keywords": "五葷（にんにく・ねぎ等）不使用, No pungent vegetables (No garlic/onions), gokun, no garlic, no onion, oriental vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース,, にんにく, ねぎ, ヴィーガン, ビーガン, ベジ",
     "verified": true
   },
   {
@@ -216,22 +248,6 @@
     "verified": true
   },
   {
-    "jp": "ピリ辛",
-    "en": "Mildly spicy",
-    "tag": "Menu",
-    "context": "少し辛めの表記に。",
-    "keywords": "ピリ辛, Mildly spicy",
-    "verified": true
-  },
-  {
-    "jp": "薬味",
-    "en": "Condiments / Garnish",
-    "tag": "Menu",
-    "context": "わさび、生姜、ネギなどの総称。",
-    "keywords": "薬味, Condiments / Garnish",
-    "verified": true
-  },
-  {
     "jp": "自家製",
     "en": "Homemade",
     "tag": "Menu",
@@ -285,6 +301,14 @@
     "tag": "Menu",
     "context": "サービスの良さを伝える。",
     "keywords": "ご飯おかわり無料, Free rice refills",
+    "verified": true
+  },
+    {
+    "jp": "お品書き",
+    "en": "Menu",
+    "tag": "Menu",
+    "context": "メニューのタイトルに。",
+    "keywords": "御品書き.おしながき,お品,品,がき,メニュー,menu,お品がき",
     "verified": true
   },
   {
@@ -525,6 +549,14 @@
     "tag": "Menu",
     "context": "定番の具材表記。",
     "keywords": "おにぎり（鮭）, Rice ball with grilled salmon",
+    "verified": true
+  },
+  {
+    "jp": "鰹だし",
+    "en": "Bonito (fish) stock",
+    "tag": "Menu",
+    "context": "魚由来であることをベジタリアンに伝える際に。",
+    "keywords": "鰹だし, Bonito (fish) stock, dashi, stock, soup, base, 鰹, 昆布, 旨味",
     "verified": true
   },
   {
@@ -824,30 +856,6 @@
     "verified": true
   },
   {
-    "jp": "持ち帰り可",
-    "en": "Takeout available",
-    "tag": "Menu",
-    "context": "お持ち帰りの案内に。",
-    "keywords": "持ち帰り可, Takeout available",
-    "verified": true
-  },
-  {
-    "jp": "テイクアウト窓口",
-    "en": "Order takeaway here",
-    "tag": "Menu",
-    "context": "テイクアウト窓口の表示に。",
-    "keywords": "テイクアウト窓口, Order takeaway here",
-    "verified": true
-  },
-  {
-    "jp": "数量限定メニュー",
-    "en": "Limited-quantity menu",
-    "tag": "Menu",
-    "context": "本日限定メニューの案内に。",
-    "keywords": "数量限定メニュー, Limited-quantity menu, menu, list, food, order",
-    "verified": true
-  },
-  {
     "jp": "旬のおすすめ",
     "en": "Seasonal recommendations",
     "tag": "Menu",
@@ -1049,10 +1057,10 @@
   },
   {
     "jp": "ヴィーガン",
-    "en": "Vegan",
+    "en": "vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース,",
     "tag": "Menu",
     "context": "ヴィーガン料理の説明に。",
-    "keywords": "ヴィーガン, Vegan",
+    "keywords": "ヴィーガン, vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース,,ヴィーガン, ビーガン, ベジ",
     "verified": true
   },
   {
@@ -1301,9 +1309,8 @@
   "en": "Vegan option available upon request",
   "tag": "Menu",
   "context": "事前相談で対応可能な場合。",
-  "keywords": "完全菜食対応可, vegan option, plant-based",
-  "verified": true,
-  "featured": true
+  "keywords": "完全菜食対応可, vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース, option, plant-based,ヴィーガン, ビーガン, ベジ",
+  "verified": true
 },
 {
   "jp": "ハラル対応可（要相談）",
@@ -1418,19 +1425,196 @@
   "verified": true
 },
 {
-  "jp": "抹茶アイス",
-  "en": "Matcha ice cream",
-  "tag": "Menu",
-  "context": "人気デザート。",
-  "keywords": "抹茶アイス, dessert, matcha",
-  "verified": true
-},
-{
   "jp": "団子",
   "en": "Rice dumplings (Dango)",
   "tag": "Menu",
   "context": "和菓子の説明。",
   "keywords": "団子, dango, dessert",
+  "verified": true
+},
+{
+  "jp": "抹茶アイス",
+  "en": "Matcha ice cream",
+  "tag": "Menu",
+  "context": "和風デザートの定番。",
+  "keywords": "抹茶アイス, matcha ice cream, green tea, dessert, sweet, まっちゃ, アイス, デザート",
+  "verified": true
+},
+{
+  "jp": "黒蜜きなこアイス",
+  "en": "Ice cream with brown sugar syrup and roasted soybean powder",
+  "tag": "Menu",
+  "context": "和風甘味の説明に。",
+  "keywords": "黒蜜きなこアイス, kuromitsu, kinako, dessert, sweet, soy, くろみつ, きなこ",
+  "verified": true
+},
+{
+  "jp": "どら焼き",
+  "en": "Dorayaki (red bean pancake sandwich)",
+  "tag": "Menu",
+  "context": "あんこ入りスイーツ。",
+  "keywords": "どら焼き, dorayaki, red bean, anko, pancake, dessert",
+  "verified": true
+},
+{
+  "jp": "大福",
+  "en": "Daifuku (mochi with filling)",
+  "tag": "Menu",
+  "context": "餅系デザート。",
+  "keywords": "大福, daifuku, mochi, red bean, dessert, sweet",
+  "verified": true
+},
+{
+  "jp": "ショートケーキ",
+  "en": "Strawberry shortcake",
+  "tag": "Menu",
+  "context": "定番の洋菓子。",
+  "keywords": "ショートケーキ, strawberry shortcake, cake, cream, dessert",
+  "verified": true
+},
+{
+  "jp": "チーズケーキ",
+  "en": "Cheesecake",
+  "tag": "Menu",
+  "context": "人気の洋風デザート。",
+  "keywords": "チーズケーキ, cheesecake, dairy, milk, dessert, sweet",
+  "verified": true
+},
+{
+  "jp": "プリン",
+  "en": "Custard pudding",
+  "tag": "Menu",
+  "context": "卵使用のデザート。",
+  "keywords": "プリン, custard pudding, egg, milk, dessert, たまご",
+  "verified": true
+},
+{
+  "jp": "パンケーキ",
+  "en": "Pancakes",
+  "tag": "Menu",
+  "context": "カフェメニューに。",
+  "keywords": "パンケーキ, pancakes, cake, sweet, dessert, syrup",
+  "verified": true
+},
+{
+  "jp": "家系ラーメン",
+  "en": "Iekei ramen (rich soy-pork broth)",
+  "tag": "Menu",
+  "context": "濃厚豚骨醤油。",
+  "keywords": "家系ラーメン, iekei ramen, pork, soy sauce, ramen, noodles",
+  "verified": true
+},
+{
+  "jp": "二郎系ラーメン",
+  "en": "Jiro-style ramen",
+  "tag": "Menu",
+  "context": "ボリューム系。",
+  "keywords": "二郎系ラーメン, jiro style, ramen, large portion, pork, garlic",
+  "verified": true
+},
+{
+  "jp": "担々麺",
+  "en": "Tantanmen (spicy sesame ramen)",
+  "tag": "Menu",
+  "context": "ピリ辛胡麻スープ。",
+  "keywords": "担々麺, tantanmen, spicy, sesame, ramen, noodles",
+  "verified": true
+},
+{
+  "jp": "つけ麺",
+  "en": "Tsukemen (dipping ramen)",
+  "tag": "Menu",
+  "context": "麺とスープ別提供。",
+  "keywords": "つけ麺, tsukemen, dipping noodles, ramen",
+  "verified": true
+},
+{
+  "jp": "油そば",
+  "en": "Abura soba (soupless ramen)",
+  "tag": "Menu",
+  "context": "スープなし。",
+  "keywords": "油そば, abura soba, ramen, no soup, noodles",
+  "verified": true
+},
+{
+  "jp": "チャーシューメン",
+  "en": "Chashu ramen",
+  "tag": "Menu",
+  "context": "焼豚多め。",
+  "keywords": "チャーシューメン, chashu ramen, pork, ramen, noodles",
+  "verified": true
+},
+{
+  "jp": "ヴィーガンラーメン",
+  "en": "Vegan Ramen",
+  "tag": "Menu",
+  "context": "動物性不使用のラーメン。",
+  "keywords": "ヴィーガンラーメン, ヴィーガン, ビーガン, ベジ,vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース, ramen, plant-based, no meat, no fish, no egg",
+  "verified": true,
+  "featured": true
+},
+{
+  "jp": "オムライス",
+  "en": "Omelet rice",
+  "tag": "Menu",
+  "context": "卵料理。",
+  "keywords": "オムライス, ライス, omelet rice, egg, chicken, ketchup",
+  "verified": true
+},
+{
+  "jp": "動物性原材料不使用",
+  "en": "No animal products used",
+  "tag": "Menu",
+  "context": "完全ヴィーガン表記。",
+  "keywords": "動物性不使用, no animal products, vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース",
+  "verified": true
+},
+{
+  "jp": "ベジタリアン対応",
+  "en": "Vegetarian option available",
+  "tag": "Menu",
+  "context": "肉なし対応。",
+  "keywords": "ベジタリアン対応, vegetarian option, no meat,vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース",
+  "verified": true
+},
+{
+  "jp": "出汁に魚を使用しています",
+  "en": "Fish stock is used in the broth",
+  "tag": "Menu",
+  "context": "ヴィーガン向け注意書き。",
+  "keywords": "出汁に魚を使用しています, fish stock, dashi, allergy,vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース",
+  "verified": true
+},
+{
+  "jp": "同じ厨房で調理しています",
+  "en": "Prepared in the same kitchen",
+  "tag": "Menu",
+  "context": "コンタミ注意。",
+  "keywords": "同じ厨房で調理しています, same kitchen, cross contamination,vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース",
+  "verified": true
+},
+{
+  "jp": "蜂蜜を使用しています",
+  "en": "Contains honey",
+  "tag": "Menu",
+  "context": "完全ヴィーガン向け注意。",
+  "keywords": "蜂蜜を使用しています, はちみつ, みつ, はち, contains honey, vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース, warning",
+  "verified": true
+},
+{
+  "jp": "バター不使用",
+  "en": "No butter used",
+  "tag": "Menu",
+  "context": "乳製品不使用。",
+  "keywords": "バター不使用, no butter, dairy-free,vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース",
+  "verified": true
+},
+{
+  "jp": "ゼラチン不使用",
+  "en": "No gelatin used",
+  "tag": "Menu",
+  "context": "動物性ゼラチン不使用。",
+  "keywords": "ゼラチン不使用, no gelatin, vegan, plant-based, デザート, ヴィーガン, ビーガン, ベジ,プラントベース, dessert",
   "verified": true
 }
 ]

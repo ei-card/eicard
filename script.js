@@ -4,6 +4,22 @@ const searchInput = document.getElementById('searchInput');
 const showMoreBtn = document.getElementById('showMoreBtn');
 const showMoreContainer = document.getElementById('showMoreContainer');
 
+// --- PWA SERVICE WORKER REGISTRATION ---
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(reg => {
+            reg.onupdatefound = () => {
+                const installingWorker = reg.installing;
+                installingWorker.onstatechange = () => {
+                    if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                        console.log('New content is available; please refresh.');
+                    }
+                };
+            };
+        });
+    });
+}
+
 let allData = []; 
 let currentActiveCategory = "All";
 let visibleCount = window.innerWidth < 600 ? 6 : 9;
@@ -11,6 +27,7 @@ const LOAD_INCREMENT = 21;
 let shuffledAllData = [];
 let selectedItems = new Map(); 
 let selectionMode = false;
+let searchTimeout;
 
 const toKatakana = (str) => {
     return str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
@@ -26,7 +43,6 @@ function shuffleArray(array) {
 }
 
 async function initializeApp() {
-    let searchTimeout;
     grid.innerHTML = "<p class='loading'>データを読み込み中...</p>";
     const categories = ['menu', 'sign', 'pay', 'hotel', 'admin'];
     try {
@@ -44,12 +60,6 @@ async function initializeApp() {
         ];
         displayTranslations(); 
 
-        searchInput.addEventListener('input', () => {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(() => {
-                displayTranslations(currentActiveCategory);
-            }, 150);
-        });
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.addEventListener('click', () => {
                 if (btn.classList.contains('active')) return;
@@ -192,7 +202,7 @@ window.toggleMenu = (e) => {
 e.target.closest('.card').classList.add('menu-open');
 };
 
-// 1. Fullscreen with Dynamic Font Scaling
+// Fullscreen
 window.openFullscreen = (jp, en) => {
     
     const fs = document.getElementById('fullscreenOverlay');
@@ -202,12 +212,13 @@ window.openFullscreen = (jp, en) => {
     jpEl.innerText = jp;
     enEl.innerText = en;
 
-    // Adaptive sizing: shorter text is bigger, longer text shrinks
     const jpSize = jp.length > 10 ? 8 : 12; // vmin
     const enSize = en.length > 10 ? 8 : 12;  // vmin
     
     jpEl.style.fontSize = `${jpSize}vmin`;
     enEl.style.fontSize = `${enSize}vmin`;
+
+    trackEvent('card','fullscreen_open', jp)
 
     fs.style.display = 'flex';
 };
@@ -216,7 +227,7 @@ window.closeFullscreen = () => {
     document.getElementById('fullscreenOverlay').style.display = 'none';
 };
 
-// 2. The Unified A4 Visual Template
+// Template
 const getUnifiedA4HTML = (jp, en) => `
     <div id="a4-template" style="
         width: 1123px;
@@ -267,7 +278,7 @@ const getUnifiedA4HTML = (jp, en) => `
     </div>
     `;
 
-// 3. Unified Print/Download Actions
+// Single Print
 window.handlePrint = (jp, en) => {
     const win = window.open('', '_blank');
     win.document.write(`
@@ -297,7 +308,7 @@ window.handlePrint = (jp, en) => {
 };
 
 window.handleDownload = async (jp, en) => {
-    trackAction('download_png', jp);
+    trackEvent('card','download_png', jp)
     const container = document.createElement('div');
     container.style.position = 'absolute';
     container.style.left = '-9999px';
@@ -374,15 +385,17 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// --- 1. GA4 TRACKING HELPER ---
-const trackAction = (actionName, label) => {
-    if (typeof gtag !== 'undefined') {
-        gtag('event', actionName, { 'event_label': label });
-    }
+// --- GA4 TRACKING HELPER ---
+const trackEvent = (feature, action, label = "") => {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', action, {
+      feature: feature,
+      label: label
+    });
+  }
 };
 
-// --- 2. ABOUT/GUIDE CONTENT ---
-// --- 2. ABOUT/GUIDE/PRIVACY CONTENT -----
+// --- ABOUT/GUIDE CONTENT ---
 const pageData = {
     about: `
         <h2 style="color:var(--accent); font-weight:900;">英換 (EIKAN) について</h2>
@@ -396,7 +409,7 @@ const pageData = {
         <p><strong>2. クイック操作:</strong> カードをクリックして「全画面」で提示したり、メニューから1枚ずつ「画像保存」や「印刷」が可能です。</p>
         <p><strong>3. まとめて処理:</strong> <br>
         右下の <strong>チェックマーク(✓)</strong> を押すと選択モードになります。複数のカードを選んで、一括でPDF保存や印刷が可能です。現場に合わせた独自の掲示物リストを数秒で作れます。</p>
-        <p><strong>4. 伝える:</strong> 印刷して壁に貼る、またはタブレットでお客様に直接見せてご活用ください。</p>
+        <p><strong>4. オフラインで使う：</strong> スマホのブラウザで「ホーム画面に追加」を行うと、電波のない場所でもアプリのように利用できます。</p>
     `,
     privacy:`
         <h3 style="font-size:1.1rem; margin-top:20px;">プライバシーとデータ利用について</h3>
@@ -463,7 +476,7 @@ function updateSelectionBar() {
     } else {
         selectionBar.classList.remove('show');
     }
-    // Enable/disable buttons
+    
     const actionButtons = document.querySelectorAll('.selection-actions button');
 
     actionButtons.forEach(btn => {
@@ -523,6 +536,7 @@ window.printSelected = () => {
     let pages = '';
 
     selectedItems.forEach(item => {
+        trackEvent('batch','print_item', item.jp)
         pages += `
             <div style="page-break-after: always;">
                 ${getUnifiedA4HTML(item.jp, item.en)}
@@ -554,47 +568,6 @@ window.printSelected = () => {
         win.print();
         win.close();
     };
-};
-
-window.downloadSelectedPDF = async () => {
-    if (selectedItems.size === 0) return;
-
-    const { jsPDF } = window.jspdf;
-    const pdf = new jsPDF({
-        orientation: "landscape",
-        unit: "px",
-        format: [1123, 794] // same as template
-    });
-
-    let index = 0;
-
-    for (const item of selectedItems.values()) {
-
-        // Render hidden DOM
-        const container = document.createElement('div');
-        container.style.position = 'absolute';
-        container.style.left = '-9999px';
-        container.innerHTML = getUnifiedA4HTML(item.jp, item.en);
-        document.body.appendChild(container);
-
-        const canvas = await html2canvas(
-            container.querySelector('#a4-template'),
-            { scale: 2 }
-        );
-
-        const imgData = canvas.toDataURL("image/png");
-
-        if (index > 0) pdf.addPage();
-        pdf.addImage(imgData, "PNG", 0, 0, 1123, 794);
-
-        document.body.removeChild(container);
-        index++;
-    }
-
-    pdf.save("Eikan_Cards.pdf");
-
-    selectedItems.clear();
-    updateSelectionBar();
 };
 
 initializeApp();
@@ -633,8 +606,17 @@ function stopHintRotation() {
     clearInterval(hintInterval);
 }
 
-searchInput.addEventListener("input", () => {
-    searchHintEl.style.display = searchInput.value.length > 0 ? "none" : "block";
+searchInput.addEventListener('input', () => {
+    searchHintEl.style.display = searchInput.value.length > 0 ? 'none' : 'block';
+    
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        const query = searchInput.value.trim();
+        displayTranslations(currentActiveCategory);
+        if (query.length > 1) {
+            trackEvent('search','query', query)
+        }
+    }, 500);
 });
 
 searchInput.addEventListener("focus", stopHintRotation);
