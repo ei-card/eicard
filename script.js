@@ -605,7 +605,7 @@ const searchHints = [
     "例: 電子マネー、マイナンバーカード、卵不使用...",
     "例: 現金のみ、チェックアウト、申請書...",
     "例: 写真撮影禁止、住民票、盛り合わせ...",
-    "例: 営業時間、蕎麦、パスポート"
+    "例: 営業時間、蕎麦、パスポート..."
 ];
 
 const searchHintEl = document.getElementById("searchHint");
@@ -626,7 +626,7 @@ function rotateHint() {
 }
 
 function startHintRotation() {
-    hintInterval = setInterval(rotateHint, 4000);
+    hintInterval = setInterval(rotateHint, 3500);
 }
 
 function stopHintRotation() {
