@@ -10,7 +10,7 @@
       gtag('js', new Date());
       gtag('config', 'G-J7NX87GJBJ');
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
     <title>英換 EIKAN | 伝わる、広がる、街の英語。</title>
     <meta name="description" content="日本の店舗・施設向けの無料翻訳・掲示ツール。現場で本当に使う英語表現を検索し、そのまま全画面表示や印刷、画像保存が可能です。">
     <meta name="keywords" content="翻訳, 英語対応, インバウンド, 接客英語, 看板作成, 無料ツール">
@@ -32,7 +32,10 @@
             <p class="tagline">伝わる、広がる、街の英語。</p>
         </div>
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="例: 予約, アレルギー, 免税...">
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" />
+                <span id="searchHint" class="search-hint"></span>
+            </div>
         </div>
         <div class="tag-row">
             <div class="quick-tags">
@@ -65,6 +68,7 @@
     <div class="footer-links">
         <a href="javascript:void(0)" onclick="showPage('about')">このサイトについて</a>
         <a href="javascript:void(0)" onclick="showPage('guide')">使い方</a>
+        <a href="javascript:void(0)" onclick="showPage('privacy')">プライバシー</a>
     </div>
     <p class="copyright">&copy; 2026 英換 EIKAN Project</p>
     </footer>
@@ -81,10 +85,8 @@
         <div id="fs-jp"></div>
         <div id="fs-en"></div>
     </div>
-
-    <button id="backToTop" class="floating-btn back-to-top">↑</button>
     <button id="multiSelectFab" class="floating-btn multi-select-fab">✓</button>
-
+    <button id="backToTop" class="floating-btn back-to-top">↑</button>
     <div id="selectionBar" class="selection-bar">
         <div class="selection-info">
             <span id="selectionCount">選択中 (0)</span>

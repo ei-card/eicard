@@ -1105,7 +1105,7 @@
   },
   {
     "jp": "グルテンフリー対応可",
-    "en": "Gluten-free options available",
+    "en": "Gluten-free option available upon request",
     "tag": "Menu",
     "context": "小麦アレルギーや食事制限のある方向けに。",
     "keywords": "グルテンフリー対応可, Gluten-free options available, gluten, wheat, allergy, アレルギー, こむぎ",
@@ -1297,7 +1297,7 @@
   "verified": true
 },
 {
-  "jp": "完全菜食対応可",
+  "jp": "ヴィーガン対応可",
   "en": "Vegan option available upon request",
   "tag": "Menu",
   "context": "事前相談で対応可能な場合。",

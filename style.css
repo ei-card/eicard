@@ -89,11 +89,17 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 22px;
+    position: relative;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
 }
 
 .search-container input {
     width: 100%;
-    max-width: 520px;
     padding: 14px 20px;
     border-radius: 16px;
     border: 1px solid var(--border);
@@ -102,6 +108,18 @@ header {
     outline: none;
     box-shadow: var(--shadow-soft);
     transition: all 0.2s ease;
+}
+
+.search-hint {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9aa3af;
+    font-size: 0.95rem;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.25s ease;
 }
 
 .search-container input:focus {
@@ -179,9 +197,10 @@ header {
 }
 
 .multi-select-fab {
-    bottom: 110px;
+    bottom: 40px;
     background: var(--accent);
     color: white;
+    transition: all 0.25s ease;
 }
 
 /* ================= GRID ================= */
@@ -591,7 +610,7 @@ transition:
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
 
     .selection-bar {
         position: fixed;
@@ -635,26 +654,31 @@ transition:
     }
 
     body.selection-mode .multi-select-fab {
-        opacity: 0;
-        pointer-events: none;
+        bottom: 260px;
     }
 
     body.selection-mode .back-to-top {
-        bottom: 20px;
+        bottom: 330px;
     }
 }
 
 /* ================= BACK TO TOP ================= */
 
 .back-to-top {
-    bottom: 40px;
+    bottom: 110px;
     background: var(--accent);
     color: white;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.25s ease;
 }
 
 .back-to-top.show {
     opacity: 1;
     visibility: visible;
+    transform: translateY(0);
 }
 
 /* ================= PRINT ================= */
