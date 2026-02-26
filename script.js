@@ -62,7 +62,7 @@ async function initializeApp() {
                 currentActiveCategory = btn.getAttribute('data-tag');
 
                 searchInput.value = ""; // reset search when switching mode
-                visibleCount = 8;
+                visibleCount = 9;
                 displayTranslations(currentActiveCategory);
             });
         });
