@@ -167,7 +167,7 @@ function displayTranslations(categoryFilter = "All") {
                     <button class="menu-btn" onclick="toggleMenu(event)">⋮</button>
                     <div class="menu-content">
                         <a href="#" onclick="handleDownload('${item.jp}', '${item.en}')">画像を保存</a>
-                        <a href="#" onclick="handlePrint('${item.jp}', '${item.en}')">印刷</a>
+                        <a href="#" onclick="handlePrint('${item.jp}', '${item.en}')">印刷 / PDF</a>
                         <div class="report-item">
                             <a href="${reportUrl}" target="_blank">報告</a>
                         </div>
@@ -272,7 +272,7 @@ const getUnifiedA4HTML = (jp, en) => `
                 color: #bdc3c7;
                 font-weight: bold;
             ">
-                英換 — EIKAN PROJECT
+                英カード — EiCard PROJECT
             </div>
         </div>
     </div>
@@ -328,7 +328,7 @@ window.handleDownload = async (jp, en) => {
 
     canvas.toBlob(async (blob) => {
 
-        const file = new File([blob], `Eikan_${jp}.png`, { type: 'image/png' });
+        const file = new File([blob], `EiCard_${jp}.png`, { type: 'image/png' });
 
         const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
@@ -336,7 +336,7 @@ window.handleDownload = async (jp, en) => {
             try {
                 await navigator.share({
                     files: [file],
-                    title: 'Eikan Image'
+                    title: 'EiCard Image'
                 });
                 return;
             } catch (err) {
@@ -347,7 +347,7 @@ window.handleDownload = async (jp, en) => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = `Eikan_${jp}.png`;
+        link.download = `EiCard_${jp}.png`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -398,8 +398,8 @@ const trackEvent = (feature, action, label = "") => {
 // --- ABOUT/GUIDE CONTENT ---
 const pageData = {
     about: `
-        <h2 style="color:var(--accent); font-weight:900;">英換 (EIKAN) について</h2>
-        <p>英換は、日本の店舗や公共施設が外国人のお客様と円滑にコミュニケーションを取るために作成した表現集です。</p>
+        <h2 style="color:var(--accent); font-weight:900;">英カード (EiCard) について</h2>
+        <p>英カードは「伝わる、広がる、街の英語。」をコンセプトに、日本の店舗や公共施設が外国人のお客様と円滑にコミュニケーションを取るために作成したオープンツールです。</p>
         <p>現場で自然に使える英語表現を厳選し、検索・表示・印刷までシンプルに行えるよう設計しています。 </p>
         <p>どなたでも無料でご利用いただけます。店頭掲示やタブレット表示など、現場に合わせてご活用ください。</p>
     `,

@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7NX87GJBJ"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY9S3S87PR"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-J7NX87GJBJ');
+      gtag('config', 'G-FY9S3S87PR');
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
-    <title>英換 EIKAN | 伝わる、広がる、街の英語。</title>
+    <title>英カード EiCard | 伝わる、広がる、街の英語。</title>
     <meta name="description" content="日本の店舗・施設向けの無料翻訳・掲示ツール。現場で本当に使う英語表現を検索し、そのまま全画面表示や印刷、画像保存が可能です。">
     <meta name="keywords" content="翻訳, 英語対応, インバウンド, 接客英語, 看板作成, 無料ツール">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://eikan-project.github.io/eikan/">
-    <meta property="og:title" content="英換 EIKAN | 伝わる、広がる、街の英語。">
+    <meta property="og:url" content="https://ei-card.github.io/eicard/">
+    <meta property="og:title" content="英カード EiCard | 伝わる、広がる、街の英語。">
     <meta property="og:description" content="お店の英語対応をスマートに。現場で使える表現を検索して、すぐに掲示用として使えます。">
-    <meta property="og:image" content="https://eikan-project.github.io/eikan/assets/og-image.png"> <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://ei-card.github.io/eicard/assets/og-image.png"> <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>    
     <header>
-        <div class="brand-container">
-            <h1 class="logo">英換</h1>
-            <div class="brand-divider"></div>
+        <div class="brand-shell">
+            <div class="logo-stack" onclick="location.reload()">
+                <div class="logo-card-under second"></div>
+                <div class="logo-card-under first"></div>
+                
+                <div class="logo-main">
+                    英<span class="card-frame">カード</span>
+                </div>
+            </div>
+            <div class="brand-tagline">EI-CARD PROJECT</div>
             <p class="tagline">伝わる、広がる、街の英語。</p>
         </div>
         <div class="search-container">
@@ -59,8 +65,8 @@
             <h2>リクエスト・お問い合わせ</h2>
             <p>リストにない表現が必要ですか？以下からリクエストできます。</p>
             <div class="contact-links">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSchjUIPTJ85jI8f8Cyav4q6Kztvts4x04xIYtY8XVzQhNZFJQ/viewform?usp=dialog" target="_blank" class="cta-button">リクエストを送る</a>
-                <a href="mailto:help.eikan@gmail.com" class="secondary-button">お問い合わせ</a>
+                <a href="https://forms.gle/ZLRUvJDWushADsLYA" target="_blank" class="cta-button">リクエストを送る</a>
+                <a href="mailto:help.eicard@gmail.com" class="secondary-button">お問い合わせ</a>
             </div>
         </div>
     </section>
@@ -70,7 +76,7 @@
         <a href="javascript:void(0)" onclick="showPage('guide')">使い方</a>
         <a href="javascript:void(0)" onclick="showPage('privacy')">プライバシー</a>
     </div>
-    <p class="copyright">&copy; 2026 英換 EIKAN Project</p>
+    <p class="copyright">&copy; 2026 英カード EiCard Project</p>
     </footer>
 
     <div id="pageOverlay" class="page-overlay" onclick="closePage()">
@@ -81,7 +87,7 @@
     </div>
     <div id="fullscreenOverlay">
         <button class="close-fs" onclick="closeFullscreen()">×</button>
-        <div class="print-branding">英換 - EIKAN PROJECT</div>
+        <div class="print-branding">英カード - EiCard PROJECT</div>
         <div id="fs-jp"></div>
         <div id="fs-en"></div>
     </div>
@@ -93,7 +99,7 @@
         </div>
 
         <div class="selection-actions">
-            <button class="primary-action" onclick="printSelected('print')">印刷 / PDF</button>
+            <button class="primary-action" onclick="printSelected('print')">まとめて 印刷 / PDF</button>
             <button class="ghost-action" onclick="clearSelection()">クリア</button>
         </div>
     </div>
