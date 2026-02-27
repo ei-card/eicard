@@ -129,7 +129,7 @@ function displayTranslations(categoryFilter = "All") {
 
     itemsToRender.forEach(item => {
         const reportSummary = `${item.jp}\n${item.en}${item.context ? `\n${item.context}` : ''}`;
-        const reportUrl = `https://docs.google.com/forms/d/e/1FAIpQLSfpbhutXoLYXMmI6aKyk0huRF_zpWxHVUwzdPWBwE8Q79xeIQ/viewform?usp=dialog&entry.1588045473=${encodeURIComponent(reportSummary)}`;
+        const reportUrl = `https://docs.google.com/forms/d/e/1FAIpQLScBTIZ3OKaHATn1SoXQVwyhpYkQwWUDCLNL2wgcotMGh8WveA/viewform?usp=dialog&entry.831162109=${encodeURIComponent(reportSummary)}`;
 
         const card = document.createElement('div');
         card.className = 'card';
