@@ -28,9 +28,11 @@ let shuffledAllData = [];
 let selectedItems = new Map(); 
 let selectionMode = false;
 let searchTimeout;
+let hasAnimatedLogo = false;
 
-const toKatakana = (str) => {
-    return str.replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
+const normalizeJP = (str = "") => {
+    return str.toLowerCase().replace(/\s+/g, "")
+        .replace(/[\u3041-\u3096]/g, m => String.fromCharCode(m.charCodeAt(0) + 0x60));
 };
 
 function shuffleArray(array) {
@@ -71,7 +73,6 @@ async function initializeApp() {
 
                 currentActiveCategory = btn.getAttribute('data-tag');
 
-                searchInput.value = ""; // reset search when switching mode
                 visibleCount = 9;
                 displayTranslations(currentActiveCategory);
             });
@@ -85,51 +86,121 @@ async function initializeApp() {
 }
 
 function displayTranslations(categoryFilter = "All") {
-    const term = searchInput.value.toLowerCase();
-    const katakanaTerm = toKatakana(term);
-    grid.innerHTML = "";
-    const isSearching = term.length > 0;
+    const query = searchInput.value.trim().toLowerCase();
+    const queryWords = query.split(/\s+/).filter(w => w.length > 0);
+    const isSearching = queryWords.length > 0;
 
-    const sourceData = categoryFilter === "All" ? shuffledAllData : allData;
+    currentActiveCategory = categoryFilter;
+    
+    grid.innerHTML = '';
+    
+    if (!isSearching) visibleCount = window.innerWidth < 600 ? 6 : 9;
 
-    let filtered = sourceData.filter(item => {
-        const matchesTag = (categoryFilter === "All" || item.tag === categoryFilter);
-        const matchesSearch = !term || 
-            item.jp.toLowerCase().includes(term) || 
-            item.en.toLowerCase().includes(term) ||
-            (item.keywords && item.keywords.toLowerCase().includes(term)) ||
-            (item.keywords && item.keywords.includes(katakanaTerm));
-        return matchesTag && matchesSearch;
+    let filtered = shuffledAllData.filter(item => {
+        const categoryMatch = categoryFilter === "All" || item.tag === categoryFilter;
+        if (!categoryMatch) return false;
+
+        if (!isSearching) return true;
+
+        const jp = (item.jp || "").toLowerCase();
+        const en = (item.en || "").toLowerCase();
+        const keywords = (item.keywords || "").toLowerCase();
+        const normJP = normalizeJP(jp);
+        const normQuery = normalizeJP(query);
+
+        return queryWords.every(word => {
+            const nWord = normalizeJP(word);
+            return jp.includes(word) || en.includes(word) || keywords.includes(word) || normJP.includes(nWord);
+        });
     });
 
-    // Featured first
-    filtered.sort((a, b) => (b.featured === true ? 1 : 0) - (a.featured === true ? 1 : 0));
+    let itemsToRender = isSearching
+        ? filtered
+        : filtered.slice(0, visibleCount);
 
-    let itemsToRender = filtered;
-
-    if (!isSearching) {
-
-        itemsToRender = filtered.slice(0, visibleCount);
-
-        if (visibleCount < filtered.length) {
-            showMoreContainer.style.display = "block";
-        } else {
-            showMoreContainer.style.display = "none";
-        }
-
-    } else {
-        itemsToRender = filtered;
-        showMoreContainer.style.display = "none";
-    }
-
+    // Empty
     if (filtered.length === 0) {
-        grid.innerHTML = "<p class='no-results'>該当する表現が見つかりませんでした。</p>";
-        return;
-    }
+        
+        const emptyDiv = document.createElement("div");
+        emptyDiv.className = "empty-state";
+        const normalizedQuery = normalizeJP(query);
 
+        // SImilar
+        const similarJP = allData.filter(item => {
+            const jp = (item.jp || "").toLowerCase();
+            return normalizeJP(jp).includes(normalizedQuery.slice(0, 2));
+        });
+
+        // Kewyword
+        const keywordMatches = allData.filter(item => {
+            const keywords = (item.keywords || "").toLowerCase();
+            return keywords.includes(query);
+        });
+
+        // Merge
+        const suggestionPool = [...new Set([
+            ...similarJP.slice(0, 3),
+            ...keywordMatches.slice(0, 3)
+        ])];
+
+        // Fallback 
+        const fallbackSuggestions = [
+            "予約",
+            "現金のみ",
+            "トイレ",
+            "クレジットカード",
+            "ラストオーダー"
+        ];
+
+        emptyDiv.innerHTML = `
+            <div class="empty-card">
+                <h3>見つかりませんでした</h3>
+                <p>検索キーワードを変えてみてください。</p>
+                ${
+                    suggestionPool.length > 0
+                        ? `
+                        <div class="suggestions">
+                            <p>もしかして：</p>
+                            ${suggestionPool.map(item =>
+                                `<button class="suggest-btn">${item.jp}</button>`
+                            ).join("")}
+                        </div>
+                        `
+                        : `
+                        <div class="suggestions">
+                            <p>よく使われる検索：</p>
+                            ${fallbackSuggestions.map(word =>
+                                `<button class="suggest-btn">${word}</button>`
+                            ).join("")}
+                        </div>
+                        `
+                }
+            </div>
+        `;
+
+        grid.appendChild(emptyDiv);
+
+        document.querySelectorAll(".suggest-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+                searchByTag(btn.innerText);
+                
+                document.querySelectorAll('.filter-btn').forEach(b => {
+                    b.classList.toggle('active', b.getAttribute('data-tag') === 'All');
+                });
+            });
+        });
+
+        return;
+}
+
+    // Render
     itemsToRender.forEach(item => {
-        const reportSummary = `${item.jp}\n${item.en}${item.context ? `\n${item.context}` : ''}`;
-        const reportUrl = `https://docs.google.com/forms/d/e/1FAIpQLScBTIZ3OKaHATn1SoXQVwyhpYkQwWUDCLNL2wgcotMGh8WveA/viewform?usp=dialog&entry.831162109=${encodeURIComponent(reportSummary)}`;
+
+        const reportSummary =
+            `${item.jp}\n${item.en}${item.context ? `\n${item.context}` : ''}`;
+
+        const reportUrl =
+            `https://docs.google.com/forms/d/e/1FAIpQLScBTIZ3OKaHATn1SoXQVwyhpYkQwWUDCLNL2wgcotMGh8WveA/viewform?usp=dialog&entry.831162109=${encodeURIComponent(reportSummary)}`;
 
         const card = document.createElement('div');
         card.className = 'card';
@@ -137,10 +208,8 @@ function displayTranslations(categoryFilter = "All") {
         card.dataset.en = item.en;
 
         card.onclick = (e) => {
-            if (
-                e.target.closest('button') ||
-                e.target.closest('.menu-container')
-            ) return;
+            if (e.target.closest('button') ||
+                e.target.closest('.menu-container')) return;
 
             if (selectionMode) {
                 const key = item.jp;
@@ -188,6 +257,11 @@ function displayTranslations(categoryFilter = "All") {
     });
 }
 
+window.quickSearch = (term) => {
+    searchInput.value = term;
+    displayTranslations(currentActiveCategory);
+};
+
 window.toggleMenu = (e) => {
     e.stopPropagation();
     const menu = e.target.nextElementSibling;
@@ -202,24 +276,37 @@ window.toggleMenu = (e) => {
 e.target.closest('.card').classList.add('menu-open');
 };
 
+function getDynamicSize(text, isEnglish = false) {
+    const len = text.length;
+
+    if (len <= 10) return isEnglish ? 14 : 13;
+    if (len <= 20) return isEnglish ? 11 : 10;
+    if (len <= 40) return isEnglish ? 8 : 7;
+    return isEnglish ? 6.5 : 6;
+}
+
 // Fullscreen
 window.openFullscreen = (jp, en) => {
-    
+
     const fs = document.getElementById('fullscreenOverlay');
     const jpEl = document.getElementById('fs-jp');
     const enEl = document.getElementById('fs-en');
-    
+
     jpEl.innerText = jp;
     enEl.innerText = en;
 
-    const jpSize = jp.length > 10 ? 8 : 12; // vmin
-    const enSize = en.length > 10 ? 8 : 12;  // vmin
-    
-    jpEl.style.fontSize = `${jpSize}vmin`;
-    enEl.style.fontSize = `${enSize}vmin`;
+    // Base sizes
+    let jpSize = getDynamicSize(jp) * 0.35;
+    jpEl.style.fontSize = jpSize + "vmin";
+    enEl.style.fontSize = (getDynamicSize(en, true) * 1.2) + "vmin";
 
-    trackEvent('card','fullscreen_open', jp)
+    requestAnimationFrame(() => {
+        if (jpEl.scrollHeight > jpEl.clientHeight) {
+            jpEl.style.fontSize = (jpSize * 0.9) + "vmin";
+        }
+    });
 
+    trackEvent('card','fullscreen_open', jp);
     fs.style.display = 'flex';
 };
 
@@ -227,56 +314,94 @@ window.closeFullscreen = () => {
     document.getElementById('fullscreenOverlay').style.display = 'none';
 };
 
-// Template
-const getUnifiedA4HTML = (jp, en) => `
-    <div id="a4-template" style="
-        width: 1123px;
-        height: 794px;
-        background: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 80px;
-        margin: 0 auto;
-        font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans JP', 'Hiragino Sans', sans-serif;
-    ">
+const catchPhrases = [
+    "他の英語表現はこちら",
+    "英語対応をもっと簡単に",
+    "EiCardで探す",
+    "無料で作れる英語カード",
+    "街で使える英語"
+];
+
+const getUnifiedA4HTML = (jp, en) => {
+    const randomPhrase =
+    catchPhrases[Math.floor(Math.random() * catchPhrases.length)];
+
+    const jpSize = getDynamicSize(jp) * 0.8; 
+    const enSize = getDynamicSize(en, true) * 1.15; 
+
+    return `
+<div id="a4-template" style="
+    width: 1123px;
+    height: 794px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px;
+    margin: 0 auto;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans JP', sans-serif;
+">
+
+    <div style="width: 70%;">
+
         <div style="
-            width: 70%;
+            font-size: ${jpSize * 3}px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            color: #81858cff;
+            margin-bottom: 2vw;
         ">
-            <div style="
-                font-size: 36px;
-                font-weight: 500;
-                color: #a4abb8;
-                margin-bottom: 20px;
-            ">
-                ${jp}
-            </div>
+            ${jp}
+        </div>
 
-            <div style="
-                font-size: 82px;
-                font-weight: 700;
-                color: #1a2a3a;
-                line-height: 1.15;
-                margin-bottom: 30px;
-            ">
-                ${en}
-            </div>
+        <div style="
+            font-size: ${enSize * 8.5}px;
+            font-weight: 800;
+            color: #1a2a3a;
+            line-height: 1.15;
+            margin-bottom: 3vw;
+        ">
+            ${en}
+        </div>
 
-            <div style="
-                border-top: 2px solid #f1f2f6;
-                padding-top: 18px;
-                font-size: 12px;
-                letter-spacing: 2px;
-                color: #bdc3c7;
-                font-weight: bold;
-            ">
-                英カード — EiCard PROJECT
-            </div>
+        <div style="
+            border-top: 2px solid #f1f2f6;
+            padding-top: 18px;
+            font-size: 12px;
+            letter-spacing: 2px;
+            color: #bdc3c7;
+            font-weight: bold;
+        ">
+            英カード — EiCard PROJECT
         </div>
     </div>
-    `;
+
+    <div style="
+        position: absolute;
+        bottom: 28px;
+        right: 32px;
+        text-align: center;
+    ">
+        <img src="assets/qr.png" style="
+            width: 64px;
+            height: 64px;
+            margin-bottom: 6px;
+        " />
+        <div style="
+            font-size: 9px;
+            color: #94a3b8;
+            letter-spacing: 0.5px;
+        ">
+            ${randomPhrase}
+        </div>
+    </div>
+
+</div>
+`;
+};
 
 // Single Print
 window.handlePrint = (jp, en) => {
@@ -318,7 +443,7 @@ window.handleDownload = async (jp, en) => {
     const canvas = await html2canvas(
         container.querySelector('#a4-template'),
         {
-            scale: 1,
+            scale: 2,
             backgroundColor: "#ffffff",
             useCORS: true
         }
@@ -612,13 +737,20 @@ searchInput.addEventListener('input', () => {
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(() => {
         const query = searchInput.value.trim();
-        displayTranslations(currentActiveCategory);
-        if (query.length > 1) {
-            trackEvent('search','query', query)
+        
+        if (query !== "") {
+            // When user starts typing a search, visually and logically reset to "All"
+            currentActiveCategory = "All";
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.toggle('active', btn.getAttribute('data-tag') === 'All');
+            });
+            displayTranslations("All");
+        } else {
+            // If the search bar is cleared, return to the previously active category
+            displayTranslations(currentActiveCategory);
         }
     }, 500);
 });
-
 searchInput.addEventListener("focus", stopHintRotation);
 
 searchInput.addEventListener("blur", () => {
@@ -628,6 +760,32 @@ searchInput.addEventListener("blur", () => {
     }
 });
 
+function searchByTag(tagName) {
+    searchInput.value = tagName;
+    
+    if (searchHintEl) searchHintEl.style.display = 'none';
+    
+    displayTranslations("All");
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    
+    trackEvent('tag_click', 'query', tagName);
+}
 // Initialize
 searchHintEl.textContent = searchHints[0];
 startHintRotation();
+
+// --- MOBILE LOGO ANIMATION TRIGGER ---
+
+window.addEventListener('scroll', () => {
+    if (window.innerWidth < 768 && !hasAnimatedLogo) {
+        const logo = document.querySelector('.logo-stack');
+        if (logo && window.scrollY > 20) {
+            hasAnimatedLogo = true;
+            logo.classList.add('is-animating');
+            
+            setTimeout(() => {
+                logo.classList.remove('is-animating');
+            }, 1500); 
+        }
+    }
+}, { passive: true });

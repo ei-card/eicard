@@ -3,12 +3,11 @@
 :root {
     --bg: #f8fafc;
     --card-bg: #ffffff;
-    --primary: #0f172a; /* Deeper Navy for text */
+    --primary: #0f172a;
     
-    --accent: #0d9488; /* Modern Teal */
+    --accent: #0d9488; 
     --accent-soft: rgba(13, 148, 136, 0.05);
     --accent-strong: #0f766e;
-    --accent-tech: #3b82f6;
     
     --text-main: #1e293b;
     --text-sub: #64748b;
@@ -48,16 +47,15 @@ header {
     text-align: center;
     background: var(--bg);
 }
-/* Container */
+
 .brand-shell {
     display: flex;
     flex-direction: column;
     align-items: center;
     perspective: 1200px;
-    margin-bottom: 40px; /* More space for the fanned cards to breathe */
+    margin-bottom: 40px; 
 }
 
-/* --- THE FIXED LOGO MAIN --- */
 .logo-main {
     position: relative;
     z-index: 20;
@@ -81,7 +79,7 @@ header {
     font-size: 0.75em; 
     transform: translateY(-0.12em); 
     box-shadow: 2px 2px 0px var(--accent-soft);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     line-height: 1;
 }
 
@@ -107,7 +105,6 @@ header {
     padding: 15px 30px; 
 }
 
-/* --- THE TAGLINE --- */
 .brand-tagline {
     font-size: 0.65rem; 
     letter-spacing: 0.5em;
@@ -130,15 +127,8 @@ header {
 
 /* --- ANIMATION --- */
 
-.logo-stack:hover .logo-main {
-    transform: translateZ(50px) rotateX(8deg) rotateY(-5deg);
-}
-
-.logo-stack:hover .card-frame {
-    background: var(--accent);
-    color: white;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-}
+.logo-stack:hover .logo-main { 
+    transform: translateZ(50px) rotateX(8deg) rotateY(-10deg); }
 
 .logo-stack:hover .logo-card-under.first {
     transform: rotate(6deg) translateZ(-25px) translateX(12px);
@@ -148,6 +138,14 @@ header {
 .logo-stack:hover .logo-card-under.second {
     transform: rotate(12deg) translateZ(-50px) translateX(24px);
     opacity: 0.4;
+}
+
+.logo-stack:hover .card-frame,
+.logo-stack.is-animating .card-frame { 
+    background: var(--accent); 
+    color: white; 
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transform: translateY(-5px) rotateY(-10deg);
 }
 
 /* ================= SEARCH ================= */
@@ -189,10 +187,62 @@ header {
     transition: opacity 0.25s ease;
 }
 
-.search-container input:focus {
-    border-color: var(--accent-tech);
-    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+.search-hint-container {
+    min-height: 1.5em; 
 }
+
+.search-container input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft); 
+}
+
+.suggest-btn {
+    margin: 6px;
+    padding: 8px 16px; 
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.suggest-btn:active {
+    transform: scale(0.95);
+    background: var(--accent-soft);
+}
+
+.empty-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-premium);
+}
+
+.suggestions {
+    margin-top: 16px;
+}
+
+.suggest-btn {
+    margin: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--accent);
+    background: var(--accent-strong);
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+}
+
+.suggest-btn:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-premium);
+}
+
 
 /* ================= FILTER ROW ================= */
 
@@ -221,19 +271,21 @@ header {
     font-size: 0.85rem;
     color: var(--text-sub);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .filter-btn:hover {
+    transform: translateY(-2px);
     background: var(--accent-soft);
     border-color: var(--accent);
-    color: var(--accent);
 }
 
 .filter-btn.active {
     background: var(--accent);
     color: white;
+    transform: translateY(0) scale(0.97);
 }
+
 .floating-btn {
     position: fixed;
     right: 24px;
@@ -320,6 +372,7 @@ header {
     padding: 16px 18px;
     position: relative;
     z-index: 1;
+    animation: cardFadeIn 0.4s ease forwards;
 
     opacity: 0;
     transform: translateY(20px); 
@@ -484,6 +537,12 @@ header {
 #fs-jp {
     font-size: clamp(1.2rem, 2.2vw, 1.6rem);
     color: var(--text-sub);
+    line-height: 1.2;
+    word-break: keep-all;
+}
+
+#fs-content {
+    width: 85%;
 }
 
 .close-fs {
@@ -521,7 +580,6 @@ header {
     border-radius: 22px;
     max-width: 720px;
     margin: 0 auto;
-    /* Fluid padding inside the CTA box */
     padding: clamp(30px, 6vw, 50px) clamp(20px, 5vw, 36px);
     box-shadow: var(--shadow-soft);
 }
@@ -552,12 +610,6 @@ header {
     text-decoration: none;
     background: var(--accent);
     color: white;
-    transition: all 0.25s ease;
-}
-
-.cta-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 24px rgba(30,58,95,0.25);
 }
 
 .mail-button {
@@ -568,13 +620,21 @@ header {
     background: white;
     color: var(--accent);
     border: 1px solid var(--accent);
-    transition: all 0.25s ease;
 }
 
-.mail-button:hover {
-    background: var(--accent-soft);
+.cta-button, .mail-button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.cta-button:hover, .mail-button:hover {
+    transform: translateY(-2px); 
+    box-shadow: var(--shadow-hover);
+    filter: brightness(1.1); 
+}
+
+.cta-button:active, .mail-button:active {
+    transform: translateY(0) scale(0.97);
+}
 
 .secondary-button {
     padding: 14px 28px;
@@ -754,6 +814,10 @@ header {
         transform: translate(0, 0);
     }
 
+    .filter-btn {
+        padding: 10px 18px;
+    }
+
     .selection-actions {
         flex-direction: column;
         gap: 14px;
@@ -797,7 +861,7 @@ header {
     }
 
     .cta-button, .mail-button {
-        flex: 1 1 100%; /* Force buttons to take up full width (stacking) */
+        flex: 1 1 100%; 
         max-width: 100%;
         width: 100%; 
         padding: 12px 20px;
@@ -838,4 +902,10 @@ header {
     }
 
     body { background: white; }
+}
+
+
+@keyframes cardFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
