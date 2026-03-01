@@ -788,21 +788,6 @@ searchHintEl.textContent = searchHints[0];
 startHintRotation();
 
 //Mobile anim trigger
-
-window.addEventListener('scroll', () => {
-    if (window.innerWidth < 768 && !hasAnimatedLogo) {
-        const logo = document.querySelector('.logo-stack');
-        if (logo && window.scrollY > 20) {
-            hasAnimatedLogo = true;
-            logo.classList.add('is-animating');
-            
-            setTimeout(() => {
-                logo.classList.remove('is-animating');
-            }, 300); 
-        }
-    }
-}, { passive: true });
-
 const logoStack = document.querySelector('.logo-stack');
 
 logoStack.addEventListener('click', () => {
