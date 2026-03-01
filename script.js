@@ -787,7 +787,7 @@ function searchByTag(tagName) {
 searchHintEl.textContent = searchHints[0];
 startHintRotation();
 
-// --- MOBILE LOGO ANIMATION TRIGGER ---
+//Mobile anim trigger
 
 window.addEventListener('scroll', () => {
     if (window.innerWidth < 768 && !hasAnimatedLogo) {
@@ -798,7 +798,7 @@ window.addEventListener('scroll', () => {
             
             setTimeout(() => {
                 logo.classList.remove('is-animating');
-            }, 1500); 
+            }, 300); 
         }
     }
 }, { passive: true });
@@ -806,11 +806,10 @@ window.addEventListener('scroll', () => {
 const logoStack = document.querySelector('.logo-stack');
 
 logoStack.addEventListener('click', () => {
-    // Add the class to start the animation
     logoStack.classList.add('is-active');
 
-    // Remove it after 800ms so it "resets" like a physical spring
+    // Timeout
     setTimeout(() => {
         logoStack.classList.remove('is-active');
-    }, 800);
+    }, 300);
 });
