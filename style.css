@@ -337,6 +337,9 @@ header {
 
 #showMoreContainer {
     margin: 20px 0 50px;
+    display: none; 
+    width: 100%;
+    justify-content: center;
 }
 
 #showMoreBtn {
@@ -890,6 +893,11 @@ header {
 
 /* ================= PRINT ================= */
 
+@page {
+  size: A4 landscape;
+  margin: 0;
+}
+
 @media print {
     header,
     .contact-section,
@@ -901,11 +909,78 @@ header {
         display: none !important;
     }
 
-    body { background: white; }
+    html, body {
+    width: 297mm;
+    height: 210mm;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white;
+  }
+
+    body * {
+        visibility: hidden;
+    }
+
+    body {
+    font-family: "Noto Sans JP", sans-serif;
+    }
+
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    #a4-template {
+        position: absolute;
+        top: 0; left: 0;
+        width: 297mm; height: 210mm;
+        background: white;
+        display: flex; flex-direction: column;
+        justify-content: center; align-items: center;
+        /* Shrink padding from 20mm to 10mm to give text more room */
+        padding: 10mm; 
+        box-sizing: border-box;
+    }
+
+    .a4-content {
+        width: 100%;
+        text-align: center;
+        display: flex; flex-direction: column;
+        gap: 15px; 
+    }
+
+    #a4-jp {
+        font-size: 110pt; 
+        font-weight: 700;
+        color: #0f172a;
+        line-height: 1.1; 
+        word-wrap: break-word;
+    }
+
+    #a4-en {
+        font-size: 65pt; 
+        font-weight: 500;
+        color: #334155;
+        line-height: 1.1;
+        word-wrap: break-word;
+    }
 }
+
 
 
 @keyframes cardFadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+.a4-wrapper {
+  width: 297mm;
+  height: 210mm;
+  transform-origin: top left;
+}
+
+@media screen and (max-width: 1000px) {
+  .a4-wrapper {
+    transform: scale(0.35);
+  }
 }

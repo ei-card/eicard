@@ -1,5 +1,5 @@
-const VERSION = '1.2.0';
-const CACHE_STATIC = `eikan-static-${VERSION}`;
+const VERSION = '1.2.2';
+const CACHE_STATIC =`eikan-static-${VERSION}`;
 const CACHE_DYNAMIC = `eikan-dynamic-${VERSION}`;
 
 const STATIC_ASSETS = [

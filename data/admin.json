@@ -122,10 +122,10 @@
   },
   {
     "jp": "申請書に不備がある場合は連絡します",
-    "en": "We will contact you if there is problems in the application form",
+    "en": "We will contact you if there are problems in the application form",
     "tag": "Admin",
     "context": "不備対応の説明に。",
-    "keywords": "申請書に不備がある場合は連絡します, We will contact you if the application is incomplete, 手続き, 申し込み, apply",
+    "keywords": "申請書に不備がある場合は連絡します, We will contact you if the application is incomplete, 手続き, 申し込み, apply, problems",
     "verified": true
   },
   {

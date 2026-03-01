@@ -73,7 +73,7 @@ async function initializeApp() {
 
                 currentActiveCategory = btn.getAttribute('data-tag');
 
-                visibleCount = 9;
+                visibleCount = window.innerWidth < 600 ? 6 : 9;
                 displayTranslations(currentActiveCategory);
             });
         });
@@ -93,8 +93,6 @@ function displayTranslations(categoryFilter = "All") {
     currentActiveCategory = categoryFilter;
     
     grid.innerHTML = '';
-    
-    if (!isSearching) visibleCount = window.innerWidth < 600 ? 6 : 9;
 
     let filtered = shuffledAllData.filter(item => {
         const categoryMatch = categoryFilter === "All" || item.tag === categoryFilter;
@@ -117,6 +115,12 @@ function displayTranslations(categoryFilter = "All") {
     let itemsToRender = isSearching
         ? filtered
         : filtered.slice(0, visibleCount);
+
+    if (filtered.length === 0 || filtered.length <= visibleCount) {
+        showMoreContainer.style.display = 'none';
+    } else {
+        showMoreContainer.style.display = 'flex';
+    }
 
     // Empty
     if (filtered.length === 0) {
@@ -249,7 +253,14 @@ function displayTranslations(categoryFilter = "All") {
         `;
 
         grid.appendChild(card);
+        // Show / hide "Show More" button
     });
+
+        if (!isSearching && filtered.length > visibleCount) {
+            showMoreContainer.style.display = "flex";
+        } else {
+            showMoreContainer.style.display = "none";
+        }
 
     // Stagger animation
     document.querySelectorAll('.card').forEach((card, index) => {
@@ -345,7 +356,7 @@ const getUnifiedA4HTML = (jp, en) => {
     font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans JP', sans-serif;
 ">
 
-    <div style="width: 70%;">
+    <div style="width: 90%;">
 
         <div style="
             font-size: ${jpSize * 3}px;
@@ -418,10 +429,11 @@ window.handlePrint = (jp, en) => {
                         margin: 0;
                     }
 
-                    body {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
+                    html, body {
+                        margin: 0;
+                        padding: 0;
+                        width: 297mm;
+                        height: 210mm;
                     }
                 </style>
             </head>
@@ -744,6 +756,7 @@ searchInput.addEventListener('input', () => {
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.getAttribute('data-tag') === 'All');
             });
+            visibleCount = window.innerWidth < 600 ? 6 : 9;
             displayTranslations("All");
         } else {
             // If the search bar is cleared, return to the previously active category
