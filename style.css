@@ -372,7 +372,7 @@ header {
 .card {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 20px; /* Rounder, friendlier corners */
+    border-radius: 20px; 
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: var(--shadow-premium);
     display: flex;
