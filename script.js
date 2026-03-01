@@ -802,3 +802,15 @@ window.addEventListener('scroll', () => {
         }
     }
 }, { passive: true });
+
+const logoStack = document.querySelector('.logo-stack');
+
+logoStack.addEventListener('click', () => {
+    // Add the class to start the animation
+    logoStack.classList.add('is-active');
+
+    // Remove it after 800ms so it "resets" like a physical spring
+    setTimeout(() => {
+        logoStack.classList.remove('is-active');
+    }, 800);
+});
