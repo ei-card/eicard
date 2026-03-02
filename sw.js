@@ -1,4 +1,4 @@
-const VERSION = '1.3.0';
+const VERSION = '1.3.1';
 const CACHE_STATIC =`eicard-static-${VERSION}`;
 const CACHE_DYNAMIC = `eicard-dynamic-${VERSION}`;
 
@@ -7,12 +7,16 @@ const STATIC_ASSETS = [
   './index.html',
   './style.css',
   './script.js',
+  './favicon.svg',
+  './icon-192.png',
+  './icon-512.png',
   './offline.html',
   './data/menu.json',
   './data/sign.json',
   './data/pay.json',
   './data/hotel.json',
-  './data/admin.json'
+  './data/admin.json',
+  './manifest.json'
 ];
 
 self.addEventListener('install', (event) => {
