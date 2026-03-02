@@ -5,7 +5,7 @@ const showMoreBtn = document.getElementById('showMoreBtn');
 const showMoreContainer = document.getElementById('showMoreContainer');
 
 // --- PWA SERVICE WORKER REGISTRATION ---
-if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
     window.addEventListener('load', () => {
         navigator.serviceWorker.register('./sw.js').then(reg => {
             reg.onupdatefound = () => {
@@ -18,6 +18,8 @@ if ('serviceWorker' in navigator) {
             };
         });
     });
+    } else {
+    console.log('Dev Mode: Service Worker skipped for live-reload.');
 }
 
 let allData = []; 
@@ -790,11 +792,33 @@ startHintRotation();
 //Mobile anim trigger
 const logoStack = document.querySelector('.logo-stack');
 
-logoStack.addEventListener('click', () => {
+logoStack.addEventListener('touchstart', () => {
     logoStack.classList.add('is-active');
+}, {passive: true});
 
-    // Timeout
+logoStack.addEventListener('touchend', () => {
     setTimeout(() => {
         logoStack.classList.remove('is-active');
-    }, 300);
-});
+    }, 100);
+}, {passive: true});
+
+async function syncVersionFromSW() {
+    try {
+        const response = await fetch('./sw.js');
+        const text = await response.text();
+        
+        const match = text.match(/const\s+VERSION\s+=\s+'([^']+)'/);
+        
+        if (match && match[1]) {
+            const version = match[1];
+            const versionEl = document.getElementById('appVersion');
+            if (versionEl) {
+                versionEl.textContent = `v${version}`;
+                console.log(`System: Running EiCard ${version}`);
+            }
+        }
+    } catch (error) {
+        console.error("Could not fetch version from SW:", error);
+    }
+}
+document.addEventListener('DOMContentLoaded', syncVersionFromSW);

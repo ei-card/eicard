@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FY9S3S87PR"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -28,12 +28,14 @@
 <body>    
     <header>
         <div class="brand-shell">
-            <div class="logo-stack">
-                <div class="logo-card-under second"></div>
-                <div class="logo-card-under first"></div>
-                
+            <div class="logo-stack">                
                 <div class="logo-main">
-                    英<span class="card-frame">カード</span>
+                    英
+                    <div class="card-wrapper">
+                        <span class="card-frame">カード</span>
+                        <div class="logo-card-under second"></div>
+                        <div class="logo-card-under first"></div>
+                    </div>
                 </div>
 
                 <div class="brand-tagline">EI-CARD PROJECT</div>
@@ -80,6 +82,7 @@
         <a href="javascript:void(0)" onclick="showPage('privacy')">プライバシー</a>
     </div>
     <p class="copyright">&copy; 2026 英カード EiCard Project</p>
+    <span id="appVersion" class="app-version"></span>
     </footer>
 
     <div id="pageOverlay" class="page-overlay" onclick="closePage()">
