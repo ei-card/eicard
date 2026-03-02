@@ -255,7 +255,6 @@ function displayTranslations(categoryFilter = "All") {
         `;
 
         grid.appendChild(card);
-        // Show / hide "Show More" button
     });
 
         if (!isSearching && filtered.length > visibleCount) {
@@ -753,7 +752,6 @@ searchInput.addEventListener('input', () => {
         const query = searchInput.value.trim();
         
         if (query !== "") {
-            // When user starts typing a search, visually and logically reset to "All"
             currentActiveCategory = "All";
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.toggle('active', btn.getAttribute('data-tag') === 'All');
@@ -761,7 +759,6 @@ searchInput.addEventListener('input', () => {
             visibleCount = window.innerWidth < 600 ? 6 : 9;
             displayTranslations("All");
         } else {
-            // If the search bar is cleared, return to the previously active category
             displayTranslations(currentActiveCategory);
         }
     }, 500);

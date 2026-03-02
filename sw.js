@@ -1,6 +1,6 @@
-const VERSION = '1.2.9';
-const CACHE_STATIC =`eikan-static-${VERSION}`;
-const CACHE_DYNAMIC = `eikan-dynamic-${VERSION}`;
+const VERSION = '1.3.0';
+const CACHE_STATIC =`eicard-static-${VERSION}`;
+const CACHE_DYNAMIC = `eicard-dynamic-${VERSION}`;
 
 const STATIC_ASSETS = [
   './',
