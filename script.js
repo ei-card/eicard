@@ -48,7 +48,7 @@ function shuffleArray(array) {
 
 async function initializeApp() {
     grid.innerHTML = "<p class='loading'>データを読み込み中...</p>";
-    const categories = ['menu', 'sign', 'pay', 'hotel', 'admin'];
+    const categories = ['menu', 'sign', 'shops','baby','hotel','admin'];
     try {
         const fetchPromises = categories.map(cat => 
             fetch(`./data/${cat}.json`).then(res => res.json())

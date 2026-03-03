@@ -69,7 +69,7 @@
     "en": "The elevator is over there",
     "tag": "Hotel",
     "context": "館内案内に。",
-    "keywords": "エレベーターはあちらです, The elevator is over there",
+    "keywords": "エレベーターはあちらです, The elevator is over there, elevator, lift, エレベーター, エレベーターホール, 上階, floor, direction",
     "verified": true
   },
   {
@@ -85,7 +85,7 @@
     "en": "Please leave your key at the desk before leaving",
     "tag": "Hotel",
     "context": "外出時のルールに。",
-    "keywords": "外出時は鍵を預けてください, Please leave your key at the desk before leaving",
+    "keywords": "外出時は鍵を預けてください, Please leave your key at the desk before leaving, key, 鍵, フロント, leave key, deposit key, 外出, desk",
     "verified": true
   },
   {
@@ -109,7 +109,7 @@
     "en": "Please rinse before entering",
     "tag": "Hotel",
     "context": "温泉のマナー説明に。",
-    "keywords": "かけ湯をしてください, Please rinse before entering",
+    "keywords": "かけ湯をしてください, Please rinse before entering, rinse, shower first, かけ湯, マナー, 温泉, bath etiquette, wash, onsen",
     "verified": true
   },
   {
@@ -117,7 +117,7 @@
     "en": "Please bring your own towel",
     "tag": "Hotel",
     "context": "銭湯などの案内に。",
-    "keywords": "タオル持参, Please bring your own towel",
+    "keywords": "タオル持参, Please bring your own towel, towel, タオル, 持参, bring towel, bath, onsen, spa",
     "verified": true
   },
   {
@@ -125,7 +125,7 @@
     "en": "No tattoos allowed",
     "tag": "Hotel",
     "context": "公共浴場のルールに。",
-    "keywords": "刺青お断り, No tattoos allowed",
+    "keywords": "刺青お断り, No tattoos allowed, tattoo, 刺青, 入れ墨, no tattoo, prohibition, rule, onsen policy",
     "verified": true
   },
   {
@@ -133,7 +133,7 @@
     "en": "Sauna",
     "tag": "Hotel",
     "context": "設備の案内に。",
-    "keywords": "サウナ, Sauna",
+    "keywords": "サウナ, Sauna, sauna room, steam, spa, bath, 温浴, ととのう",
     "verified": true
   },
   {
@@ -149,7 +149,7 @@
     "en": "Curfew",
     "tag": "Hotel",
     "context": "夜間の入館制限に。",
-    "keywords": "門限, Curfew",
+    "keywords": "門限, Curfew, curfew time, closing time, entry restriction, night rule, entrance limit",
     "verified": true
   },
   {
@@ -157,7 +157,7 @@
     "en": "The curfew is ___PM",
     "tag": "Hotel",
     "context": "具体的な時間の案内に。",
-    "keywords": "門限は___時です, The curfew is ___PM",
+    "keywords": "門限は___時です, The curfew is ___PM, curfew time, closing time, entrance restriction, ___時, night policy",
     "verified": true
   },
   {
@@ -165,7 +165,7 @@
     "en": "No smoking throughout the building",
     "tag": "Hotel",
     "context": "建物全体のルールに。",
-    "keywords": "全館禁煙, No smoking throughout the building",
+    "keywords": "全館禁煙, No smoking throughout the building, non-smoking, 禁煙, smoke-free, no smoking, building policy",
     "verified": true
   },
   {
@@ -173,7 +173,7 @@
     "en": "We hope to see you again",
     "tag": "Hotel",
     "context": "お見送りの挨拶に。",
-    "keywords": "またお越しください, We hope to see you again",
+    "keywords": "またお越しください, We hope to see you again, thank you for staying, welcome again, see you next time, farewell",
     "verified": true
   },
   {
@@ -181,7 +181,7 @@
     "en": "Have a nice trip!",
     "tag": "Hotel",
     "context": "最後に一言添える時に。",
-    "keywords": "良い旅を！, Have a nice trip!",
+    "keywords": "良い旅を！, Have a nice trip!, safe travels, enjoy your trip, farewell, goodbye",
     "verified": true
   },
   {
@@ -213,7 +213,7 @@
     "en": "Laundry service available",
     "tag": "Hotel",
     "context": "ランドリー・サービスの案内に。",
-    "keywords": "ランドリーサービスがあります, Laundry service available",
+    "keywords": "ランドリーサービスがあります, Laundry service available, laundry, 洗濯, dry cleaning, cleaning service, washer",
     "verified": true
   },
   {
@@ -221,7 +221,7 @@
     "en": "Room service available",
     "tag": "Hotel",
     "context": "お部屋での注文に対応します。",
-    "keywords": "ルームサービスをご利用いただけます, Room service available",
+    "keywords": "ルームサービスをご利用いただけます, Room service available, room service, in-room dining, meal delivery, order food",
     "verified": true
   },
   {
@@ -229,7 +229,7 @@
     "en": "Wake-up call service",
     "tag": "Hotel",
     "context": "時間の予約について。",
-    "keywords": "モーニングコール承ります, Wake-up call service",
+    "keywords": "モーニングコール承ります, Wake-up call service, wake-up call, morning call, alarm service, front desk call",
     "verified": true
   },
   {
@@ -237,7 +237,7 @@
     "en": "Daily housekeeping",
     "tag": "Hotel",
     "context": "清掃に関する案内に。",
-    "keywords": "ハウスキーピングを行っています, Daily housekeeping",
+    "keywords": "ハウスキーピングを行っています, Daily housekeeping, housekeeping, cleaning service, room cleaning, 清掃, daily service",
     "verified": true
   },
   {
@@ -245,7 +245,7 @@
     "en": "Do Not Disturb",
     "tag": "Hotel",
     "context": "客室ドアの表示に。",
-    "keywords": "起こさないでください, Do Not Disturb",
+    "keywords": "起こさないでください, Do Not Disturb, DND, privacy, no service, door sign, disturb",
     "verified": true
   },
   {
@@ -265,10 +265,10 @@
     "verified": true
   },
   {
-    "jp": "バリアフリー対応です",
-    "en": "Accessible rooms available",
+    "jp": "バリアフリーのお部屋がございます",
+    "en": "We have accessible rooms available",
     "tag": "Hotel",
-    "context": "設備の案内に。",
+    "context": "旅館やホテルの案内に。",
     "keywords": "バリアフリー対応です, Accessible rooms available",
     "verified": true
   },
@@ -293,7 +293,7 @@
     "en": "Parking available",
     "tag": "Hotel",
     "context": "駐車場の案内に。",
-    "keywords": "駐車場あり, Parking available",
+    "keywords": "駐車場あり, Parking available, parking, car park, 駐車場, on-site parking, vehicle",
     "verified": true
   },
   {
@@ -301,7 +301,7 @@
     "en": "Valet parking available",
     "tag": "Hotel",
     "context": "設備オプションに。",
-    "keywords": "バレットパーキング対応, Valet parking available",
+    "keywords": "バレットパーキング対応, Valet parking available, valet service, parking service, car service, 車預かり",
     "verified": true
   },
   {
@@ -309,7 +309,7 @@
     "en": "Bicycle rental",
     "tag": "Hotel",
     "context": "スポーツ・レクリエーションに。",
-    "keywords": "レンタサイクルあります, Bicycle rental",
+    "keywords": "レンタサイクルあります, Bicycle rental, bike rental, bicycle hire, cycling, レンタル自転車",
     "verified": true
   },
   {
@@ -317,7 +317,7 @@
     "en": "Shuttle service available",
     "tag": "Hotel",
     "context": "送迎サービスの案内に。",
-    "keywords": "シャトルサービスがあります, Shuttle service available",
+    "keywords": "シャトルサービスがあります, Shuttle service available, shuttle, transfer, pick-up, drop-off, transportation",
     "verified": true
   },
   {
@@ -325,7 +325,7 @@
     "en": "Airport shuttle service",
     "tag": "Hotel",
     "context": "予約についてはデスクに詳しく。",
-    "keywords": "空港シャトルサービスあり, Airport shuttle service",
+    "keywords": "空港シャトルサービスあり, Airport shuttle service, airport transfer, shuttle bus, pick-up service, transportation",
     "verified": true
   },
   {
@@ -333,7 +333,7 @@
     "en": "Concierge available",
     "tag": "Hotel",
     "context": "観光の手配に。",
-    "keywords": "コンシェルジュがいます, Concierge available",
+    "keywords": "コンシェルジュがいます, Concierge available, concierge service, travel assistance, booking support, front desk help",
     "verified": true
   },
   {
@@ -381,7 +381,7 @@
     "en": "Ryokan staff / Room attendant",
     "tag": "Hotel",
     "context": "旅館の給仕担当者。",
-    "keywords": "仲居さん, Ryokan staff / Room attendant",
+    "keywords": "仲居さん, Ryokan staff, room attendant, traditional inn staff, hostess, service staff",
     "verified": true
   },
   {
@@ -421,7 +421,7 @@
     "en": "Feeling unwell / Ambulance",
     "tag": "Hotel",
     "context": "緊急時の連絡に。",
-    "keywords": "体調不良・救急車, Feeling unwell / Ambulance",
+    "keywords": "体調不良・救急車, Feeling unwell, Ambulance, emergency, sick, medical help, hospital, urgent",
     "verified": true
   },
   {
@@ -429,7 +429,7 @@
     "en": "Directions to nearby convenience stores",
     "tag": "Hotel",
     "context": "買い物場所の案内に。",
-    "keywords": "近隣のコンビニ案内, Directions to nearby convenience stores",
+    "keywords": "近隣のコンビニ案内, Directions to nearby convenience stores, convenience store, コンビニ, nearby shop, map, direction",
     "verified": true
   },
   {
@@ -437,7 +437,7 @@
     "en": "Humidifier rental",
     "tag": "Hotel",
     "context": "乾燥対策の備品案内に。",
-    "keywords": "加湿器の貸出, Humidifier rental",
+    "keywords": "加湿器の貸出, Humidifier rental, humidifier, air moisture, rental item, room equipment",
     "verified": true
   },
   {

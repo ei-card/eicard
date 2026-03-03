@@ -824,14 +824,6 @@
     "verified": true
   },
   {
-    "jp": "ベジタリアン対応",
-    "en": "Vegetarian options available",
-    "tag": "Menu",
-    "context": "菜食対応が可能な場合に。",
-    "keywords": "ベジタリアン対応, Vegetarian options available",
-    "verified": true
-  },
-  {
     "jp": "キッズメニュー",
     "en": "Kids' menu",
     "tag": "Menu",
@@ -1049,7 +1041,7 @@
   },
   {
     "jp": "ヴィーガン",
-    "en": "vegan, plant-based, ヴィーガン, ビーガン, ベジ,プラントベース,",
+    "en": "Vegan",
     "tag": "Menu",
     "context": "ヴィーガン料理の説明に。",
     "keywords": "ヴィーガン, vegan, plant-based, ヴィーガン, ビーガン, ベジ, プラントベース, ヴィーガン, ビーガン, ベジ",
@@ -1105,7 +1097,7 @@
   },
   {
     "jp": "グルテンフリー対応可",
-    "en": "Gluten-free option available upon request",
+    "en": "Gluten-free option available (upon request)",
     "tag": "Menu",
     "context": "小麦アレルギーや食事制限のある方向けに。",
     "keywords": "グルテンフリー対応可, Gluten-free options available, gluten, wheat, allergy, アレルギー, こむぎ",
@@ -1305,7 +1297,7 @@
     "featured": true
   },
   {
-    "jp": "ハラル対応可（要相談）",
+    "jp": "ハラル対応可",
     "en": "Halal options available (upon request)",
     "tag": "Menu",
     "context": "ハラル対応可能な場合。",
@@ -1353,7 +1345,7 @@
     "verified": true
   },
   {
-    "jp": "ご注文はお決まりですか？",
+    "jp": "ご注文はお決まりでしょうか？",
     "en": "Are you ready to order?",
     "tag": "Menu",
     "context": "注文確認時に。",
@@ -1562,8 +1554,8 @@
     "verified": true
   },
   {
-    "jp": "ベジタリアン対応",
-    "en": "Vegetarian option available",
+    "jp": "ベジタリアン対応可",
+    "en": "Vegetarian option available (upon request)",
     "tag": "Menu",
     "context": "肉なし対応。",
     "keywords": "ベジタリアン対応, vegetarian option, no meat, vegan, plant-based, ヴィーガン, ビーガン, ベジ, プラントベース",

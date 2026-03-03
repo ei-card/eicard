@@ -13,9 +13,10 @@ const STATIC_ASSETS = [
   './offline.html',
   './data/menu.json',
   './data/sign.json',
-  './data/pay.json',
   './data/hotel.json',
   './data/admin.json',
+  './data/shops.json',
+  './data/baby.json',
   './manifest.json'
 ];
 

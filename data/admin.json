@@ -13,8 +13,7 @@
     "tag": "Admin",
     "context": "申請受付時の一般的な案内に。",
     "keywords": "必要,書類,提出, Please, submit, required, documents",
-    "verified": true,
-    "featured":true
+    "verified": true
   },
   {
     "jp": "身分証明書を提示してください(パスポート又は在留カード)",

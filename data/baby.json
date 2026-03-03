@@ -1,0 +1,211 @@
+[
+    {
+    "jp": "ベビールーム（授乳室）はこちらです",
+    "en": "The nursing room is this way",
+    "tag": "Baby",
+    "context": "赤ちゃん連れの方への案内に。",
+    "keywords": "ベビールーム（授乳室）はこちらです, nursing room, baby room, 授乳室, 赤ちゃん, おむつ, 案内",
+    "verified": true,
+    "featured": true
+    },
+    {
+    "jp": "おむつ交換台がございます",
+    "en": "We have a diaper changing table available",
+    "tag": "Baby",
+    "context": "おむつ替えの場所を探している時に。",
+    "keywords": "おむつ交換台がございます, diaper changing table, おむつ, 交換, 台, baby, 赤ちゃん",
+    "verified": true
+    },
+    {
+    "jp": "ベビーカーはこちらにお預けください",
+    "en": "Please park your stroller here",
+    "tag": "Baby",
+    "context": "ベビーカー置き場への案内に。",
+    "keywords": "ベビーカーはこちらにお預けください, leave stroller, 預ける, 置く, park, ベビーカー",
+    "verified": true
+    },
+    {
+    "jp": "ベビーカーの貸し出しを行っています",
+    "en": "We have strollers available to rent",
+    "tag": "Baby",
+    "context": "ベビーカーレンタルサービスの案内に。",
+    "keywords": "ベビーカーの貸し出しを行っています, stroller rental, 貸出, レンタル, カート, baby",
+    "verified": true
+    },
+    {
+    "jp": "ミルク用のお湯が必要な際はお声がけください",
+    "en": "Please let us know if you need hot water for baby formula",
+    "tag": "Baby",
+    "context": "授乳中の方への配慮に。",
+    "keywords": "ミルク用のお湯が必要な際はお声がけください, hot water, formula, ミルク, お湯, 赤ちゃん, baby",
+    "verified": true
+    },
+    {
+    "jp": "離乳食の温めを承ります",
+    "en": "We can heat up your baby food for you",
+    "tag": "Baby",
+    "context": "飲食店やサービスカウンターでの対応に。",
+    "keywords": "離乳食の温めを承ります, heat up, baby food, 離乳食, 温める, 電子レンジ, microwave",
+    "verified": true
+    },
+    {
+    "jp": "離乳食の持ち込みは可能です",
+    "en": "You are welcome to bring your own baby food",
+    "tag": "Baby",
+    "context": "飲食店での離乳食の可否について。",
+    "keywords": "離乳食の持ち込みは可能です, baby food, bring, 離乳食, 持ち込み, 赤ちゃん",
+    "verified": true
+    },
+    {
+    "jp": "アレルギー対応の離乳食はありますか？",
+    "en": "Do you have any allergy-friendly baby food?",
+    "tag": "Baby",
+    "context": "客からの質問を想定、または確認。",
+    "keywords": "アレルギー対応の離乳食はありますか？, allergy, baby food, アレルギー, 離乳食, 食事",
+    "verified": true
+    },
+    {
+    "jp": "授乳クッションの貸し出しがあります",
+    "en": "Nursing pillows are available to borrow",
+    "tag": "Baby",
+    "context": "ベビールームでの備品案内に。",
+    "keywords": "授乳クッションの貸し出しがあります, nursing pillow, 授乳, クッション, 貸出, borrow",
+    "verified": true
+    },
+    {
+    "jp": "ベビーカーのまま入れるトイレはこちらです",
+    "en": "You can bring your stroller into this restroom",
+    "tag": "Baby",
+    "context": "多目的トイレや広いトイレの案内に。",
+    "keywords": "ベビーカーのまま入れるトイレはこちらです, accessible, stroller, トイレ, 広い, ベビーカー",
+    "verified": true
+    },
+    {
+    "jp": "子供用の椅子をご用意します",
+    "en": "I will prepare a high chair for your child",
+    "tag": "Baby",
+    "context": "レストランや休憩スペースでの対応に。",
+    "keywords": "子供用の椅子をご用意します, high chair, 椅子, 子供, ベビーチェア, chair",
+    "verified": true
+    },
+    {
+    "jp": "靴を脱いで上がるエリアです",
+    "en": "Please take off your shoes in this area",
+    "tag": "Baby",
+    "context": "キッズスペースなどの利用ルール説明に。",
+    "keywords": "靴を脱いで上がるエリアです, shoes off, 靴, 脱ぐ, キッズスペース, playground",
+    "verified": true
+    },
+    {
+    "jp": "保護者同伴でのご利用をお願いします",
+    "en": "Children must be accompanied by an adult",
+    "tag": "Baby",
+    "context": "キッズスペースの安全管理のために。",
+    "keywords": "保護者同伴でのご利用をお願いします, accompany, adult, 保護者, 一緒, 注意, safety",
+    "verified": true
+    },
+    {
+    "jp": "おむつは持ち帰りにご協力ください",
+    "en": "Please take your used diapers home with you",
+    "tag": "Baby",
+    "context": "ゴミ箱がない施設でのお願い。",
+    "keywords": "おむつは持ち帰りにご協力ください, diapers home, おむつ, 持ち帰り, ゴミ, trash",
+    "verified": true
+    },
+    {
+    "jp": "おむつ用のゴミ箱はこちらです",
+    "en": "The diaper bin is right here",
+    "tag": "Baby",
+    "context": "ベビールーム内での案内に。",
+    "keywords": "おむつ用のゴミ箱はこちらです, diaper bin, おむつ, ゴミ箱, trash, bin",
+    "verified": true
+    },
+    {
+    "jp": "迷子のお呼び出しをしましょうか？",
+    "en": "Shall we make an announcement for your missing child?",
+    "tag": "Baby",
+    "context": "迷子が発生した際の対応。",
+    "keywords": "迷子のお呼び出しをしましょうか？, announcement, missing child, 迷子, 放送, 呼び出し",
+    "verified": true
+    },
+    {
+    "jp": "お子様向けのメニューがございます",
+    "en": "We have a menu for children",
+    "tag": "Baby",
+    "context": "食事の案内に。",
+    "keywords": "お子様向けのメニューがございます, kids menu, 子供, メニュー, 食事, kids",
+    "verified": true
+    },
+    {
+    "jp": "ミルクを冷やすための氷水を用意します",
+    "en": "I’ll prepare some ice water to cool the milk down",
+    "tag": "Baby",
+    "context": "哺乳瓶を冷やす手伝いをする際に。",
+    "keywords": "ミルクを冷やすための氷水を用意します, cool down, milk, ミルク, 冷やす, 氷水, ice",
+    "verified": true
+    },
+    {
+    "jp": "お湯の温度は70度以上に設定されています",
+    "en": "The water temperature is set to over 70°C",
+    "tag": "Baby",
+    "context": "調乳用温水器の安全性説明。",
+    "keywords": "お湯の温度は70度以上に設定されています, temperature, water, お湯, 温度, 70度, milk",
+    "verified": true
+    },
+    {
+    "jp": "ここはベビーカー優先エリアです",
+    "en": "This is a priority area for strollers",
+    "tag": "Baby",
+    "context": "エレベーターや通路での誘導。",
+    "keywords": "ここはベビーカー優先エリアです, priority, stroller, 優先, ベビーカー, エリア",
+    "verified": true
+    },
+    {
+    "jp": "お着替え台をご利用ください",
+    "en": "Please use the changing station",
+    "tag": "Baby",
+    "context": "服を着替えさせる場所を探している方に。",
+    "keywords": "お着替え台をご利用ください, changing station, 着替え, 台, 赤ちゃん, baby",
+    "verified": true
+    },
+    {
+    "jp": "ベビーカーのタイヤを拭いていただけますか？",
+    "en": "Could you please wipe the stroller tires?",
+    "tag": "Baby",
+    "context": "屋内施設で汚れが気になる際のお願い。",
+    "keywords": "ベビーカーのタイヤを拭いていただけますか？, wipe, tires, 拭く, タイヤ, ベビーカー, 掃除",
+    "verified": true
+    },
+    {
+    "jp": "個室の授乳室が空いています",
+    "en": "A private nursing room is available right now",
+    "tag": "Baby",
+    "context": "混雑時の案内に。",
+    "keywords": "個室の授乳室が空いています, private, nursing room, 個室, 授乳室, 空き, available",
+    "verified": true
+    },
+    {
+    "jp": "幼児用の補助便座があります",
+    "en": "We have child toilet seats available",
+    "tag": "Baby",
+    "context": "子供用トイレの案内に。",
+    "keywords": "幼児用の補助便座があります, training seat, トイレ, 補助便座, 子供, toddler",
+    "verified": true
+    },
+    {
+    "jp": "お子様用のカトラリー（スプーン等）です",
+    "en": "Here is some cutlery for your child",
+    "tag": "Baby",
+    "context": "スプーンやフォークを渡す際に。",
+    "keywords": "お子様用のカトラリーです, cutlery, spoon, fork, 子供, スプーン, フォーク",
+    "verified": true
+    },
+    {
+    "jp": "ベビーカーを畳んでいただけますか？",
+    "en": "Could you please fold your stroller?",
+    "tag": "Baby",
+    "context": "混雑したバスや狭い店内での協力依頼。",
+    "keywords": "ベビーカーを畳んでいただけますか？, fold stroller, 畳む, ベビーカー, 協力, narrow",
+    "verified": true
+    }
+]

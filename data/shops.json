@@ -1,372 +1,604 @@
 [
-  {
+    {
+    "jp": "ご試着いかがですか？",
+    "en": "How does it fit?",
+    "tag": "Shops",
+    "context": "試着中の客への声掛けに。",
+    "keywords": "ご試着いかがですか？, How is the fit?, 試着, フィッティング, fitting, 服, Shops, サイズ, size",
+    "verified": true
+    },
+    {
+    "jp": "試着室はこちらです",
+    "en": "The fitting rooms are this way",
+    "tag": "Shops",
+    "context": "試着室への案内に。",
+    "keywords": "試着室はこちらです, The fitting rooms are this way, 試着室, fitting room, 案内, guide",
+    "verified": true
+    },
+    {
+    "jp": "サイズ違いをお持ちしましょうか？",
+    "en": "Would you like me to bring a different size?",
+    "tag": "Shops",
+    "context": "サイズが合わない様子の時に。",
+    "keywords": "サイズ違いをお持ちしましょうか？, size, different, 大きい, 小さい, big, small, 変更",
+    "verified": true,
+    "featured": true
+    },
+    {
+    "jp": "色違いもございます",
+    "en": "We also have this in other colors",
+    "tag": "Shops",
+    "context": "カラーバリエーションの紹介に。",
+    "keywords": "色違いもございます, other colors, 色, カラー, color, バリエーション",
+    "verified": true
+    },
+    {
+    "jp": "足のサイズをお測りします",
+    "en": "I can measure your feet for you",
+    "tag": "Shops",
+    "context": "靴屋でのフィッティングに。",
+    "keywords": "足のサイズをお測りします, measure, foot size, 靴, Shops, 足, 測る, measurement",
+    "verified": true
+    },
+    {
+    "jp": "こちらの靴は少し小さめの作りです",
+    "en": "These shoes run a bit small",
+    "tag": "Shops",
+    "context": "サイズ選びのアドバイスに。",
+    "keywords": "こちらの靴は少し小さめの作りです, run small, 小さい, 靴, Shops, きつい, tight",
+    "verified": true
+    },
+    {
+    "jp": "ギフトラッピングを承ります",
+    "en": "We offer gift wrapping",
+    "tag": "Shops",
+    "context": "雑貨屋やアパレルでのギフト対応に。",
+    "keywords": "ギフトラッピングを承ります, Gift wrapping, プレゼント, お土産, 包装, present, souvenir",
+    "verified": true
+    },
+    {
+    "jp": "割れ物ですので丁寧にお包みします",
+    "en": "These are fragile, so I’ll wrap them carefully",
+    "tag": "Shops",
+    "context": "食器や雑貨などの梱包時に。",
+    "keywords": "割れ物ですので丁寧にお包みします, fragile, wrap, 割れ物, 壊れやすい, 注意, packing",
+    "verified": true
+    },
+    {
+    "jp": "ベビーカーのままご入店いただけます",
+    "en": "You are welcome to enter with your stroller",
+    "tag": "Shops",
+    "context": "ベビーカー利用客への歓迎の言葉に。",
+    "keywords": "ベビーカーのままご入店いただけます, stroller, welcome, ベビーカー, 赤ちゃん, 入店",
+    "verified": true
+    },
+    {
+    "jp": "ギフト用レシートをお入れしますか？",
+    "en": "Would you like a gift receipt?",
+    "tag": "Shops",
+    "context": "プレゼント購入時の確認に。",
+    "keywords": "ギフト用レシートをお入れしますか？, gift receipt, ギフト, レシート, 贈り物, 値段消し, price tag",
+    "verified": true
+    },
+    {
+    "jp": "新しい在庫をお出しします",
+    "en": "I’ll get a new one from the stock for you",
+    "tag": "Shops",
+    "context": "展示品ではなく新品を渡す際に。",
+    "keywords": "新しい在庫をお出しします, fresh stock, 新品, 在庫, 新しい, new, item",
+    "verified": true
+    },
+    {
+    "jp": "こちらはセール対象外です",
+    "en": "This item is excluded from the sale",
+    "tag": "Shops",
+    "context": "割引の可否を伝える際に。",
+    "keywords": "こちらはセール対象外です, excluded, sale, セール, 対象外, 割引, discount",
+    "verified": true
+    },
+    {
+    "jp": "お取り寄せに1週間ほどかかります",
+    "en": "It will take about a week to order this for you",
+    "tag": "Shops",
+    "context": "他店からの取り寄せ期間の案内に。",
+    "keywords": "お取り寄せに1週間ほどかかります, order, week, 取り寄せ, 期間, 日数, time",
+    "verified": true
+    },
+    {
+    "jp": "横幅を広げる調整が可能です",
+    "en": "We can stretch the width for you",
+    "tag": "Shops",
+    "context": "靴の幅がキツイという客に対して。",
+    "keywords": "横幅を広げる調整が可能です, stretch, width, 靴, 幅, 調整, きつい, tight",
+    "verified": true
+    },
+    {
+    "jp": "防水スプレーの使用をお勧めします",
+    "en": "We recommend using a waterproof spray",
+    "tag": "Shops",
+    "context": "靴のメンテナンス提案に。",
+    "keywords": "防水スプレーの使用をお勧めします, waterproof spray, 防水, ケア, 手入れ, care",
+    "verified": true
+    },
+    {
+    "jp": "靴べらをお使いください",
+    "en": "Please use this shoehorn",
+    "tag": "Shops",
+    "context": "試着時に靴べらを貸し出す際に。",
+    "keywords": "靴べらをお使いください, shoehorn, 靴べら, 試着, はく, try on",
+    "verified": true
+    },
+    {
+    "jp": "歩き心地はいかがですか？",
+    "en": "How do they feel when you walk?",
+    "tag": "Shops",
+    "context": "店内で試し履きをしている客への確認。",
+    "keywords": "歩き心地はいかがですか？, walk, feel, 歩く, 確認, 履き心地",
+    "verified": true
+    },
+    {
+    "jp": "裾上げは30分ほどで終わります",
+    "en": "The hemming will be ready in about 30 minutes",
+    "tag": "Shops",
+    "context": "パンツの丈直しの待ち時間の案内に。",
+    "keywords": "裾上げは30分ほどで終わります, hemming, length, 裾上げ, 丈, 直し, 時間, wait",
+    "verified": true
+    },
+    {
+    "jp": "肩幅を合わせましょうか？",
+    "en": "Shall we check the shoulder width?",
+    "tag": "Shops",
+    "context": "ジャケットなどのサイズ確認時に。",
+    "keywords": "肩幅を合わせましょうか？, shoulder, width, 肩, サイズ, size, check",
+    "verified": true
+    },
+    {
+    "jp": "ご自宅で洗濯可能です",
+    "en": "You can machine wash this at home",
+    "tag": "Shops",
+    "context": "手入れの簡単さを伝える際に。",
+    "keywords": "ご自宅で洗濯可能です, washable, laundry, 洗濯, 洗える, 家, home",
+    "verified": true
+    },
+    {
+    "jp": "ドライクリーニングのみ対応です",
+    "en": "Dry clean only",
+    "tag": "Shops",
+    "context": "洗濯時の注意点として。",
+    "keywords": "ドライクリーニングのみ対応です, dry clean, クリーニング, 洗濯, 注意, caution",
+    "verified": true
+    },
+    {
+    "jp": "セットで購入するとお得です",
+    "en": "It’s cheaper if you buy them as a set",
+    "tag": "Shops",
+    "context": "セット割引の提案に。",
+    "keywords": "セットで購入するとお得です, set, cheap, discount, セット, 割引, お得",
+    "verified": true
+    },
+    {
+    "jp": "袋を二重にしましょうか？",
+    "en": "Shall I double-bag it for you?",
+    "tag": "Shops",
+    "context": "重い商品や雨の日の梱包に。",
+    "keywords": "袋を二重にしましょうか？, double bag, 袋, 二重, 重い, heavy, rain",
+    "verified": true
+    },
+    {
+    "jp": "こちらで破棄してよろしいですか？",
+    "en": "Would you like me to throw this away for you?",
+    "tag": "Shops",
+    "context": "不要な包装やゴミを預かる際に。",
+    "keywords": "こちらで破棄してよろしいですか？, dispose, trash, ゴミ, 捨てる, 不要",
+    "verified": true
+    },
+    {
+    "jp": "配送も承っております",
+    "en": "We can ship this to your address",
+    "tag": "Shops",
+    "context": "大きな商品や荷物が多い客に対して。",
+    "keywords": "配送も承っております, shipping, delivery, 配送, 送る, 荷物",
+    "verified": true
+    },
+    {
+    "jp": "1点もののため、現品限りとなります",
+    "en": "This is the last one available",
+    "tag": "Shops",
+    "context": "在庫がないことを伝える際に。",
+    "keywords": "1点もののため,現品限りとなります, last one, 現品, 在庫, 限り, only",
+    "verified": true
+    },
+    {
+    "jp": "色落ちはしにくい素材です",
+    "en": "The color won’t fade easily",
+    "tag": "Shops",
+    "context": "素材の特性を説明する際に。",
+    "keywords": "色落ちはしにくい素材です, fade, color, 色落ち, 素材, 丈夫, material",
+    "verified": true
+    },
+    {
+    "jp": "リバーシブルでお使いいただけます",
+    "en": "This is reversible",
+    "tag": "Shops",
+    "context": "商品の機能を説明する際に。",
+    "keywords": "リバーシブルでお使いいただけます, reversible, リバーシブル, 裏表, 機能",
+    "verified": true
+    },
+    {
+    "jp": "ユニセックスのサイズ展開です",
+    "en": "This comes in unisex sizes",
+    "tag": "Shops",
+    "context": "男女兼用であることを伝える際に。",
+    "keywords": "ユニセックスのサイズ展開です, unisex, 男女兼用, サイズ, size",
+    "verified": true
+    },
+    {
     "jp": "電子マネー対応",
     "en": "E-money accepted",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "電子マネーの案内に。",
     "keywords": "電子マネー, キャッシュレス, 支払い方法, 決済, スイカ, パスモ, e-money, contactless",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "お会計は別々ですか？",
     "en": "Would you like to pay separately?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "個別会計の確認に。",
     "keywords": "お会計は別々ですか？, Would you like to pay separately?, 分ける, チェック, split, bill, separate",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "免税カウンターはこちらです",
     "en": "The tax-free counter is here",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "買い物客への案内に。",
     "keywords": "免税カウンターはこちらです, Tax-free counter is over here, tax-free, refund, 8%, 10%, consumption tax, duty free, めんぜい",
     "verified": true,
     "featured": true
-  },
-  {
+    },
+    {
     "jp": "暗証番号を入力してください",
     "en": "Please enter your PIN",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "カード決済の時に。",
     "keywords": "暗証番号を入力してください, Please enter your PIN, パスワード, pin, code, security, 入力",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "サインをお願いします",
     "en": "Please sign here",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "署名が必要な時に。",
     "keywords": "サインをお願いします, Please sign here, 署名, sign, signature, 名前",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "一括払いでよろしいですか？",
     "en": "Single payment?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "支払回数の確認に。",
     "keywords": "一括払いでよろしいですか？, One-time payment?, one-time, single, payment",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "レシートは必要ですか？",
     "en": "Would you like a receipt?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "会計終了時の確認に。",
     "keywords": "レシートは必要ですか？, Would you like a receipt?, receipt, bill, proof, 明細",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "領収書は必要ですか？",
     "en": "Would you like a formal receipt?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "会計終了時の確認に。",
     "keywords": "領収書は必要ですか？, Would you like a formal receipt?, receipt, bill, proof, 明細",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "領収書をください",
     "en": "May I have a formal receipt?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "領収証を求められた時に。",
     "keywords": "領収書をください, May I have a formal receipt?, receipt, bill, proof, 明細",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "お釣りです",
     "en": "Here is your change",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "現金を返す時に。",
     "keywords": "お釣りです, Here is your change",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "1万円札は使えません",
     "en": "Cannot accept 10,000 yen notes",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "千円札専用の機械などで。",
     "keywords": "1万円札は使えません, Cannot accept 10,000 yen notes",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "新札は使えません",
     "en": "Does not accept the new banknotes",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "古い機械での注意書きに。",
     "keywords": "新札は使えません, Does not accept the new banknotes",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "袋は有料です",
     "en": "There is a charge for plastic bags",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "レジ袋有料化の説明に。",
     "keywords": "袋は有料です, There is a charge for plastic bags",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "袋はいりますか？",
     "en": "Do you need a bag?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "袋の要否確認に。",
     "keywords": "袋はいりますか？, Do you need a bag?",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "セルフ会計",
     "en": "Self-checkout",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "自動精算機の案内に。",
     "keywords": "セルフ会計, Self-checkout",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "前払い制",
     "en": "Payment first",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "注文時に支払う形式の説明に。",
     "keywords": "前払い制, Payment first",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "後払い制",
     "en": "Payment after dining",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "レジで最後に支払う形式に。",
     "keywords": "後払い制, Payment after dining",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "免税対象額は_______円以上です",
     "en": "Tax-free available for purchases over _______ yen",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税適用の条件を説明する際に。",
     "keywords": "免税対象額は_______円以上です, Tax-free available for purchases over _______ yen, tax-free, refund, 8%, 10%, consumption tax, duty free, めんぜい",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "パスポートの実物が必要です（コピー不可）",
     "en": "Physical passport required (No copies accepted)",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税手続きの厳しいルールを伝える際に。",
     "keywords": "パスポートの実物が必要です（コピー不可）, Physical passport required (No copies accepted), passport, ID, copy, original, 提示",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "QRコード決済",
     "en": "QR Code payment",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "スマホ決済の利用可否を伝える際に。",
     "keywords": "QRコード決済, QR Code payment, スマホ, 決済, barcode, line pay, paypay",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "タッチ決済（NFC）可能です",
     "en": "Contactless payment (NFC) available",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "VisaタッチやApple Payの案内に。",
     "keywords": "タッチ決済（NFC）可能です, Contactless payment (NFC) available, contactless, apple pay, google pay, visa touch",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "合算できません",
     "en": "Receipts cannot be combined",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税やキャンペーンで複数のレシートをまとめられない時に。",
     "keywords": "合算できません, Receipts cannot be combined",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "消耗品",
     "en": "Consumables",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税区分の説明に。",
     "keywords": "消耗品, Consumables, food, cosmetics, liquid, tax-free, rules",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "一般物品",
     "en": "General goods",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税区分の説明に。",
     "keywords": "一般物品, General goods, electronics, clothes, shoes, tax-free",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "開封厳禁（免税品）",
     "en": "Do not open until leaving Japan (Tax-free items)",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税袋の注意書き。",
     "keywords": "開封厳禁（免税品）, Do not open until leaving Japan (Tax-free items), tax-free, refund, 8%, 10%, consumption tax, duty free, めんぜい, do not open, sealed, bag, customs",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "期間限定セール",
     "en": "Limited-time sale",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "今だけの割引の案内に。",
     "keywords": "期間限定セール, Limited-time sale",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "お一人様___点まで",
     "en": "Limit of ___ items per customer",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "購入制限がある場合に。",
     "keywords": "お一人様___点まで, Limit of ___ items per customer",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "在庫切れ（再入荷未定）",
     "en": "Out of stock (Restock date undecided)",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "売り切れの説明に。",
     "keywords": "在庫切れ（再入荷未定）, Out of stock (Restock date undecided)",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "このカードはご利用いただけません",
     "en": "This card cannot be accepted",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "カードが使えない場合に。",
     "keywords": "このカードはご利用いただけません, card declined, not accepted, payment error",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "通信エラーです。もう一度お試しください",
     "en": "Connection error. Please try again",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "決済端末のエラー時に。",
     "keywords": "通信エラー, try again, payment error, terminal",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "残高不足です",
     "en": "Insufficient balance",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "電子マネーやカード残高不足時に。",
     "keywords": "残高不足, insufficient funds, balance",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "別のお支払い方法はございますか？",
     "en": "Do you have another payment method?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "決済不可時の確認に。",
     "keywords": "別のお支払い方法, another payment method",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "宛名はございますか？",
     "en": "What name should we put on the receipt?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "領収書の宛名確認に。",
     "keywords": "宛名, receipt name, invoice name",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "但し書きはどうなさいますか？",
     "en": "What should we write as the description?",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "領収書の但し書き確認に。",
     "keywords": "但し書き, description, receipt note",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "明細付きレシート",
     "en": "Itemized receipt",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "明細表示のあるレシート。",
     "keywords": "明細付き, itemized receipt",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "クレジットカードのみ対応",
     "en": "Credit cards only",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "現金不可の店舗表示。",
     "keywords": "クレジットカードのみ, credit card only",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "現金のみ",
     "en": "Cash only",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "カード不可の店舗表示。",
     "keywords": "現金のみ, cash only, 現金, のみ",
-    "verified": true,
-    "featured": true
-  },
-  {
+    "verified": true
+    },
+    {
     "jp": "キャッシュレスのみ",
     "en": "Cashless only",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "カード不可の店舗表示。",
     "keywords": "キャッシュレスのみ, cashless only",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "両替はできません",
     "en": "Money exchange is not available",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "両替不可の案内。",
     "keywords": "両替できません, no exchange",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "返金はできません",
     "en": "No refunds available",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "返金不可ポリシー。",
     "keywords": "返金不可, キャンセル, 返品, 返金できません, 注意事項, no refund",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "テーブルでお会計します",
     "en": "We will process the payment at your table",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "テーブル会計制の説明。",
     "keywords": "テーブル会計, pay at table",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "サービス料が含まれています",
     "en": "Service charge is included",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "サービス料込みの案内。",
     "keywords": "サービス料, 込み, 料金, 会計, 総額, チップ, service charge",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "サービス料は含まれていません",
     "en": "Service charge is not included",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "サービス料別途の案内。",
     "keywords": "サービス料なし, no service charge",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "免税手続きにはお時間がかかります",
     "en": "Tax-free processing may take some time",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "混雑時の案内。",
     "keywords": "免税手続き, processing time, tax free",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "当日購入分のみ対象です",
     "en": "Only purchases made today are eligible",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税対象条件の説明。",
     "keywords": "当日購入分のみ, same day only, tax free",
     "verified": true
-  },
-  {
+    },
+    {
     "jp": "パスポートの提示をお願いします",
     "en": "Please present your passport",
-    "tag": "Pay",
+    "tag": "Shops",
     "context": "免税時の一般案内。",
     "keywords": "パスポート提示, passport required",
     "verified": true
-  }
+    }
 ]
