@@ -156,7 +156,7 @@
     "en": "Emergency stairs",
     "tag": "Sign",
     "context": "避難経路の案内に。",
-    "keywords": "避難, 災害, 火事, 地震, 出口, ひじょうかいだん, stairs, emergency exit",
+    "keywords": "避難, 災害, 火事, 地震, 出口, ひじょうかいだん, stairs, emergency exit, 階段",
     "verified": true
   },
   {
@@ -711,6 +711,110 @@
     "tag": "Sign",
     "context": "営業時間案内。",
     "keywords": "ラストオーダー, last order, closing time",
+    "verified": true
+  },
+  {
+  "jp": "非常口",
+  "en": "Emergency Exit",
+  "tag": "Sign",
+  "context": "非常口の表示標識に。",
+  "keywords": "非常口, Emergency Exit, 避難, 災害, 出口, exit",
+  "verified": true
+  },
+  {
+  "jp": "非常口はこちらです",
+  "en": "The emergency exit is this way",
+  "tag": "Hotel",
+  "context": "チェックイン時の避難経路説明や、緊急時の案内に。",
+  "keywords": "非常口はこちらです, emergency exit, this way, guide, route, 避難経路, 案内, こちら",
+  "verified": true
+  },
+  {
+  "jp": "非常時以外使用禁止",
+  "en": "Emergency use only",
+  "tag": "Sign",
+  "context": "非常扉や警報装置の注意書きに。",
+  "keywords": "非常時以外使用禁止, emergency use only, prohibited, 禁止, 警告, warning",
+  "verified": true
+  },
+  {
+    "jp": "係員の指示に従ってください",
+    "en": "Please follow the instructions of the staff",
+    "tag": "Sign",
+    "context": "イベント会場や緊急時の誘導に。",
+    "keywords": "指示, 従う, 係員, スタッフ, follow, instructions, staff, emergency",
+    "verified": true
+  },
+  {
+    "jp": "エスカレーターでは歩かないでください",
+    "en": "Please do not walk on the escalator",
+    "tag": "Sign",
+    "context": "安全のためのマナー啓発に。",
+    "keywords": "エスカレーター, 歩かない, 安全, 事故防止, escalator, do not walk, safety",
+    "verified": true
+  },
+  {
+    "jp": "手荷物から目を離さないでください",
+    "en": "Please keep an eye on your belongings",
+    "tag": "Sign",
+    "context": "盗難防止の注意喚起に。",
+    "keywords": "手荷物, 目を離さない, 盗難注意, belongings, keep an eye on, theft prevention",
+    "verified": true
+  },
+  {
+    "jp": "段差に注意",
+    "en": "Watch the gap / Mind the step",
+    "tag": "Sign",
+    "context": "駅のホームや古い建物の入り口に。",
+    "keywords": "段差, 隙間, 注意, gap, step, watch, mind",
+    "verified": true
+  },
+  {
+    "jp": "列車とホームの間、足元にご注意ください",
+    "en": "Mind the gap",
+    "tag": "Sign",
+    "context": "駅のホームと列車の間の隙間に注意を促す際に。",
+    "keywords": "隙間, 列車, ホーム, mind the gap, train, platform",
+    "verified": true
+  },
+  {
+    "jp": "この先行き止まり",
+    "en": "Dead end",
+    "tag": "Sign",
+    "context": "通路の突き当たりなどに。",
+    "keywords": "行き止まり, 通れない, dead end, no thoroughfare",
+    "verified": true
+  },
+  {
+    "jp": "自動ドアに注意",
+    "en": "Caution: Automatic Door",
+    "tag": "Sign",
+    "context": "急に開閉するドアへの注意喚起に。",
+    "keywords": "自動ドア, 注意, 挟まれる, automatic door, caution",
+    "verified": true
+  },
+  {
+    "jp": "開くドアにご注意",
+    "en": "Caution: Doors opening",
+    "tag": "Sign",
+    "context": "電車のドアの開閉時の注意喚起に。",
+    "keywords": "開くドアにご注意,電車, caution, moving door, automatic door, train, opening, caution, beware, ひらくどあにごちゅうい",
+    "verified": true
+  },
+  {
+    "jp": "Free Wi-Fi 使えます",
+    "en": "Free Wi-Fi available",
+    "tag": "Sign",
+    "context": "Wi-Fi提供エリアの表示に。",
+    "keywords": "Wi-Fi, インターネット, 接続, free, available, internet",
+    "verified": true
+  },
+  {
+    "jp": "お忘れ物にご注意ください",
+    "en": "Please don't forget your belongings",
+    "tag": "Sign",
+    "context": "退店時や降車時のアナウンス・表示に。",
+    "keywords": "忘れ物, 注意, belongings, check, left behind",
     "verified": true
   }
 ]

@@ -12,7 +12,7 @@
     "en": "Spicy miso ramen",
     "tag": "Menu",
     "context": "辛口表記に。",
-    "keywords": "辛味噌ラーメン, spicy miso ramen, spicy, ramen, noodles",
+    "keywords": "辛味噌ラーメン, spicy miso ramen, spicy, ramen, noodles,辛い,らーめん,ラーメン,味噌",
     "verified": true
   },
   {
@@ -580,7 +580,7 @@
     "en": "Soy Sauce Base Ramen",
     "tag": "Menu",
     "context": "醤油ベースのスープ表記。",
-    "keywords": "醤油ラーメン, Soy Sauce Base Ramen, ramen, noodles, pork, wheat",
+    "keywords": "醤油ラーメン, Soy Sauce Base Ramen, ramen, noodles, wheat, らーめん, 醤油, ソイ",
     "verified": true
   },
   {
@@ -596,7 +596,7 @@
     "en": "Miso Base Ramen",
     "tag": "Menu",
     "context": "味噌ベースの説明。",
-    "keywords": "味噌ラーメン, Miso Base Ramen, ramen, noodles, pork, wheat",
+    "keywords": "味噌ラーメン, Miso Base Ramen, ramen, noodles, pork, wheat, らーめん, 味噌,麺",
     "verified": true
   },
   {
@@ -604,23 +604,7 @@
     "en": "Salt Base Ramen",
     "tag": "Menu",
     "context": "あっさり系の説明。",
-    "keywords": "塩ラーメン, Salt Base Ramen, ramen, noodles, pork, wheat",
-    "verified": true
-  },
-  {
-    "jp": "担々麺",
-    "en": "Tantan Noodles",
-    "tag": "Menu",
-    "context": "ゴマの風味と辛さを表記。",
-    "keywords": "担々麺, Tantan Noodles",
-    "verified": true
-  },
-  {
-    "jp": "つけ麺",
-    "en": "Dipping Noodles",
-    "tag": "Menu",
-    "context": "つけ汁で食べる麺。",
-    "keywords": "つけ麺, Dipping Noodles",
+    "keywords": "塩ラーメン, Salt Base Ramen, ramen, noodles, wheat,塩,らーめん, 麺",
     "verified": true
   },
   {
@@ -628,7 +612,7 @@
     "en": "Cold Chinese- style Noodles",
     "tag": "Menu",
     "context": "夏季限定の冷製麺。",
-    "keywords": "冷やし中華, Cold Chinese-style Noodles",
+    "keywords": "冷やし中華, Cold Chinese-style Noodles, 麺, 中華料理",
     "verified": true
   },
   {
@@ -1351,7 +1335,7 @@
     "context": "注文確認時に。",
     "keywords": "ご注文はお決まりですか, order",
     "verified": true,
-    "featured":true
+    "featured": true
   },
   {
     "jp": "こちらがおすすめです",
@@ -1486,7 +1470,7 @@
     "en": "Iekei ramen (rich soy-pork broth)",
     "tag": "Menu",
     "context": "濃厚豚骨醤油。",
-    "keywords": "家系ラーメン, iekei ramen, pork, soy sauce, ramen, noodles",
+    "keywords": "家系ラーメン, iekei ramen, pork, soy sauce, ramen, noodles,らーめん, 麺",
     "verified": true
   },
   {
@@ -1494,7 +1478,7 @@
     "en": "Jiro-style ramen",
     "tag": "Menu",
     "context": "ボリューム系。",
-    "keywords": "二郎系ラーメン, jiro style, ramen, large portion, pork, garlic",
+    "keywords": "二郎系ラーメン, jiro style, ramen, large portion, pork, garlic,らーめん, 麺",
     "verified": true
   },
   {
@@ -1599,6 +1583,22 @@
     "tag": "Menu",
     "context": "動物性ゼラチン不使用。",
     "keywords": "ゼラチン不使用, no gelatin, vegan, plant-based, デザート, ヴィーガン, ビーガン, ベジ, プラントベース, dessert",
+    "verified": true
+  },
+  {
+    "jp": "取り皿をお持ちしましょうか？",
+    "en": "Would you like some extra plates?",
+    "tag": "Menu",
+    "context": "大皿料理の提供時や、シェアして食べる様子の時に。",
+    "keywords": "取り皿をお持ちしましょうか？, plates, share, dish, extra, 皿, 取り皿, シェア, 追加",
+    "verified": true
+  },
+  {
+    "jp": "お下げしましょうか？",
+    "en": "May I clear these for you?",
+    "tag": "Menu",
+    "context": "食器を片付ける際の確認に。",
+    "keywords": "お下げしましょうか？, clear, take away, finish, plate, glass, 片付け, 下げる, 空いた",
     "verified": true
   }
 ]

@@ -49,6 +49,14 @@
     "verified": true
   },
   {
+    "jp": "お荷物をお預かりしましょうか？",
+    "en": "Would you like us to keep your bags/luggage?",
+    "tag": "Hotel",
+    "context": "荷物預かり、またはクロークでの案内に。",
+    "keywords": "荷物を預けられますか？, Would you like us to keep your bags/luggage?, baggage, luggage, 預かり, クローク, カバン, keep, storage, cloak",
+    "verified": true
+  },
+  {
     "jp": "予約していますか？",
     "en": "Do you have a reservation?",
     "tag": "Hotel",
@@ -497,7 +505,7 @@
     "verified": true
   },
   {
-    "jp": "タクシーをお呼びしますか？",
+    "jp": "タクシーをお呼びしましょうか？",
     "en": "Would you like us to call a taxi?",
     "tag": "Hotel",
     "context": "外出サポートに。",

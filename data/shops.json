@@ -16,11 +16,11 @@
     "verified": true
     },
     {
-    "jp": "サイズ違いをお持ちしますか？",
+    "jp": "サイズ違いをお持ちしましょうか？",
     "en": "Would you like me to bring a different size?",
     "tag": "Shops",
     "context": "サイズが合わない様子の時に。",
-    "keywords": "サイズ違いをお持ちしますか？, size, different, 大きい, 小さい, big, small, 変更",
+    "keywords": "サイズ違いをお持ちしましょうか？, size, different, 大きい, 小さい, big, small, 変更",
     "verified": true,
     "featured": true
     },
@@ -177,7 +177,7 @@
     "verified": true
     },
     {
-    "jp": "袋を二重にしますか？",
+    "jp": "袋を二重にしましょうか？",
     "en": "Shall I double-bag it for you?",
     "tag": "Shops",
     "context": "重い商品や雨の日の梱包に。",
