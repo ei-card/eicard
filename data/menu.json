@@ -49,7 +49,7 @@
   },
   {
     "jp": "数量限定メニュー",
-    "en": "Limited-quantity menu",
+    "en": "Limited quantity",
     "tag": "Menu",
     "context": "本日限定メニューの案内に。",
     "keywords": "数量限定メニュー, Limited-quantity menu, menu, list, food, order",
@@ -225,7 +225,7 @@
   },
   {
     "jp": "脂ののった",
-    "en": "Fatty",
+    "en": "Rich and fatty",
     "tag": "Menu",
     "context": "魚の部位の特徴を伝える。",
     "keywords": "脂ののった, Fatty",
@@ -265,10 +265,10 @@
   },
   {
     "jp": "お通し（席料）",
-    "en": "Mandatory appetizer (cover charge)",
+    "en": "Small appetizer (cover charge)",
     "tag": "Menu",
     "context": "席料がかかる場合の表記に。",
-    "keywords": "お通し（席料）, Mandatory appetizer (cover charge)",
+    "keywords": "お通し（席料）, Small, appetizer, cover, charge",
     "verified": true
   },
   {

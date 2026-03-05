@@ -105,7 +105,7 @@
   },
   {
     "jp": "ゴミ箱はこちらです",
-    "en": "Trash can is here",
+    "en": "The trash can is here",
     "tag": "Sign",
     "context": "ゴミ捨て場の案内に。",
     "keywords": "ごみばこ, 屑入れ, 廃棄, くずいれ, trash, garbage, bin",
@@ -201,7 +201,7 @@
   },
   {
     "jp": "通話はご遠慮ください",
-    "en": "No calling",
+    "en": "No phone calls",
     "tag": "Sign",
     "context": "静かな場所でのマナーに。",
     "keywords": "通話はご遠慮ください, No calling, しずかに, quiet, silence, noise, 禁止, つうわ",

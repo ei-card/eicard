@@ -1,7 +1,7 @@
 [
   {
     "jp": "充電できます",
-    "en": "Charging stations available",
+    "en": "Charging available",
     "tag": "Hotel",
     "context": "コンセント開放の案内に。",
     "keywords": "充電できます, Charging stations available, じゅうでん, battery, charge, コンセント, 電源, outlet, plug, USB",
@@ -82,7 +82,7 @@
   },
   {
     "jp": "朝食は___時からです",
-    "en": "Breakfast starts at ___AM",
+    "en": "Breakfast starts at ___ AM",
     "tag": "Hotel",
     "context": "食事時間の説明に。",
     "keywords": "朝食は___時からです, Breakfast starts at ___AM, breakfast, ご飯, モーニング, morning, 食事, 券",
@@ -194,7 +194,7 @@
   },
   {
     "jp": "フロントは24時間対応です",
-    "en": "Front desk is open 24 hours",
+    "en": "The front desk is open 24 hours.",
     "tag": "Hotel",
     "context": "フロントの案内に。",
     "keywords": "フロントは24時間対応です, Front desk open 24 hours",
