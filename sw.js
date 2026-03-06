@@ -1,4 +1,4 @@
-const VERSION = '1.3.7';
+const VERSION = '1.3.8';
 const CACHE_STATIC =`eicard-static-${VERSION}`;
 const CACHE_DYNAMIC = `eicard-dynamic-${VERSION}`;
 

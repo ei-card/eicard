@@ -1662,7 +1662,7 @@
     "en": "This dish contains _______",
     "tag": "Menu",
     "context": "特定のアレルゲンが含まれていることを明示する際に。",
-    "keywords": "含有, contains, include, ingredients, alert,アレルギー対応",
+    "keywords": "含有, contains, include, ingredients, alert,アレルギー対応,コンタミネーション",
     "verified": true
   }
 ]
